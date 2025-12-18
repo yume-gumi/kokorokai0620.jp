@@ -1,0 +1,67 @@
+@use "function" as *;
+/* ===============================================
+# 変数
+=============================================== */
+// フォント
+$font-zenmaru:"Zen Maru Gothic",sans-serif;
+$font-NotoSerif:"Noto Serif", serif;
+$font-NotoSerifJp:"Noto Serif jp", serif;
+
+//フォントサイズ
+$font-size-small: rem(12);
+$font-size-normal: rem(16);
+$font-size-18: rem(18);
+$font-size-20: rem(20);
+$font-size-22: rem(22);
+$font-size-24: rem(24);
+$font-size-28: rem(28);
+$font-size-30: rem(30);
+$font-size-32: rem(32);
+$font-size-36: rem(36);
+$font-size-50: rem(50);
+
+:root {
+  --font-size12: #{$font-size-small};
+  --font-size16: #{$font-size-normal};
+  --font-size18: #{$font-size-18};
+  --font-size20: #{$font-size-20};
+  --font-size22: #{$font-size-22};
+  --font-size24: #{$font-size-24};
+  --font-size28: #{$font-size-28};
+  --font-size30: #{$font-size-30};
+  --font-size32: #{$font-size-32};
+  --font-size36: #{$font-size-36};
+  --font-size50: #{$font-size-50};
+}
+
+// 色
+$bg-main: #F8F8EC;
+$text: #B44906;
+$white: #fff;
+$black: #151515;
+$gray: #cbcbcb;
+$gray-bg: #ebebe3;
+$red: #890000;
+$red-hover: #f0776c;
+$orange: #ffc76a;
+$green: #99c88f;
+$green-hover: #9cdb8e;
+$color:#3100f6;
+$brown-bg:#e0d6ca;// 下層ページheader下
+$color-link:#0000ee;
+$color-link-visited:#551a8b;
+
+:root {
+  --color-white: #{$white};
+  --color-black: #{$black};
+  --color-gray: #{$gray};
+  --color-gray-bg: #{$gray-bg};
+  --color-red: #{$red};
+  --color-red-hover: #{$red-hover};
+  --color-orange: #{$orange};
+  --color-green: #{$green};
+  --color-green-hover: #{$green-hover};
+  --color-brown-bg:#{$brown-bg};
+  --color-link:#{$color-link};
+  --color-link-visited:#{$color-link-visited};
+}

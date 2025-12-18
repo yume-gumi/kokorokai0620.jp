@@ -1,0 +1,217 @@
+@use "../global" as *;
+/* ===============================================
+# header
+=============================================== */
+
+header {
+    width: 100%;
+    height: 72px;
+    padding: 12px;
+    background-color: $bg-main;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+
+            img {
+                display: block;
+                width: 180px;
+                height: auto;
+            }
+        }
+
+
+
+        /* ========ハンバーガーボタン======= */
+
+        .hamburger-btn {
+            width: 40px;
+            height: auto;
+            z-index: 999;
+            cursor: pointer;
+
+            span {
+                width: 100%;
+                height: 1px;
+                position: relative;
+                background-color: $text;
+                transition: ease .4s;
+                display: block;
+            }
+
+            span:nth-child(1) {
+                top: 0;
+            }
+
+            span:nth-child(2) {
+                margin: 8px 0 2px;
+            }
+
+            p {
+                font-size: .9rem;
+            }
+        }
+
+    }
+
+    // .header-container
+
+
+
+    /* =======ヘッダーメニュー====== */
+
+    nav {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        background-color: $bg-main;
+        transition: ease .4s;
+
+        ul {
+            width: 70%;
+            padding: 20px 40px;
+            font-size: 1rem;
+
+            li {
+                padding: 4px 0;
+                border-bottom: 1px solid $text;
+
+
+                a {
+                    padding: 4px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .arrow {
+                        position: relative;
+                        display: inline-block;
+                        width: 20px;
+                        height: 1px;
+                        margin: 6.4px 0;
+                        background-color: $text;
+                    }
+
+                    .arrow::before,
+                    .arrow::after {
+                        content: "";
+                        position: absolute;
+                        top: calc(50% - 0.5px);
+                        right: 0;
+                        width: 10px;
+                        height: 1px;
+                        background-color: $text;
+                        transform-origin: calc(100% - 0.5px) 50%;
+                    }
+
+                    .arrow::before {
+                        transform: rotate(45deg);
+                    }
+
+                    .arrow::after {
+                        transform: rotate(-45deg);
+                    }
+
+                    //   .arrow
+
+                    .plus {
+                        position: relative;
+                        display: inline-block;
+                        width: 20px;
+                        height: 1px;
+                        margin: 6.4px 0;
+                        background-color: $text;
+                    }
+
+                    .plus::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 1px;
+                        background-color: $text;
+                        transform: translateX(-50%);
+                        transform: rotate(90deg);
+                    }
+
+                    //   /plus
+                }
+
+                // li>a
+            }
+
+            // li
+
+
+            /* ======アコーディオンメニュー====== */
+
+            .accordion-menu {
+                padding: 8px;
+
+                a {
+                    display: block;
+                    padding: 2px 0;
+                    cursor: pointer;
+                }
+            }
+
+            a {
+                display: block;
+                padding: 2px 0;
+                cursor: pointer;
+
+                img {
+                    width: 24px;
+                    margin: 20px 0;
+                }
+
+                span {
+                    font-size: .875rem;
+                }
+            }
+
+        }
+
+        // ul
+
+    }
+
+    // nav
+
+}
+
+// header
+
+
+    /* =======ハンバーガーボタンアクティブ====== */
+
+    .hamburger-btn.active span:nth-child(1) {
+        top: 0px;
+        margin: 8px 0;
+        transform: rotate(45deg);
+    }
+    
+    .hamburger-btn.active span:nth-child(2) {
+        top: -10px;
+        margin: 8px 0;
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger-btn.active p {
+        opacity: 0;
+    }
+        /* =======ヘッダーメニューアクティブ====== */
+    .header-nav.active {
+        transform: translateX(0);
+    }

@@ -34,6 +34,7 @@ header {
         .hamburger-btn {
             width: 40px;
             height: auto;
+            margin-top: 8px;
             z-index: 999;
             cursor: pointer;
 
@@ -79,7 +80,6 @@ header {
         transition: ease .4s;
 
         ul {
-            width: 70%;
             padding: 20px 40px;
             font-size: 1rem;
 

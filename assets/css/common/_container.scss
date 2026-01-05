@@ -1,39 +1,38 @@
 .container {
   width: 100%;
   padding: 0 3rem;
-  margin-top: 40px;
 }
 
 
-.wave {
-  padding: 40px 0;
-  border: 1px solid #000;
-
-  position: relative;
-  // overflow: hidden;
-
-  &>*:not(.bg-yellow) {
-    position: relative;
-    z-index: 1;
-  }
-
-  .bg-yellow {
+.svg-outer {
+  line-height: 0;
+  font-size: 0;
+}
+  
+  .bg-top.bg-under {
     display: block;
-
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-
     width: 100%;
-
     height: auto;
-
     z-index: -1;
+    margin-bottom: 0;
+
+    // position: absolute;
+    // top: -10px;
+    // left: 50%;
+    // transform: translateX(-50%);
+
+  }
 
     .wave-yellow {
-      fill: var(--color-yellow);
+      fill: var(--color-yellow) !important;
     }
-  }
 
-}
+    .wave-green {
+      fill: var(--color-green) !important;
+    }
+
+    .wave-pink {
+      fill: var(--color-pink) !important;
+    }
+
+    

@@ -36,7 +36,11 @@ $font-size-50: rem(50);
 
 // 色
 $bg-main: #F8F8EC;
-$bg-yellow: #F7EDA0;
+$blue: #D3E5F4;
+$yellow: #F7EDA0;
+$green: #DAE8C0;
+$pink: #F8E7ED;
+$orange: #F8E2CF;
 $text: #B44906;
 $text-sub: #D95B0D;
 $orange-2nd: #D17E36;
@@ -48,8 +52,6 @@ $gray: #cbcbcb;
 $gray-bg: #ebebe3;
 $red: #890000;
 $red-hover: #f0776c;
-$orange: #ffc76a;
-$green: #99c88f;
 $green-hover: #9cdb8e;
 $color:#3100f6;
 $brown-bg:#e0d6ca;// 下層ページheader下
@@ -62,9 +64,9 @@ $color-link-visited:#551a8b;
   --color-gray: #{$gray};
   --color-gray-bg: #{$gray-bg};
   --color-red: #{$red};
-  --color-red-hover: #{$red-hover};
+  --color-pink: #{$pink};
   --color-orange: #{$orange};
-  --color-yellow: #{$bg-yellow};
+  --color-yellow: #{$yellow};
   --color-green: #{$green};
   --color-green-hover: #{$green-hover};
   --color-brown-bg:#{$brown-bg};

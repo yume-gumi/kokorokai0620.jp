@@ -13,54 +13,55 @@
 
     .bg-img {
       margin: 1rem;
-    padding: 1rem;
-    background-image: url(../images/bg-footer-top.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+      padding: 1rem;
+      background-image: url(../images/bg-footer-top.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 
-    .footer_top-outer {
-      text-align: center;
+      .footer_top-outer {
+        text-align: center;
 
-      h4 {
-        font-size: 1.375rem;
-        margin-bottom: 1rem;
-      }
+        h4 {
+          font-size: 1.375rem;
+          margin-bottom: 1rem;
+        }
 
-      p {
-        font-size: 1.125rem;
-        margin-bottom: 12px;
-      }
+        p {
+          font-size: 1rem;
+          margin-bottom: 12px;
+        }
 
-      .footer_top-inner {
-        margin: 0 auto;
-        max-width: 380px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
+        .footer_top-inner {
+          margin: 0 auto;
+          max-width: 380px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
 
-        .footer_top-block {
-          display: block;
-          width: 50%;
+          .footer_top-block {
+            display: block;
+            width: 50%;
 
-          p {
-            font-size: 1.5rem;
-          }
+            p {
+              font-size: 1.5rem;
+            }
 
-          span {
-            font-size: 0.875em;
+            span {
+              font-size: 0.875em;
+            }
           }
         }
+
+        // .footer_top-inner
       }
 
-      // .footer_top-inner
+      // .footer_top-outer
+
     }
 
-    // .footer_top-outer
-
-  }
-  // .bg-img
+    // .bg-img
 
   }
 
@@ -112,21 +113,27 @@
         left: 50%;
         width: 12px;
         height: 12px;
-        border-left: 2px solid $white;
-        border-top: 2px solid $white;
+        border-left: 2px solid $btn-cc;
+        border-top: 2px solid $btn-cc;
         border-radius: 2px;
         transform: translate(-50%, -25%) rotate(45deg);
         transition: border-color 0.2s ease;
       }
 
-      // ★ホバー時の設定
       &:hover {
-        background: $white !important;
+        transform: translateY(-4px);
+        transition: transform 0.2s ease;
+      }
+
+      &:active {
+        background: $btn-cc !important;
         border-color: $text;
 
         &::before {
           border-color: $text;
         }
+
+
 
       }
 
@@ -153,7 +160,7 @@ footer {
   margin: 0 auto;
   min-width: 380px;
   background: $bg-main;
-  
+
   background-image: url(../images/footer_sp.png);
   // background-attachment: fixed; 
   background-repeat: repeat-x;
@@ -322,11 +329,11 @@ footer {
             cursor: pointer;
           }
 
-        &.is-open {
-          margin-top: 8px;
-          min-height: 120px;
-          opacity: 1;
-        }
+          &.is-open {
+            margin-top: 8px;
+            min-height: 120px;
+            opacity: 1;
+          }
 
         }
 
@@ -336,9 +343,9 @@ footer {
           margin: 18px 0 8px;
           width: 20px;
         }
-  
+
         .sub-menu {
-  
+
           span {
             font-size: 0.875rem;
           }

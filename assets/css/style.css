@@ -760,6 +760,7 @@ header {
   background-color: #F8F8EC;
   z-index: 99;
   transition: all 0.3s ease; /* スクロール時滑らかにする */
+  overflow-x: hidden;
   /* =======ヘッダーメニュー====== */
 }
 header .header-container {

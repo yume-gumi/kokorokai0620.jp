@@ -19,23 +19,23 @@
 }
 
 .wave-yellow {
-  fill: var(--color-yellow) !important;
+  fill: var(--color-yellow) ;
 }
 
 .wave-green {
-  fill: var(--color-green) !important;
+  fill: var(--color-green) ;
 }
 
 .wave-pink {
-  fill: var(--color-pink) !important;
+  fill: var(--color-pink) ;
 }
 
 .wave-orange {
   fill: var(--color-orange);
 }
 
-.wage-blue {
-  fill: var(--color-blue);
+.wave-blue {
+  fill: var(--color-blue) ;
 }
 
 
@@ -55,6 +55,7 @@
 
 .cc-2nd-outer {
   margin: 0 auto;
+  padding-top: 20px;
 
   .cc-2nd-inner {
     padding-bottom: 16px;

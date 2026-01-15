@@ -41,6 +41,7 @@ $yellow: #F7EDA0;
 $green: #DAE8C0;
 $green-2nd: #85D136;
 $pink: #F8E7ED;
+$pink-2nd: #ED83A6;
 $orange: #F8E2CF;
 $text: #B44906;
 $text-sub: #D95B0D;
@@ -63,8 +64,7 @@ $color-link-visited:#551a8b;
   --color-white: #{$white};
   --color-black: #{$black};
   --color-gray: #{$gray};
-  --color-gray-bg: #{$gray-bg};
-  --color-red: #{$red};
+  --color-blue: #{$blue};
   --color-pink: #{$pink};
   --color-orange: #{$orange};
   --color-yellow: #{$yellow};
@@ -74,3 +74,4 @@ $color-link-visited:#551a8b;
   --color-link:#{$color-link};
   --color-link-visited:#{$color-link-visited};
 }
+

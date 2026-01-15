@@ -32,8 +32,7 @@
   --color-white: #fff;
   --color-black: #151515;
   --color-gray: #cbcbcb;
-  --color-gray-bg: #ebebe3;
-  --color-red: #890000;
+  --color-blue: #D3E5F4;
   --color-pink: #F8E7ED;
   --color-orange: #F8E2CF;
   --color-yellow: #F7EDA0;
@@ -141,22 +140,22 @@ button {
 }
 
 .wave-yellow {
-  fill: var(--color-yellow) !important;
+  fill: var(--color-yellow);
 }
 
 .wave-green {
-  fill: var(--color-green) !important;
+  fill: var(--color-green);
 }
 
 .wave-pink {
-  fill: var(--color-pink) !important;
+  fill: var(--color-pink);
 }
 
 .wave-orange {
   fill: var(--color-orange);
 }
 
-.wage-blue {
+.wave-blue {
   fill: var(--color-blue);
 }
 
@@ -175,6 +174,7 @@ button {
 /* ========事業内容2ndコピー======= */
 .cc-2nd-outer {
   margin: 0 auto;
+  padding-top: 20px;
 }
 .cc-2nd-outer .cc-2nd-inner {
   padding-bottom: 16px;
@@ -577,6 +577,7 @@ main #service .service-container .service-outer .service-block p {
 }
 #plus .plus-container {
   margin: 0 auto;
+  padding-bottom: 12px;
   width: 100%;
 }
 @media (min-width: 376px) {
@@ -609,7 +610,7 @@ main #service .service-container .service-outer .service-block p {
 #plus .plus-container .plus-frame .cc-plus {
   padding: 12px 28px;
   position: absolute;
-  top: 90%;
+  top: 96%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
@@ -626,6 +627,119 @@ main #service .service-container .service-outer .service-block p {
   #plus .plus-container .plus-2nd {
     padding-top: 0;
   }
+}
+
+/* ========事業所方針======= */
+#policy {
+  background: #F8E2CF;
+}
+#policy .policy-container {
+  padding: 12px 0 20px;
+}
+#policy .policy-container .policy-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#policy .policy-container .policy-outer .policy-brock {
+  max-width: 240px;
+  height: auto;
+}
+
+/* ========1日のスケジュール======= */
+#schedule {
+  background: #F8E7ED;
+}
+#schedule .timeline-container {
+  margin: 0 auto;
+  padding: 12px 0 20px;
+  max-width: 600px;
+}
+#schedule .timeline-container .timeline {
+  margin-left: 50px;
+  padding-top: 20px;
+  position: relative;
+  border-left: 2px solid #ED83A6;
+}
+#schedule .timeline-container .timeline .timeline-brock {
+  margin-bottom: 40px;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#schedule .timeline-container .timeline .timeline-brock::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  border-radius: 50%;
+}
+#schedule .timeline-container .timeline .timeline-brock:nth-child(1)::before {
+  background-image: url("../images/icon/9000.svg");
+}
+#schedule .timeline-container .timeline .timeline-brock:nth-child(2)::before {
+  background-image: url("../images/icon/1000.svg");
+}
+#schedule .timeline-container .timeline .timeline-brock:nth-child(3)::before {
+  background-image: url("../images/icon/1200.svg");
+}
+#schedule .timeline-container .timeline .timeline-brock:nth-child(4)::before {
+  background-image: url("../images/icon/1300.svg");
+}
+#schedule .timeline-container .timeline .timeline-brock:nth-child(5)::before {
+  background-image: url("../images/icon/1500.svg");
+}
+#schedule .timeline-container .timeline .timeline-brock .time {
+  padding-bottom: 2px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  border-bottom: 2px dotted #ED83A6;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#schedule .timeline-container .timeline .timeline-brock img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 8px;
+  max-width: 240px;
+  height: auto;
+}
+#schedule .timeline-container .timeline .timeline-brock .timeline-text {
+  padding: 12px 20px 4px;
+  line-height: 1.5;
+}
+
+/* ========ご利用の流れ======= */
+#flow {
+  background: #D3E5F4;
+}
+#flow .flow-outer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 12px;
+}
+#flow .flow-outer .flow-brock {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#flow .flow-outer .flow-brock .step-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 2;
+}
+#flow .flow-outer .flow-brock .flow-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px 20px 20px 50px;
+  box-shadow: 2px 4px 4px 0 #cbcbcb;
 }
 
 /* ===============================================

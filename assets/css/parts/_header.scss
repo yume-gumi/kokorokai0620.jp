@@ -19,7 +19,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
         h1 {
             img {
                 display: block;
@@ -75,11 +75,13 @@ header {
         left: 0;
         width: 100%;
         height: 100vh;
+
+        opacity: 0 ;
         transform: translateX(100%);
+        
         background-color: $bg-main;
         transition: ease .4s;
         z-index: 9999;
-        opacity: 1 !important;
         padding: 20px 40px;
         font-size: 1rem;
 
@@ -321,6 +323,11 @@ header {
 }
 
 /* =======ヘッダーメニューアクティブ====== */
+#js-header.active {
+  overflow: visible;
+}
+
 .header-nav.active {
     transform: translateX(0);
+    opacity: 1;
 }

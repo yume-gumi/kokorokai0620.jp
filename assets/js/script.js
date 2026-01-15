@@ -46,11 +46,13 @@ window.addEventListener('scroll', function() {
 
 const ham = document.querySelector('#js-hamburger');
 const nav = document.querySelector('#js-nav');
+const header = document.querySelector('#js-header');
 
 ham.addEventListener('click', function () {
 
   ham.classList.toggle('active');
   nav.classList.toggle('active');
+  header.classList.toggle('active');
 
 });
 

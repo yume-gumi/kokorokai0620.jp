@@ -13,7 +13,7 @@
 
 <body>
 
-    <header class="js-header">
+    <header id="js-header">
 
         <div class="header-container">
 

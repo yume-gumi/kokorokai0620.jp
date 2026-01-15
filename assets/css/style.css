@@ -480,6 +480,11 @@ main #news .news-container .news-outer a {
   display: block;
   width: 160px;
 }
+@media (max-width: 350px) {
+  main #news .news-container .news-outer a:nth-child(n+3) {
+    display: none;
+  }
+}
 @media (min-width: 350px) and (max-width: 670px) {
   main #news .news-container .news-outer a:nth-child(n+3) {
     display: none;

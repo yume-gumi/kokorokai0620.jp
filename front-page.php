@@ -28,9 +28,9 @@
 
 
                 <div class="kv-inner">
-                    みんなの<span class="cacth_copy-2rd">幸せ</span>を<br>
-                    <span class="cacth_copy-2rd">考え</span>、<span class="cacth_copy-2rd">願い</span>、<br>
-                    <span class="cacth_copy-2rd">行動</span>していきます
+                    みんなの<span>幸せ</span>を<br>
+                    <span>考え</span>、<span>願い</span>、<br>
+                    <span>行動</span>していきます
                 </div>
 
             </div>
@@ -56,7 +56,7 @@
     <section id="news">
 
 
-        <h2>お知らせ</h2>
+        <h2 class="h2-01">お知らせ</h2>
 
         <div class="news-container">
 
@@ -167,9 +167,9 @@
 
         <div class="service-container">
 
-            <h2>事業内容</h2>
+            <h2 class="h2-02">事業内容</h2>
 
-            <div class="service-outer">
+            <div class=" service-outer">
 
                 <div class="service-block">
                     <a href="ponte.html">
@@ -230,7 +230,7 @@
 
                 <div class="footer_top-outer">
 
-                    <h3 class="contact-text">お気軽にお問い合わせください</h3>
+                    <div class="contact-text">お気軽にお問い合わせください</div>
 
 
                     <p>一般社団法人こころ会</p>
@@ -262,16 +262,19 @@
 
 
         <!-- topに戻るボタン -->
-        <div id="back-page-top">
-            <button class="btn-top">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        <a href="<?php echo home_url('/'); ?>">
+            <div id="back-page-top">
+                <button class="btn-top">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </a>
 
 
     </section>
     <!-- footer_top -->
+
 
     <svg class=" bg-under wave-pink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 84.628">
         <g transform="translate(-0.699 -691.113)">

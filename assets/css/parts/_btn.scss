@@ -7,75 +7,93 @@
 # ボタン
 =============================================== */
 .btn {
-    position: relative;
-    margin: 0 auto;
-    width: 160px;
-    height: 40px;
+  position: relative;
+  margin: 0 auto;
 
+  max-width: 160px;
+  height: auto;
+  padding: 4px 20px;
+
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+
+  background: $btn-cc;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid $text;
+
+  box-shadow: 4px 4px 0 0 $text;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 0 0 0 $text;
+    transform: translate(4px, 4px);
+  }
+
+  &:active {
+    background: $text;
+    color: $btn-cc;
+  }
+
+  .btn-circle {
+    position: absolute;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    background: $text;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding-left: 2rem;
-    background: $btn-cc;
-    text-align: center;
-    border-radius: 50px;
-    border: 1px solid $text;
+    justify-content: center;
 
-    box-shadow: 4px 4px 0 0 $text;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-      &:hover {
-        box-shadow: 0 0 0 0 $text;
-        transform: translate(4px, 4px);
-      }
-
-      &:active {
-        background: $text;
-        color: $btn-cc;
-      }
-
-
-
-    .btn-circle {
-        position: absolute;
-        right: 8px;
-        width: 16px;
-        height: 16px;
-        background: $text;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-        &::after {
-            content: '';
-            width: 4px;
-            height: 4px;
-            border-top: 1px solid $btn-cc;
-            border-right: 1px solid $btn-cc;
-            transform: rotate(45deg);
-            margin-right: 3px;
-        }
-
+    &::after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-top: 1px solid $btn-cc;
+      border-right: 1px solid $btn-cc;
+      transform: rotate(45deg);
+      margin-right: 3px;
     }
+  }
 
-
-
+  @media (min-width: 600px) {
+    font-size: 1.125rem;
+    max-width: 180px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.3rem;
+    max-width: 200px;
+  }
 }
 // .btn
 
- .contact {
-    width: 180px;
-    padding-left: 1rem;
+.contact {
+  max-width: 180px;
+  padding-left: 1rem;
 
-    .mail-icon {
-        display: block;
-        width: 24px;
-        margin-right: 2px;
-    }
-    span {
-    margin-left: 8px;
-    }
+  .mail-icon {
+    display: block;
+    width: 24px;
+    margin-right: 2px;
+    margin-top: 1px;
+  }
+  span {
+    margin-left: 6px;
+    margin-top: 1px;
+  }
 
- }
+  @media (min-width: 600px) {
+    max-width: 200px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 240px;
+  }
+}
+//  .contact

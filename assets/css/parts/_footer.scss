@@ -4,6 +4,8 @@
 # footer footer-top
 =============================================== */
 #footer_top {
+  position: relative;
+
   background: var(--color-pink);
   padding-bottom: 20px;
 
@@ -13,7 +15,7 @@
 
     .bg-img {
       margin: 1rem;
-      padding: 1rem;
+      padding: 1rem 0.75rem;
       background-image: url(../images/bg-footer-top.png);
       background-size: cover;
       background-position: center;
@@ -21,15 +23,36 @@
 
       .footer_top-outer {
         text-align: center;
+        padding-bottom: 8px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .contact-text {
           font-size: 1.375rem;
-          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          @media (min-width: 600px) {
+            font-size: 1.6rem;
+            padding-bottom: 1.175rem;
+          }
+          @media (min-width: 1024px) {
+            font-size: 1.8rem;
+          }
         }
 
         p {
           font-size: 1rem;
           margin-bottom: 12px;
+          @media (min-width: 600px) {
+            font-size: 1.3rem;
+            padding-bottom: 4px;
+          }
+          @media (min-width: 1024px) {
+            font-size: 1.5rem;
+            padding-bottom: 6px;
+          }
         }
 
         .footer_top-inner {
@@ -39,17 +62,42 @@
           align-items: center;
           justify-content: center;
           gap: 4px;
+          @media (min-width: 600px) {
+            max-width: 560px;
+            gap: 8px;
+          }
+          @media (min-width: 786px) {
+            gap: 16px;
+          }
+          @media (min-width: 1024px) {
+            gap: 32px;
+            max-width: 800px;
+          }
 
           .footer_top-block {
             display: block;
-            width: 50%;
+            width: fit-content;
 
             p {
               font-size: 1.5rem;
+              margin-bottom: 6px;
+              @media (min-width: 600px) {
+                font-size: 1.7rem;
+                letter-spacing: 2px;
+              }
+              @media (min-width: 1024px) {
+                font-size: 2rem;
+              }
             }
 
             span {
               font-size: 0.875em;
+                            @media (min-width: 600px) {
+                font-size: 1rem;
+              }
+              @media (min-width: 1024px) {
+                font-size: 1.175rem;
+              }
             }
           }
         }
@@ -58,52 +106,56 @@
       }
 
       // .footer_top-outer
-
     }
 
     // .bg-img
-
   }
 
   // .footer_top-container
-
-
 
   /* ========topに戻るボタン======= */
 
   #back-page-top {
     position: fixed;
-    bottom: 20px;
-    right: 0;
+    bottom: 30px;
+    right: 20px;
     z-index: 10;
 
-    /* 初期状態は非表示 */
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 0.3s;
-    /* ふわっと表示させる */
+    transition:
+      opacity 0.3s,
+      visibility 0.3s;
 
-    /* JSでクラスがついたら表示する */
-    &.is-active {
+    &.is-show {
       opacity: 1;
       visibility: visible;
     }
 
+    /* フッターに到達した時にJSでこのクラスをつける */
+    &.is-stopped {
+      position: absolute;
+      bottom: 20px; /* #footer_topの最下部からの距離 */
+      top: auto;
+      right: 20px;
+    }
 
     .btn-top {
       display: block;
       position: relative;
       margin-left: auto;
       margin-right: 1rem;
-      width: 44px;
-      height: 44px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: $text;
-      border: 1px solid $text;
+      border: 1px solid $btn-cc;
       z-index: 2;
       cursor: pointer;
-      // アニメーションを滑らかに
-      transition: background-color 0.2s ease, border-color 0.2s ease;
+
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 
       &::before {
         content: "";
@@ -121,36 +173,27 @@
       }
 
       &:hover {
-        transform: translateY(-4px);
+        transform: translateY(4px);
         transition: transform 0.2s ease;
       }
 
       &:active {
-        background: $btn-cc !important;
+        background: $btn-cc;
         border-color: $text;
 
         &::before {
           border-color: $text;
         }
-
-
-
       }
-
-
     }
 
     // .btn_top
-
   }
 
   // #back-page-top
-
 }
 
 // #footer-top
-
-
 
 /* ===============================================
 # footer footer
@@ -162,7 +205,7 @@ footer {
   background: $bg-main;
 
   background-image: url(../images/footer_sp.png);
-  // background-attachment: fixed; 
+  // background-attachment: fixed;
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 400px 140px;
@@ -187,11 +230,9 @@ footer {
       }
     }
 
-
     /* ========footer-menu======= */
 
     nav {
-
       ul {
         max-width: 540px;
         font-size: 1rem;
@@ -199,7 +240,6 @@ footer {
         li {
           padding: 4px 0;
           border-bottom: 1px solid $text;
-
 
           a {
             padding: 4px 0;
@@ -237,14 +277,12 @@ footer {
             }
 
             //   .arrow
-
           }
 
           // li>a
         }
 
         // li
-
 
         /* ======アコーディオンメニュー====== */
 
@@ -263,9 +301,7 @@ footer {
             display: block;
             position: relative;
             width: 18px;
-            /* アイコンの幅 */
             height: 18px;
-            /* アイコンの高さ */
 
             // 横棒・縦棒の共通スタイル
             &::before,
@@ -273,10 +309,11 @@ footer {
               content: "";
               position: absolute;
               background-color: $text;
-              /* 文字と同じ色にする */
               top: 50%;
               left: 50%;
-              transition: transform 0.3s ease, opacity 0.3s ease;
+              transition:
+                transform 0.3s ease,
+                opacity 0.3s ease;
             }
 
             // 横棒（マイナス部分）
@@ -299,19 +336,13 @@ footer {
           &.is-open {
             .plus {
               &::after {
-                // 縦棒を回転させて横棒に重ねる、または透明にする
                 transform: translate(-50%, -50%) rotate(90deg);
                 opacity: 0;
-              }
-
-              &::before {
-                // 横棒はそのままでも良いし、少し太くしたり色を変えたりも可能
               }
             }
           }
 
           // .is-open
-
         }
 
         // .btn-accordion
@@ -334,7 +365,6 @@ footer {
             min-height: 120px;
             opacity: 1;
           }
-
         }
 
         // .accordion-body
@@ -345,19 +375,16 @@ footer {
         }
 
         .sub-menu {
-
           span {
             font-size: 0.875rem;
           }
         }
-
       }
 
       // ul
     }
 
     // nav
-
   }
 
   // .footer-container
@@ -368,7 +395,6 @@ footer {
     padding-bottom: 20px;
     text-align: center;
   }
-
 }
 
 // footer

@@ -21,21 +21,16 @@ switchViewport();
 # ヘッダースクロールで上部固定
 =============================================== */
 
+/* script.js 修正案 */
 window.addEventListener('scroll', function() {
-  const header = document.querySelector('.js-header');
-  const headerHeight = header.offsetHeight; // 72pxを取得
+  const header = document.querySelector('header'); 
   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
   
-  // 閾値を100からheaderHeight（72）に変更
-  if (scrollY > headerHeight) {
+  if (scrollY > 200) { // 少し余裕を持って判定
     header.classList.add('header-sticky');
-    // 固定された分、コンテンツが上に跳ねないように余白を追加
-    document.body.style.marginTop = headerHeight + 'px';
-  } else {
-    header.classList.remove('header-sticky');
-    // 余白をリセット（'72'ではなく'0'または元の値に。単位'px'も必須）
-    document.body.style.marginTop = '0px'; 
-  }
+  } else if (scrollY < 10) { // 消すときはもっと上で
+  header.classList.remove('header-sticky');
+}
 });
 
 
@@ -84,23 +79,30 @@ for (let i = 0; i < qa.length; i++) {
 # topへ戻るボタン（スクロールで戻る）
 =============================================== */
 
-// 外側の枠組み（親要素）を取得
-const buttonWrapper = document.querySelector('#back-page-top');
+const topBtn = document.querySelector('#back-page-top');
+const footerTop = document.querySelector('#footer_top');
 
-// クリックイベント（中のボタンが押されても反応するように）
-buttonWrapper.addEventListener('click', () => {
-  window.scroll({ 
-    top: 0, 
-    behavior: "smooth"
-  });
-});
-
-// スクロールイベント
 window.addEventListener('scroll', () => {
-  // 72px以上スクロールしたら親要素にクラスを付与
-  if (window.scrollY > 72) {
-    buttonWrapper.classList.add('is-active');
+  const scrollY = window.pageYOffset;
+  const triggerHeight = 72; // どれくらいスクロールしたら表示するか
+
+  // 1. まず表示・非表示だけを判定
+  if (scrollY > triggerHeight) {
+    topBtn.classList.add('is-show');
   } else {
-    buttonWrapper.classList.remove('is-active');
+    topBtn.classList.remove('is-show');
+  }
+
+  // 2. 止まる位置（#footer_top の上端）を判定
+  // getBoundingClientRect().top は画面内での相対位置なのでスクロール量を足す
+  const footerRect = footerTop.getBoundingClientRect();
+  const footerTopPos = footerRect.top + scrollY;
+  const windowBottom = scrollY + window.innerHeight;
+
+  // #footer_topのエリア内に画面が入ったら止める
+  if (windowBottom >= (footerTopPos + footerTop.offsetHeight)) {
+    topBtn.classList.add('is-stopped');
+  } else {
+    topBtn.classList.remove('is-stopped');
   }
 });

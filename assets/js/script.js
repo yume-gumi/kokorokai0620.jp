@@ -17,21 +17,21 @@ const switchViewport = () => {
 window.addEventListener('resize', switchViewport);
 switchViewport();
 
-/* ===============================================
-# ヘッダースクロールで上部固定
-=============================================== */
+// /* ===============================================
+// # ヘッダースクロールで上部固定
+// =============================================== */
 
-/* script.js 修正案 */
-window.addEventListener('scroll', function() {
-  const header = document.querySelector('header'); 
-  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+// /* script.js 修正案 */
+// window.addEventListener('scroll', function() {
+//   const header = document.querySelector('header'); 
+//   const scrollY = window.pageYOffset || document.documentElement.scrollTop;
   
-  if (scrollY > 200) { // 少し余裕を持って判定
-    header.classList.add('header-sticky');
-  } else if (scrollY < 10) { // 消すときはもっと上で
-  header.classList.remove('header-sticky');
-}
-});
+//   if (scrollY > 200) { // 少し余裕を持って判定
+//     header.classList.add('header-sticky');
+//   } else if (scrollY < 10) { // 消すときはもっと上で
+//   header.classList.remove('header-sticky');
+// }
+// });
 
 
 
@@ -40,8 +40,8 @@ window.addEventListener('scroll', function() {
 =============================================== */
 
 const ham = document.querySelector('#js-hamburger');
-const nav = document.querySelector('#js-nav');
-const header = document.querySelector('#js-header');
+const nav = document.querySelector('.header__nav--sp');
+const header = document.querySelector('header');
 
 ham.addEventListener('click', function () {
 

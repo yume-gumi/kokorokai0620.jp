@@ -1,4 +1,4 @@
-<?php get_template_part('parts/header'); ?>
+<?php get_header(); ?>
 
 <!-- MAIN -->
 <main id="top">
@@ -139,7 +139,7 @@
             </div>
             <!-- news-outer -->
 
-            <a href="news.html" class="btn more">一覧を見る<span class="btn-circle"></span></a>
+            <a href="<?php echo esc_url( home_url('/news') ); ?>" class="btn more">一覧を見る<span class="btn-circle"></span></a>
 
         </div>
         <!-- news-contens -->
@@ -159,7 +159,7 @@
             <div class=" service-outer">
 
                 <div class="service-block">
-                    <a href="ponte.html">
+                <a href="<?php echo esc_url( home_url('/survice/ponte01/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_ponte.png" alt="就労継続支援B型
                         ぽんて">
                         <p>就労継続支援B型<br>
@@ -176,7 +176,7 @@
                 </div>
 
                 <div class="service-block">
-                    <a href="sakura.html">
+                <a href="<?php echo esc_url( home_url('/survice/sakura01/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_sakura.png" alt="地域活動支援センターさくら">
                         <p class="service-title">地域活動支援センター<br>
                             さくら</p>
@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="service-block">
-                    <a href="PW.html">
+                <a href="<?php echo esc_url( home_url('/survice/ponte02/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_ponte.png" alt="相談支援ぽんて">
                         <p class="service-title">相談支援<br>
                             ぽんて</p>
@@ -222,7 +222,7 @@
                             <span>平日 9:00〜17:00まで</span>
                         </div>
 
-                        <a class="btn contact" href="contact.html">
+                        <a class="btn contact" href="<?php echo esc_url( home_url('/contact') ); ?>">
                             <img class="mail-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/mail.svg" alt="mail icon">
                             お問い合わせ
                             <span class="btn-circle"></span>
@@ -264,4 +264,4 @@
 <!-- MAIN -->
 
 
-<?php get_template_part('parts/footer'); ?>
+<?php get_footer(); ?>

@@ -976,9 +976,16 @@ button {
   /* ========事業所方針======= */
   /* ========1日のスケジュール======= */
   /* ========ご利用の流れ======= */
+  /* =======アドレス======= */
 }
-#plus #plus-top {
-  background: #DAE8C0;
+#plus .service-head {
+  margin: 0 auto 12px;
+  padding: 8px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 1.5rem;
+  border-radius: 24px;
 }
 #plus #plus-top .plus-container {
   margin: 0 auto;
@@ -1024,6 +1031,13 @@ button {
   border-radius: 24px;
   background: #85D136;
 }
+@media (min-width: 500px) {
+  #plus #plus-top .plus-container .plus-frame .cc-plus {
+    top: 92%;
+    left: 20%;
+    padding: 18px 28px;
+  }
+}
 #plus #plus-top .plus-container .plus-frame .cc-plus p {
   font-size: 1.125em;
   color: #fff;
@@ -1037,7 +1051,9 @@ button {
   background: #F8E2CF;
 }
 #plus #policy .policy-container {
+  margin: 0 auto;
   padding: 12px 0 20px;
+  width: 100%;
 }
 #plus #policy .policy-container .policy-outer {
   margin: 0 auto;
@@ -1064,6 +1080,7 @@ button {
 #plus #schedule .timeline-container {
   margin: 0 auto;
   padding: 12px 0 20px;
+  width: 100%;
   max-width: 600px;
 }
 #plus #schedule .timeline-container .timeline {
@@ -1127,30 +1144,64 @@ button {
   background: #D3E5F4;
 }
 #plus #flow .flow-container {
-  width: 100%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 520px;
+}
+@media (min-width: 1024px) {
+  #plus #flow .flow-container {
+    max-width: 1100px;
+  }
 }
 #plus #flow .flow-container .flow-outer {
+  margin: 20px auto 30px;
+  padding: 0 20px 0 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 16px;
-  margin: 20px auto;
-  padding: 0 20px 0 30px;
-  max-width: 520px;
+}
+@media (min-width: 1024px) {
+  #plus #flow .flow-container .flow-outer {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1240px) {
+  #plus #flow .flow-container .flow-outer {
+    gap: 20px;
+  }
 }
 #plus #flow .flow-container .flow-outer .flow-brock {
   display: flex;
-  align-items: center;
+  width: 100%;
   position: relative;
+}
+@media (min-width: 1024px) {
+  #plus #flow .flow-container .flow-outer .flow-brock {
+    width: 25%;
+    max-width: 260px;
+    flex: 1;
+  }
 }
 #plus #flow .flow-container .flow-outer .flow-brock .step-icon {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   left: -28px;
   width: 80px;
   height: 80px;
   z-index: 2;
+}
+@media (min-width: 1024px) {
+  #plus #flow .flow-container .flow-outer .flow-brock .step-icon {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 #plus #flow .flow-container .flow-outer .flow-brock .flow-card {
   width: 100%;
@@ -1162,12 +1213,24 @@ button {
   flex-direction: column;
   justify-content: center;
 }
+@media (min-width: 1024px) {
+  #plus #flow .flow-container .flow-outer .flow-brock .flow-card {
+    padding: 64px 20px 20px 20px;
+    justify-content: start;
+  }
+}
 #plus #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
   font-size: 1.5rem;
   padding-bottom: 8px;
   padding-right: 16px;
   font-weight: bold;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #plus #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
+    padding-bottom: 16px;
+    padding-right: 0px;
+  }
 }
 #plus #flow .flow-container .flow-outer .flow-brock .flow-card p {
   line-height: 1.5;
@@ -1188,16 +1251,22 @@ button {
 #plus #flow .flow-container .flow-2nd-outer {
   margin: 40px auto 0;
   padding: 12px 16px;
-  max-width: 600px;
+  max-width: calc(100% - 12px);
   position: relative;
   background: #E4EFF8;
   border-radius: 4px;
   box-shadow: 0 4px 10px #cbcbcb;
 }
+@media (min-width: 786px) {
+  #plus #flow .flow-container .flow-2nd-outer {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 #plus #flow .flow-container .flow-2nd-outer::after {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -28px;
   right: 20px;
   width: 60px;
   height: 60px;
@@ -1217,7 +1286,7 @@ button {
   text-align: center;
   font-size: 1.125rem;
   font-weight: bold;
-  margin-bottom: 4px;
+  padding-bottom: 8px;
 }
 #plus #flow .flow-container .flow-2nd-outer ul li p {
   font-size: 1rem;
@@ -1228,12 +1297,119 @@ button {
   font-size: 0.875rem;
   margin-top: 4px;
 }
-#plus #flow .flow-container .flow-contact-outer {
-  margin: 20px auto;
-  max-width: 520px;
+#plus #flow .flow-container .flow-contact {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 440px;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer {
+  margin: 20px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 3px 4px 0 0 #93C7ED;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer .disc {
+  font-size: 1rem;
+  padding-bottom: 8px;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer .flow-contact-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer .flow-contact-inner .tell {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer .flow-contact-inner .tell .tell-number {
+  font-size: 1.375rem;
+}
+#plus #flow .flow-container .flow-contact .flow-contact-outer .flow-contact-inner span {
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: 8px;
 }
 #plus #address {
   background: #F7EDA0;
+}
+#plus #address .address-container {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+#plus #address .address-container .address-outer {
+  padding: 8px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+#plus #address .address-container .address-outer ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #B44906;
+}
+#plus #address .address-container .address-outer ul li div {
+  width: 100px;
+}
+#plus #address .address-container .address-outer ul li p {
+  width: 250px;
+}
+#plus #address .map {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9のアスペクト比 */
+  height: 0;
+}
+#plus #address .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#plus #address .access {
+  padding: 8px 20px;
+}
+#plus #address .access .access-title {
+  font-size: 1.25rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B44906;
+}
+#plus #address .access .access-brock .access-tool {
+  margin: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #B44906;
+}
+#plus #address .access .access-brock .access-01 {
+  padding: 4px 0;
+}
+#plus #address .access .access-brock .access-02 {
+  padding: 4px 0 4px 1rem;
+}
+#plus #address .access .access-brock .access-03 {
+  padding: 0px 0 4px 1.75rem;
+}
+#plus #address .access .access-brock .access-03 p {
+  padding-top: 8px;
+}
+#plus #address .access .access-brock .access-03 p span {
+  border-bottom: 1px solid #E8BF33;
+}
+#plus #address .access .access-car {
+  padding-top: 12px;
 }
 
 /* ===============================================
@@ -1384,7 +1560,7 @@ header.header-sticky {
   }
 }
 .header_nav__pc ul li.background_circle--01::before {
-  background: #BEE6A8;
+  background: #ACD086;
 }
 .header_nav__pc ul li.background_circle--02::before {
   background: #F5AC71;
@@ -1645,7 +1821,7 @@ footer .footer-container .footer_nav__pc .service-items ul li a::before {
   content: "";
   display: block;
   width: 6px;
-  border-top: 2px solid #BEE6A8;
+  border-top: 2px solid #ACD086;
 }
 footer .footer-container .footer_nav__pc .service-items ul li a span {
   font-size: 12px;
@@ -1661,7 +1837,7 @@ footer .footer-container .footer_nav__pc .list-style::before {
   content: "";
   border-width: 8px 10px;
   border-style: solid;
-  border-color: transparent transparent transparent #BEE6A8;
+  border-color: transparent transparent transparent #ACD086;
 }
 footer .footer-container .footer_nav__pc .instagram {
   width: 28px;

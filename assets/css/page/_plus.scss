@@ -4,24 +4,26 @@
 # page
 =============================================== */
 #plus {
-  background: $green;
+  padding-top: 80px; //headerの分
+  background: $bg-main;
 
   #plus-top {
+    background: $green;
 
     .plus-container {
       margin: 0 auto;
       padding-bottom: 12px;
       width: 100%;
 
-      @media (min-width:376px) {
+      @media (min-width: 376px) {
         max-width: 500px;
       }
 
-      @media (min-width:500px) {
+      @media (min-width: 500px) {
         max-width: 600px;
       }
 
-      @media (min-width:785px) {
+      @media (min-width: 785px) {
         max-width: 1000px;
       }
 
@@ -56,26 +58,21 @@
         }
 
         // .cc-plus
-
       }
 
       // .plus-frame
 
       .plus-2nd {
-        @media (min-width:600px) {
+        @media (min-width: 600px) {
           padding-top: 0;
         }
       }
-
     }
 
     // .plus-container
-
   }
 
   // #plus
-
-
 
   /* ========事業所方針======= */
 
@@ -86,10 +83,19 @@
       padding: 12px 0 20px;
 
       .policy-outer {
+        margin: 0 auto;
+        width: 100%;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media (min-width: 376px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          max-width: 900px;
+        }
 
         .policy-brock {
           max-width: 240px;
@@ -97,16 +103,12 @@
         }
 
         // .policy-brock
-
       }
 
       // .policy-outer
-
     }
 
     // .policy-container
-
-
   }
 
   // #policy
@@ -128,14 +130,14 @@
         border-left: 2px solid $pink-2nd;
 
         .timeline-brock {
-          margin-bottom: 40px;
+          margin-bottom: 20px;
           padding-left: 30px;
           position: relative;
           display: flex;
           flex-direction: column;
 
           &::before {
-            content: '';
+            content: "";
             position: absolute;
             left: -21px;
             top: 0;
@@ -146,23 +148,23 @@
           }
 
           &:nth-child(1)::before {
-            background-image: url('../images/icon/9000.svg');
+            background-image: url("../images/icon/9000.svg");
           }
 
           &:nth-child(2)::before {
-            background-image: url('../images/icon/1000.svg');
+            background-image: url("../images/icon/1000.svg");
           }
 
           &:nth-child(3)::before {
-            background-image: url('../images/icon/1200.svg');
+            background-image: url("../images/icon/1200.svg");
           }
 
           &:nth-child(4)::before {
-            background-image: url('../images/icon/1300.svg');
+            background-image: url("../images/icon/1300.svg");
           }
 
           &:nth-child(5)::before {
-            background-image: url('../images/icon/1500.svg');
+            background-image: url("../images/icon/1500.svg");
           }
 
           // 時計アイコン
@@ -187,64 +189,158 @@
             padding: 12px 20px 4px;
             line-height: 1.5;
           }
-
         }
 
         // .timeline-brock
-
       }
 
       // .timeline
-
     }
 
     // .timeline-container
-
   }
 
   // schedule
-
 
   /* ========ご利用の流れ======= */
 
   #flow {
     background: $blue;
 
-    .flow-outer {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      gap: 12px;
+    .flow-container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 40px 0;
 
-      .flow-brock {
+      .flow-outer {
         display: flex;
-        align-items: center;
-        position: relative;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 16px;
 
-        .step-icon {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          z-index: 2;
+        margin: 20px auto;
+        padding: 0 20px 0 30px;
+        max-width: 520px;
+
+        .flow-brock {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .step-icon {
+            position: absolute;
+            left: -28px;
+            width: 80px;
+            height: 80px;
+            z-index: 2;
+          }
+
+          .flow-card {
+            width: 100%;
+            background: $white;
+            border-radius: 24px;
+            padding: 20px 20px 20px 48px;
+            box-shadow: 2px 4px 4px 0 $gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .flow-title {
+              font-size: 1.5rem;
+              padding-bottom: 8px;
+              padding-right: 16px;
+              font-weight: bold;
+              text-align: center;
+            }
+            // .flow-title
+
+            p {
+              line-height: 1.5;
+              padding-left: 4px;
+            }
+
+            .step1 {
+              color: $green-3nd;
+            }
+            .step2 {
+              color: $orange-3nd;
+            }
+            .step3 {
+              color: $pink-3nd;
+            }
+            .step4 {
+              color: $blue-3nd;
+            }
+          }
+
+          // flow-card
         }
 
-        .flow-card {
-          background: $white;
-          border-radius: 24px;
-          padding: 20px 20px 20px 50px;
-          box-shadow: 2px 4px 4px 0 $gray ;
-        }
-
-        // flow-card
-
+        // flow-brock
       }
 
-      // flow-brock
+      // flow-outer
 
+      .flow-2nd-outer {
+        margin: 40px auto 0;
+        padding: 12px 16px;
+        max-width: 600px;
+
+        position: relative;
+        background: $blue-4nd;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px $gray;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -20px;
+          right: 20px;
+          width: 60px;
+          height: 60px;
+          background-image: url("../images/icon/pin.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 5;
+        }
+
+        ul {
+          li {
+            padding: 20px 0;
+            border-bottom: 1px dashed $blue-3nd;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .flow-2nd-title {
+              text-align: center;
+              font-size: 1.125rem;
+              font-weight: bold;
+              margin-bottom: 4px;
+            }
+
+            p {
+              font-size: 1rem;
+              line-height: 1.6;
+            }
+            span {
+              display: block;
+              font-size: 0.875rem;
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+      // .flow-2nd-outer
+
+      .flow-contact-outer {
+        margin: 20px auto;
+        max-width: 520px;
+      }
+      // flow-contact-outer
     }
-
-    // flow-outer
-
+    // flow-container
   }
 
   // #flow
@@ -252,7 +348,6 @@
   #address {
     background: $yellow;
   }
-
 }
 
 // #plus

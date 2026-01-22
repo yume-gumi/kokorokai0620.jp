@@ -160,7 +160,7 @@
 
                 <div class="service-block">
                 <a href="<?php echo esc_url( home_url('/survice/ponte01/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_ponte.png" alt="就労継続支援B型
+                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型
                         ぽんて">
                         <p>就労継続支援B型<br>
                             ぽんて</p>
@@ -169,7 +169,7 @@
 
                 <div class="service-block">
                 <a href="<?php echo esc_url( home_url('/survice/plus01/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_plus.png" alt="就労継続支援B型ぷらす">
+                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型ぷらす">
                         <p class="service-title">就労継続支援B型<br>
                             ぷらす</p>
                     </a>
@@ -177,7 +177,7 @@
 
                 <div class="service-block">
                 <a href="<?php echo esc_url( home_url('/survice/sakura01/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_sakura.png" alt="地域活動支援センターさくら">
+                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="地域活動支援センターさくら">
                         <p class="service-title">地域活動支援センター<br>
                             さくら</p>
                     </a>
@@ -185,7 +185,7 @@
 
                 <div class="service-block">
                 <a href="<?php echo esc_url( home_url('/survice/ponte02/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_ponte.png" alt="相談支援ぽんて">
+                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="相談支援ぽんて">
                         <p class="service-title">相談支援<br>
                             ぽんて</p>
                     </a>

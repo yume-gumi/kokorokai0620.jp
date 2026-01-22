@@ -125,7 +125,7 @@ h2::before {
 }
 
 .h2-01::before {
-  background-color: #BEE6A8;
+  background-color: #ACD086;
 }
 
 .h2-02::before {
@@ -971,10 +971,14 @@ button {
 # page
 =============================================== */
 #plus {
-  background: #DAE8C0;
+  padding-top: 80px;
+  background: #F8F8EC;
   /* ========事業所方針======= */
   /* ========1日のスケジュール======= */
   /* ========ご利用の流れ======= */
+}
+#plus #plus-top {
+  background: #DAE8C0;
 }
 #plus #plus-top .plus-container {
   margin: 0 auto;
@@ -1036,10 +1040,19 @@ button {
   padding: 12px 0 20px;
 }
 #plus #policy .policy-container .policy-outer {
+  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 376px) {
+  #plus #policy .policy-container .policy-outer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
 }
 #plus #policy .policy-container .policy-outer .policy-brock {
   max-width: 240px;
@@ -1060,7 +1073,7 @@ button {
   border-left: 2px solid #ED83A6;
 }
 #plus #schedule .timeline-container .timeline .timeline-brock {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding-left: 30px;
   position: relative;
   display: flex;
@@ -1113,28 +1126,111 @@ button {
 #plus #flow {
   background: #D3E5F4;
 }
-#plus #flow .flow-outer {
+#plus #flow .flow-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+#plus #flow .flow-container .flow-outer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  margin: 20px auto;
+  padding: 0 20px 0 30px;
+  max-width: 520px;
 }
-#plus #flow .flow-outer .flow-brock {
+#plus #flow .flow-container .flow-outer .flow-brock {
   display: flex;
   align-items: center;
   position: relative;
 }
-#plus #flow .flow-outer .flow-brock .step-icon {
+#plus #flow .flow-container .flow-outer .flow-brock .step-icon {
+  position: absolute;
+  left: -28px;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
   z-index: 2;
 }
-#plus #flow .flow-outer .flow-brock .flow-card {
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card {
+  width: 100%;
   background: #fff;
   border-radius: 24px;
-  padding: 20px 20px 20px 50px;
+  padding: 20px 20px 20px 48px;
   box-shadow: 2px 4px 4px 0 #cbcbcb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card p {
+  line-height: 1.5;
+  padding-left: 4px;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card .step1 {
+  color: #ACD086;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card .step2 {
+  color: #F5AC71;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card .step3 {
+  color: #F2B5C9;
+}
+#plus #flow .flow-container .flow-outer .flow-brock .flow-card .step4 {
+  color: #93C7ED;
+}
+#plus #flow .flow-container .flow-2nd-outer {
+  margin: 40px auto 0;
+  padding: 12px 16px;
+  max-width: 600px;
+  position: relative;
+  background: #E4EFF8;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px #cbcbcb;
+}
+#plus #flow .flow-container .flow-2nd-outer::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/icon/pin.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+#plus #flow .flow-container .flow-2nd-outer ul li {
+  padding: 20px 0;
+  border-bottom: 1px dashed #93C7ED;
+}
+#plus #flow .flow-container .flow-2nd-outer ul li:last-child {
+  border-bottom: none;
+}
+#plus #flow .flow-container .flow-2nd-outer ul li .flow-2nd-title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+#plus #flow .flow-container .flow-2nd-outer ul li p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#plus #flow .flow-container .flow-2nd-outer ul li span {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+#plus #flow .flow-container .flow-contact-outer {
+  margin: 20px auto;
+  max-width: 520px;
 }
 #plus #address {
   background: #F7EDA0;

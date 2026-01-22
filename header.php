@@ -27,7 +27,7 @@
                 </a>
             </h1>
 
-            <nav class="header__nav--pc">
+            <nav class="header_nav__pc">
                 <ul>
                     <li class=" background_circle background_circle--01">
                         <a href="<?= site_url(); ?>/news">お知らせ</a>
@@ -93,7 +93,7 @@
     
     <!-- ハンバーガーメニュー -->
 
-    <nav id="js-nav" class="header__nav--sp">
+    <nav id="js-nav" class="header_nav__sp">
 
         <ul>
 

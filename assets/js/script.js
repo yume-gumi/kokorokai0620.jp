@@ -40,7 +40,7 @@ switchViewport();
 =============================================== */
 
 const ham = document.querySelector('#js-hamburger');
-const nav = document.querySelector('.header__nav--sp');
+const nav = document.querySelector('.header_nav__sp');
 const header = document.querySelector('header');
 
 ham.addEventListener('click', function () {

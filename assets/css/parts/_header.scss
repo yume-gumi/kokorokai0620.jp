@@ -108,7 +108,7 @@ header {
 
 
 
-.header__nav--pc{
+.header_nav__pc{
   @include tb(){
     display: none;
   }
@@ -205,7 +205,7 @@ header {
 
 /* =======ハンバーガーメニュー====== */
 
-.header__nav--sp {
+.header_nav__sp {
   position: fixed;
   top: 0;
   right: 0;

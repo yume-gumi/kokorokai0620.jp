@@ -1,0 +1,24 @@
+@use "../global" as *;
+
+/* ===============================================
+# page
+=============================================== */
+
+#about{
+    .about{
+        &__top{
+            text-align: center;
+            &--inner{
+                max-width: 996px;
+                padding: 40px 20px 64px;
+                margin-inline: auto;
+            }
+
+        }
+
+
+        &__company{
+            background: $blue;
+        }
+    }
+}

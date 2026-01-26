@@ -138,3 +138,95 @@
     }
   }
 
+
+
+
+
+// 固定ページ追加
+
+
+function create_page_if_not_exists($slug, $title) {
+    if (!get_page_by_path($slug)) {
+        wp_insert_post([
+            'post_title'   => $title,
+            'post_name'    => $slug,
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+        ]);
+    }
+}
+
+function create_individual_pages() {
+    $pages = [
+        [
+            'slug'    => 'about',
+            'title'   => '会社概要',
+        ],
+        [
+            'slug'    => 'contact',
+            'title'   => 'お問い合わせ',
+        ],
+        [
+            'slug'    => 'privacy',
+            'title'   => 'プライバシーポリシー',
+        ],
+    ];
+
+    foreach ($pages as $page) {
+        create_page_if_not_exists($page['slug'], $page['title']);
+    }
+}
+add_action('after_setup_theme', 'create_individual_pages');
+
+
+
+
+// jQuery
+function my_theme_enqueue_scripts() {
+    // jQueryをフッターで読み込む（WordPressバンドル版）
+    wp_enqueue_script('jquery', false, array(), false, true);
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
+
+
+
+// news
+
+function post_has_archive($args,$post_type){
+    if('post' == $post_type){
+      $args['rewrite'] = true;
+      $args['has_archive'] = 'news';//スラッグ名
+    }
+    return $args;
+}
+add_filter('register_post_type_args','post_has_archive',10,2);
+
+// WordPressのデフォルトの投稿アーカイブを「news」ページに設定
+function custom_news_archive_page() {
+    $news_page = get_page_by_path('news');
+    if ($news_page) {
+        // 「投稿ページ」の設定を「お知らせ」ページに自動設定
+        update_option('page_for_posts', $news_page->ID);
+        // 「フロントページの表示」を「固定ページ」に設定し、フロントページは設定しない（投稿ページが設定されるため）
+        update_option('show_on_front', 'posts'); // この行で「最新の投稿」に設定
+    }
+}
+add_action('init', 'custom_news_archive_page');
+
+// パーマリンクを自動的に再生成する
+function auto_flush_rewrite_rules() {
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules();
+}
+add_action('init', 'auto_flush_rewrite_rules');
+
+
+
+// アイキャッチ画像
+add_theme_support("post-thumbnails");
+
+
+// 管理バー非表示
+add_filter( 'show_admin_bar', '__return_false' );
+

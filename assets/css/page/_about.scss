@@ -19,6 +19,7 @@
 
         &__company{
             background: $blue;
+            padding-inline: 20px;
             h2{
                 &::before{
                     background: $pink-3rd;
@@ -30,6 +31,105 @@
                 max-width: 960px;
                 width: 100%;
                 margin-inline: auto;
+                border-top: 1px solid $text;
+                border-bottom: 1px solid $text;
+                & > div{
+                    display: flex;
+                    padding-block: 24px;
+                    flex-wrap: wrap;
+                    @include tb(){
+                        padding-block: 16px;
+
+                    }
+
+                    &:not(:last-child){
+                        border-bottom: 1px dashed $blue-3rd;
+                    }
+
+                    dt{
+                        width: 200px;
+                        font-weight: normal;
+                        font-size: 20px;
+                        @include tb(){
+                            text-align: center;
+                            width: 100%;
+                            margin-bottom: 8px;
+                        }
+                    }
+
+                    dd{
+                        width: calc(100% - 200px);
+                        @include tb(){
+                            width: 100%;
+                            text-align: center;
+                        }
+                        ul{
+                            width: fit-content;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            margin-bottom: 24px;
+                            @include tb(){
+                                margin-inline: auto;
+                            }
+                            li{
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                &::before{
+                                    content: "";
+                                    display: inline-block;
+                                    width: .5em;
+                                    height: 1.6px;
+                                    border-radius: .8px;
+                                    background: $text;
+                                }
+                            }
+                        }
+
+                        .service{
+                            border-top: 1px solid $text;
+                            &__item{
+                                padding-block: 20px;
+                                p{
+                                    font-size: 20px;
+                                    margin-bottom: 12px;
+                                    span{
+                                        display: block;
+                                        font-size: 14px;
+                                    }
+                                }
+
+
+                                address{
+                                    margin-bottom: 8px;
+                                    br{
+                                        display: none;
+                                        @include tb(){
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+
+                                &--contact{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 16px;
+                                    @include tb(){
+                                        justify-content: center;
+                                        flex-direction: column;
+                                        gap: 0;
+                                    }
+                                }
+                                &:not(:last-child){
+                                    border-bottom: 1px dashed $blue-3rd;
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
         }
     }

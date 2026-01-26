@@ -383,6 +383,7 @@ button {
 }
 #about .about__company {
   background: #D3E5F4;
+  padding-inline: 20px;
 }
 #about .about__company h2::before {
   background: #F2B5C9;
@@ -391,6 +392,108 @@ button {
   max-width: 960px;
   width: 100%;
   margin-inline: auto;
+  border-top: 1px solid #B44906;
+  border-bottom: 1px solid #B44906;
+}
+#about .about__company dl > div {
+  display: flex;
+  padding-block: 24px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div {
+    padding-block: 16px;
+  }
+}
+#about .about__company dl > div:not(:last-child) {
+  border-bottom: 1px dashed #93C7ED;
+}
+#about .about__company dl > div dt {
+  width: 200px;
+  font-weight: normal;
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div dt {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+#about .about__company dl > div dd {
+  width: calc(100% - 200px);
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div dd {
+    width: 100%;
+    text-align: center;
+  }
+}
+#about .about__company dl > div dd ul {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div dd ul {
+    margin-inline: auto;
+  }
+}
+#about .about__company dl > div dd ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#about .about__company dl > div dd ul li::before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 1.6px;
+  border-radius: 0.8px;
+  background: #B44906;
+}
+#about .about__company dl > div dd .service {
+  border-top: 1px solid #B44906;
+}
+#about .about__company dl > div dd .service__item {
+  padding-block: 20px;
+}
+#about .about__company dl > div dd .service__item p {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+#about .about__company dl > div dd .service__item p span {
+  display: block;
+  font-size: 14px;
+}
+#about .about__company dl > div dd .service__item address {
+  margin-bottom: 8px;
+}
+#about .about__company dl > div dd .service__item address br {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div dd .service__item address br {
+    display: block;
+  }
+}
+#about .about__company dl > div dd .service__item--contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media screen and (max-width: 800px) {
+  #about .about__company dl > div dd .service__item--contact {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+#about .about__company dl > div dd .service__item:not(:last-child) {
+  border-bottom: 1px dashed #93C7ED;
 }
 
 /* ===============================================

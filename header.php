@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="stylesheet" href="<?php echo get_theme_file_uri(); ?>/assets/css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
     <?php wp_head(); ?> 
     
 </head>
@@ -23,7 +27,7 @@
 
             <h1>
                 <a href="<?= site_url(); ?>">
-                    <img class="header-logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo_h1_sp.png" alt="一般社団法人こころ会">
+                    <img class="header-logo" src="<?php echo get_theme_file_uri(); ?>/assets/images/logo.svg" alt="一般社団法人こころ会">
                 </a>
             </h1>
 
@@ -37,25 +41,25 @@
                             事業内容
                             <div class="service__items">
                                 <object>
-                                    <a href="<?= site_url(); ?>/ponte">
+                                    <a href="<?= site_url(); ?>/service/ponte">
                                         <span>就労継続支援B型</span>
                                         ぽんて
                                     </a>
                                 </object>
                                 <object>
-                                    <a href="<?= site_url(); ?>/plus">
+                                    <a href="<?= site_url(); ?>/service/plus">
                                         <span>就労継続支援B型</span>
                                         ぷらす
                                     </a>
                                 </object>
                                 <object>
-                                    <a href="<?= site_url(); ?>/sakura">
+                                    <a href="<?= site_url(); ?>/service/sakura">
                                         <span>地域活動支援センター</span>
                                         さくら
                                     </a>
                                 </object>
                                 <object>
-                                    <a href="<?= site_url(); ?>/PW">
+                                    <a href="<?= site_url(); ?>/service/ponte-pw">
                                         <span>相談支援</span>
                                         ぽんて
                                     </a>
@@ -97,8 +101,8 @@
 
         <ul>
 
-            <li><a href="index.html">TOPページ<span class="arrow"></span></a></li>
-            <li><a href="news.html">お知らせ<span class="arrow"></span></a></li>
+            <li><a href="<?= site_url() ?>">TOPページ<span class="arrow"></span></a></li>
+            <li><a href="<?= site_url() ?>/news">お知らせ<span class="arrow"></span></a></li>
 
             <li class="btn-accordion js-ac">
                 <button class="accordion-head">事業内容</button>
@@ -106,10 +110,10 @@
             </li>
             <!-- アコーディオンメニュー -->
             <div class="accordion-body">
-                <a href="<?= site_url(); ?>/ponte">就労継続支援B型　ぽんて</a>
-                <a href="<?= site_url(); ?>/plus">就労継続支援B型　ぷらす</a>
-                <a href="<?= site_url(); ?>/sakura">地域活動センター　さくら</a>
-                <a href="<?= site_url(); ?>/pw">相談支援　ぽんて</a>
+                <a href="<?= site_url(); ?>/service/ponte">就労継続支援B型　ぽんて</a>
+                <a href="<?= site_url(); ?>/service/plus">就労継続支援B型　ぷらす</a>
+                <a href="<?= site_url(); ?>/service/sakura">地域活動センター　さくら</a>
+                <a href="<?= site_url(); ?>/service/ponte-pw">相談支援　ぽんて</a>
             </div>
             <!-- アコーディオンメニュー閉じる -->
 

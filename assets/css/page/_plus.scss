@@ -7,49 +7,61 @@
   padding-top: 80px; //headerの分
   background: $bg-main;
 
+  .service-head {
+    margin: 0 auto 12px;
+    padding: 8px 16px;
+    width: fit-content;
+    background: $white;
+    font-size: 1.5rem;
+    border-radius: 24px;
+  }
+
   #plus-top {
-    background: $green;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1920 / 600;
+
+    background-image: url(../images/svg/wave-top-service.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 32vw;
+
+    @media (min-width: 786px) {
+      background-position: center 300px;
+    }
 
     .plus-container {
       margin: 0 auto;
-      padding-bottom: 12px;
       width: 100%;
-
-      @media (min-width: 376px) {
-        max-width: 500px;
-      }
-
-      @media (min-width: 500px) {
-        max-width: 600px;
-      }
-
-      @media (min-width: 785px) {
-        max-width: 1000px;
-      }
 
       .plus-frame {
         margin: 0 auto;
-        margin-bottom: 100px;
+        max-width: 1200px;
         width: calc(100% - 24px);
-        position: relative;
 
         img {
           display: block;
           margin: 0 auto;
           width: 100%;
           height: auto;
+          z-index: 2;
         }
 
         .cc-plus {
+          position: relative;
+          margin: -2% auto 0;
           padding: 12px 28px;
-          position: absolute;
-          top: 96%;
-          left: 50%;
-          transform: translateX(-50%);
           white-space: nowrap;
           width: fit-content;
           border-radius: 24px;
           background: $green-2nd;
+          z-index: 3;
+
+          @media (min-width: 600px) {
+            margin-top: -4%;
+            margin-left: 2%;
+            padding: 18px 28px;
+          }
 
           p {
             font-size: 1.125em;
@@ -62,10 +74,9 @@
 
       // .plus-frame
 
-      .plus-2nd {
-        @media (min-width: 600px) {
-          padding-top: 0;
-        }
+      .div-green {
+        background: $green;
+        width: 100%;
       }
     }
 
@@ -80,7 +91,9 @@
     background: $orange;
 
     .policy-container {
+      margin: 0 auto;
       padding: 12px 0 20px;
+      width: 100%;
 
       .policy-outer {
         margin: 0 auto;
@@ -117,11 +130,17 @@
 
   #schedule {
     background: $pink;
+    padding-bottom: 20px;
 
     .timeline-container {
       margin: 0 auto;
-      padding: 12px 0 20px;
+      padding: 0 20px;
+      width: 100%;
       max-width: 600px;
+
+      @media (min-width: 1024px) {
+        max-width: 800px;
+      }
 
       .timeline {
         margin-left: 50px;
@@ -187,7 +206,10 @@
 
           .timeline-text {
             padding: 12px 20px 4px;
-            line-height: 1.5;
+            line-height: 1.8;
+            p {
+              line-height: 1.6;
+            }
           }
         }
 
@@ -208,31 +230,55 @@
     background: $blue;
 
     .flow-container {
-      width: 100%;
       margin: 0 auto;
-      padding: 40px 0;
+      padding-bottom: 20px;
+      width: 100%;
 
       .flow-outer {
+        margin: 20px auto 30px;
+        padding: 0 20px 0 30px;
+        max-width: 520px;
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         gap: 16px;
 
-        margin: 20px auto;
-        padding: 0 20px 0 30px;
-        max-width: 520px;
+        @media (min-width: 1024px) {
+          max-width: 1100px;
+
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: stretch;
+        }
+        @media (min-width: 1240px) {
+          gap: 20px;
+        }
 
         .flow-brock {
           display: flex;
-          align-items: center;
+          width: 100%;
           position: relative;
+          @media (min-width: 1024px) {
+            width: 25%;
+            max-width: 260px;
+            flex: 1;
+          }
 
           .step-icon {
             position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             left: -28px;
             width: 80px;
             height: 80px;
             z-index: 2;
+            @media (min-width: 1024px) {
+              top: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
           }
 
           .flow-card {
@@ -241,9 +287,15 @@
             border-radius: 24px;
             padding: 20px 20px 20px 48px;
             box-shadow: 2px 4px 4px 0 $gray;
+            line-height: 1.8;
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (min-width: 1024px) {
+              padding: 64px 20px 20px 20px;
+              justify-content: start;
+            }
 
             .flow-title {
               font-size: 1.5rem;
@@ -251,6 +303,10 @@
               padding-right: 16px;
               font-weight: bold;
               text-align: center;
+              @media (min-width: 1024px) {
+                padding-bottom: 16px;
+                padding-right: 0px;
+              }
             }
             // .flow-title
 
@@ -260,16 +316,16 @@
             }
 
             .step1 {
-              color: $green-3nd;
+              color: $green-3rd;
             }
             .step2 {
-              color: $orange-3nd;
+              color: $orange-3rd;
             }
             .step3 {
-              color: $pink-3nd;
+              color: $pink-3rd;
             }
             .step4 {
-              color: $blue-3nd;
+              color: $blue-3rd;
             }
           }
 
@@ -281,20 +337,27 @@
 
       // flow-outer
 
+      /* ========ご利用の流れ詳細======= */
+
       .flow-2nd-outer {
-        margin: 40px auto 0;
+        margin: 40px 0;
         padding: 12px 16px;
-        max-width: 600px;
+        width: auto;
 
         position: relative;
         background: $blue-4nd;
         border-radius: 4px;
-        box-shadow: 0 4px 10px $gray;
+        box-shadow: 0 4px 10px -4px $gray;
+
+        @media (min-width: 786px) {
+          margin: 40px auto 0;
+          width: 100%;
+        }
 
         &::after {
           content: "";
           position: absolute;
-          top: -20px;
+          top: -28px;
           right: 20px;
           width: 60px;
           height: 60px;
@@ -302,52 +365,269 @@
           background-size: contain;
           background-repeat: no-repeat;
           z-index: 5;
+          @media (min-width: 1024px) {
+            left: 50%;
+            transform: translateX(480px);
+          }
         }
 
         ul {
+          margin: 0 auto;
+          max-width: 780px;
           li {
             padding: 20px 0;
-            border-bottom: 1px dashed $blue-3nd;
+            border-bottom: 1px dashed $blue-3rd;
+
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 1024px) {
+              flex-direction: row;
+            }
 
             &:last-child {
               border-bottom: none;
             }
 
             .flow-2nd-title {
-              text-align: center;
+              padding-bottom: 8px;
+              min-width: 160px;
               font-size: 1.125rem;
               font-weight: bold;
-              margin-bottom: 4px;
+              text-align: center;
+              @media (min-width: 1024px) {
+                text-align: left;
+              }
             }
 
             p {
               font-size: 1rem;
               line-height: 1.6;
-            }
-            span {
-              display: block;
-              font-size: 0.875rem;
-              margin-top: 4px;
+              span {
+                display: block;
+                font-size: 0.875rem;
+                margin-top: 4px;
+              }
             }
           }
         }
       }
       // .flow-2nd-outer
 
-      .flow-contact-outer {
-        margin: 20px auto;
-        max-width: 520px;
+      /* ========お気軽にご相談ください======= */
+
+      .flow-contact {
+        margin: 32px auto 20px;
+        max-width: 360px;
+        background: $white;
+        border-radius: 24px;
+        padding: 20px 32px;
+        box-shadow: 3px 4px 0 0 $blue-3rd;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 786px) {
+          max-width: 780px;
+          padding: 28px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          flex: 1;
+        }
+
+        h4 {
+          font-size: 1.25rem;
+          font-weight: bold;
+          padding-bottom: 8px;
+
+          @media (min-width: 786px) {
+            order: 2;
+          }
+        }
+
+        .disc {
+          font-size: 1rem;
+          padding-bottom: 8px;
+          @media (min-width: 786px) {
+            order: 1;
+            width: 100%;
+            padding-bottom: 12px;
+          }
+        }
+
+        .flow-contact-inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @media (min-width: 786px) {
+            order: 3;
+          }
+
+          .tell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+
+            .tell-number {
+              font-size: 1.6rem;
+              padding-bottom: 4px;
+            }
+          }
+
+          span {
+            display: block;
+            font-size: 0.875rem;
+            padding-bottom: 10px;
+          }
+        }
+        // .flow-contact-inner
+
+        .btn {
+          // width:;
+          @media (min-width: 786px) {
+            order: 4;
+          }
+        }
+        h4,
+        .flow-contact-inner,
+        .btn {
+          flex: 1;
+          text-align: center;
+        }
       }
-      // flow-contact-outer
+      // .flow-contact
     }
-    // flow-container
+    // .flow-container
   }
 
   // #flow
 
+  /* =======アドレス======= */
+
   #address {
     background: $yellow;
+
+    .address-container {
+      padding: 20px 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      @media (min-width: 786px) {
+        max-width: 780px;
+      }
+
+      .address-outer {
+        padding: 8px 20px;
+        margin: 0 auto;
+        width: 100%;
+
+        @media (min-width: 786px) {
+          max-width: 600px;
+        }
+
+        ul {
+          li {
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px dashed $text;
+
+            div {
+              width: 100px;
+              flex-shrink: 0;
+            }
+            .address-tell {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1;
+              gap: 2px;
+              @media (min-width: 786px)  {
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+              }
+            }
+            p {
+            }
+          }
+          // li
+        }
+
+        // ul
+      }
+      // .address-container
+    }
+    // address-container
+
+    .map {
+      position: relative;
+      margin: 20px auto;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9のアスペクト比 */
+      height: 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    // map
+
+    .access {
+      padding: 8px 0px;
+
+      .access-title {
+        font-size: 1.25rem;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $text;
+      }
+
+      .access-brock {
+        .access-tool {
+          margin: 8px;
+          padding-bottom: 12px;
+          border-bottom: 1px dashed $text;
+        }
+        // .access-tool
+
+        .access-01 {
+          padding: 4px 0;
+        }
+        .access-02 {
+          padding: 4px 0 4px;
+        }
+        .access-03 {
+          padding: 0px 0 4px 1rem;
+
+          p {
+            padding-top: 8px;
+
+            span {
+              border-bottom: 1px solid $yellow-2nd;
+            }
+          }
+        }
+      }
+      // .access-brock
+      .access-car {
+        padding-top: 12px;
+      }
+    }
+    // .access
   }
+
+  // #address
 }
 
 // #plus

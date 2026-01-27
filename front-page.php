@@ -159,7 +159,7 @@
             <div class=" service-outer">
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/survice/ponte01/') ); ?>">
+                <a href="<?php echo esc_url( home_url('/service/ponte/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型
                         ぽんて">
                         <p>就労継続支援B型<br>
@@ -168,7 +168,7 @@
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/survice/plus01/') ); ?>">
+                <a href="<?php echo esc_url( home_url('/service/plus/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型ぷらす">
                         <p class="service-title">就労継続支援B型<br>
                             ぷらす</p>
@@ -176,7 +176,7 @@
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/survice/sakura01/') ); ?>">
+                <a href="<?php echo esc_url( home_url('/service/sakura/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="地域活動支援センターさくら">
                         <p class="service-title">地域活動支援センター<br>
                             さくら</p>
@@ -184,7 +184,7 @@
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/survice/ponte02/') ); ?>">
+                <a href="<?php echo esc_url( home_url('/service/ponte-pw/') ); ?>">
                         <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="相談支援ぽんて">
                         <p class="service-title">相談支援<br>
                             ぽんて</p>
@@ -200,64 +200,15 @@
     </section>
     <!-- service -->
 
-    <section id="footer_top">
-    <div class="wave-bottom wave-green"></div>
 
 
-        <div class="footer_top-container">
-
-            <div class="bg-img">
-
-                <div class="footer_top-outer">
-
-                    <div class="contact-text">お気軽にお問い合わせください</div>
-
-
-                    <p>一般社団法人こころ会</p>
-
-                    <div class="footer_top-inner">
-
-                        <div class="footer_top-block">
-                            <p>049-293-6729</p>
-                            <span>平日 9:00〜17:00まで</span>
-                        </div>
-
-                        <a class="btn contact" href="<?php echo esc_url( home_url('/contact') ); ?>">
-                            <img class="mail-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/mail.svg" alt="mail icon">
-                            お問い合わせ
-                            <span class="btn-circle"></span>
-                        </a>
-
-                    </div>
-                    <!-- footer_top-inner -->
-
-                </div>
-                <!-- footer_top-outer -->
-
-            </div>
-            <!-- bg-img -->
-
-        </div>
-        <!-- footer_top-container -->
-
-
-        <!-- topに戻るボタン -->
-        <section id="back-btn-containar">
-        <a href="<?php echo home_url('/'); ?>">
-            <div id="back-page-top">
-                <button class="btn-top">
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </a>
-</section>
-
-    </section>
-    <!-- footer_top -->
-
-
-    <div class="wave-bottom wave-pink"></div>
+    <?php 
+        $args = [
+            "top-wave" => "green",
+            "background" => "pink",
+        ];
+        get_template_part("parts/footer_top", null ,$args); 
+    ?>
 
 
 </main>

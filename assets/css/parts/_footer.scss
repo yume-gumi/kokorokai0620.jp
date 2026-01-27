@@ -14,17 +14,33 @@ footer {
 
   background-repeat: repeat-x;
   background-position: bottom;
+  overflow: hidden;
   
 
-  background-image: url(../images/footer_pc.png);
-  background-size: contain ;
-  padding-bottom: 20px;
-  padding-bottom: 20vw;
+  padding-bottom: min(28vw , 320px);
+  &::after{
+    display: block;
+    content: "";
+    width: 100%;
+    min-height: 280px;
+    aspect-ratio: 2161/340;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/footer_pc.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+
+    @include tb(){
+      display: none;
+    }
+  }
   @include tb(){
     background-image: url(../images/footer_sp.png);
-    // background-attachment: fixed;
     background-size: 400px 140px;
     padding-bottom: 120px;
+    display: block;
 
   }
   .footer-container {
@@ -75,7 +91,7 @@ footer {
                 content: "";
                 display: block;
                 width: 6px;
-                border-top: 2px solid $green-3nd;
+                border-top: 2px solid $green-3rd;
               }
               span{
                 font-size: 12px;
@@ -95,7 +111,7 @@ footer {
           content: "";
           border-width: 8px 10px;
           border-style: solid;
-          border-color:  transparent transparent transparent $green-3nd;
+          border-color:  transparent transparent transparent $green-3rd;
         }
       }
       .instagram{
@@ -269,6 +285,7 @@ footer {
     bottom: 20px;
     left: 50%;
     translate: -50% 0;
+    z-index: 10;
   }
 }
 

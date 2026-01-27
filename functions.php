@@ -138,3 +138,119 @@
     }
   }
 
+
+
+
+
+// 固定ページ追加
+
+// 1. 関数を少し拡張：第3引数で親のIDを受け取れるようにします
+function create_page_if_not_exists($slug, $title, $parent_id = 0) {
+    // get_page_by_path は階層を考慮するので 'service/plus' の形式でチェック
+    if (!get_page_by_path($slug)) {
+        return wp_insert_post([
+            'post_title'   => $title,
+            'post_name'    => basename($slug), // スラッグのみ抽出
+            'post_status'  => 'publish',
+            'post_type'    => 'page',
+            'post_parent'  => $parent_id,
+        ]);
+    }
+    // 既存ページがある場合はそのIDを返す
+    $page = get_page_by_path($slug);
+    return $page->ID;
+}
+
+function create_individual_pages() {
+    // 通常の固定ページ
+    $pages = [
+        ['slug' => 'about',   'title' => '会社概要'],
+        ['slug' => 'contact', 'title' => 'お問い合わせ'],
+        ['slug' => 'privacy', 'title' => 'プライバシーポリシー'],
+    ];
+
+    foreach ($pages as $page) {
+        create_page_if_not_exists($page['slug'], $page['title']);
+    }
+
+    // --- ここから親子ページの作成 ---
+    
+    // まずは親（service）を作成
+    $parent_id = create_page_if_not_exists('service', '事業内容');
+
+    // 親のIDを使って子（plus）を作成
+    if ($parent_id) {
+
+        create_page_if_not_exists('service/ponte', '就労支援B型　ぽんて', $parent_id);
+        create_page_if_not_exists('service/plus', '就労支援B型　ぷらす', $parent_id);
+        create_page_if_not_exists('service/sakura', '地域活動支援　さくら', $parent_id);
+        create_page_if_not_exists('service/ponte-pw', '相談支援　ぽんて', $parent_id);
+    }
+}
+add_action('after_setup_theme', 'create_individual_pages');
+
+// --- service だけを 404 に飛ばす設定 ---
+add_action('template_redirect', function() {
+    // service ページ本体（かつ子ページではない）の場合のみ 404
+    if (is_page('service')) {
+        global $wp_query;
+        $wp_query->set_404();
+        status_header(404);
+        nocache_headers();
+        include(get_query_template('404'));
+        die();
+    }
+});
+
+
+
+
+// jQuery
+function my_theme_enqueue_scripts() {
+    // jQueryをフッターで読み込む（WordPressバンドル版）
+    wp_enqueue_script('jquery', false, array(), false, true);
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
+
+
+
+
+// news
+
+function post_has_archive($args,$post_type){
+    if('post' == $post_type){
+      $args['rewrite'] = true;
+      $args['has_archive'] = 'news';//スラッグ名
+    }
+    return $args;
+}
+add_filter('register_post_type_args','post_has_archive',10,2);
+
+// WordPressのデフォルトの投稿アーカイブを「news」ページに設定
+function custom_news_archive_page() {
+    $news_page = get_page_by_path('news');
+    if ($news_page) {
+        // 「投稿ページ」の設定を「お知らせ」ページに自動設定
+        update_option('page_for_posts', $news_page->ID);
+        // 「フロントページの表示」を「固定ページ」に設定し、フロントページは設定しない（投稿ページが設定されるため）
+        update_option('show_on_front', 'posts'); // この行で「最新の投稿」に設定
+    }
+}
+add_action('init', 'custom_news_archive_page');
+
+// パーマリンクを自動的に再生成する
+function auto_flush_rewrite_rules() {
+    global $wp_rewrite;
+    $wp_rewrite->flush_rules();
+}
+add_action('init', 'auto_flush_rewrite_rules');
+
+
+
+// アイキャッチ画像
+add_theme_support("post-thumbnails");
+
+
+// 管理バー非表示
+add_filter( 'show_admin_bar', '__return_false' );
+

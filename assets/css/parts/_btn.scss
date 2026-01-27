@@ -39,6 +39,13 @@
   &:active {
     background: $text;
     color: $btn-cc;
+    .btn-circle{
+      background: $btn-cc;
+      &::after{
+        border-color: $text;
+
+      }
+    }
   }
 
   .btn-circle {

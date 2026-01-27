@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- MAIN -->
-<main id="news">
+<main id="sakura">
 
 
   
@@ -9,6 +9,7 @@
         $args = [
             "top-wave" => "yellow",
             "background" => "green",
+            "service" => true
         ];
         get_template_part("parts/footer_top", null ,$args); 
     ?>

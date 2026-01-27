@@ -23,32 +23,32 @@
                 <p class="list-style">事業内容</p>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="<?= site_url() ?>/service/ponte">
                             <span>就労継続支援B型</span>ぽんて
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="<?= site_url() ?>/service/plus">
                             <span>就労継続支援B型</span>ぷらす
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="<?= site_url() ?>/service/sakura">
                             <span>地域活動支援センター</span>さくら
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="<?= site_url() ?>/service/ponte-pw">
                             <span>相談支援</span>ぽんて
                         </a>
                     </li>
                 </ul>
             </div>
             <ul>
-                <li class="list-style"><a href="">お知らせ</a></li>
-                <li class="list-style"><a href="">会社概要</a></li>
-                <li class="list-style"><a href="">お問い合わせ</a></li>
-                <li class="list-style"><a href="">プライバシーポリシー</a></li>
+                <li class="list-style"><a href="<?= site_url() ?>/news">お知らせ</a></li>
+                <li class="list-style"><a href="<?= site_url() ?>/about">会社概要</a></li>
+                <li class="list-style"><a href="<?= site_url() ?>/contact">お問い合わせ</a></li>
+                <li class="list-style"><a href="<?= site_url() ?>/privacy">プライバシーポリシー</a></li>
             </ul>
 
             <div class="instagram">
@@ -70,10 +70,10 @@
                 </li>
                 <!-- アコーディオンメニュー -->
                 <div class="accordion-body">
-                    <a href="<?= site_url(); ?>/ponte">就労継続支援B型　ぽんて</a>
-                    <a href="<?= site_url(); ?>/plus">就労継続支援B型　ぷらす</a>
-                    <a href="<?= site_url(); ?>/sakura">地域活動センター　さくら</a>
-                    <a href="<?= site_url(); ?>/pw">相談支援　ぽんて</a>
+                    <a href="<?= site_url(); ?>/service/ponte">就労継続支援B型　ぽんて</a>
+                    <a href="<?= site_url(); ?>/service/plus">就労継続支援B型　ぷらす</a>
+                    <a href="<?= site_url(); ?>/service/sakura">地域活動センター　さくら</a>
+                    <a href="<?= site_url(); ?>/service/ponte-pw">相談支援　ぽんて</a>
                 </div>
                 <!-- アコーディオンメニュー閉じる -->
 

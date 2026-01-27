@@ -103,11 +103,19 @@
   border-radius: 50px;
 }
 
-/* ========事業内容2ndコピー======= */
+/* ========事業内容2ndキャッチコピー======= */
 
 .cc-2nd-outer {
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px 0;
+  width: 100%;
+  @media (min-width: 600px) {
+    padding: 0 24px 0;
+  }
+
+  @media (min-width: 786px) {
+    width: 100%;
+  }
 
   .cc-2nd-inner {
     padding-bottom: 16px;
@@ -117,12 +125,13 @@
     align-items: center;
 
     @media (min-width: 600px) {
-      flex-direction: row;
+      padding-top: 0;
+      flex-direction: row-reverse;
     }
 
     @media (min-width:600px) {
       &:nth-child(even) {
-        flex-direction: row-reverse;
+        flex-direction: row;
       }
     }
 
@@ -134,9 +143,8 @@
 
     .cc-2nd-text {
 
-
       p {
-        padding: 0 54px;
+        padding: 0 28px;
         align-self: start;
 
         @media (min-width: 600px) {

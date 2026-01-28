@@ -4,6 +4,8 @@
 # page
 =============================================== */
 #plus {
+  padding-top: 80px; //headerの分
+  background: $bg-main;
 
   .service-head {
     margin: 0 auto 12px;
@@ -19,7 +21,7 @@
     width: 100%;
     aspect-ratio: 1920 / 600;
 
-    background-image: url(../images/svg/wave-top-green.svg);
+    background-image: url(../images/svg/wave-top-service.svg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center 32vw;
@@ -49,6 +51,7 @@
           position: relative;
           margin: -2% auto 0;
           padding: 12px 28px;
+          white-space: nowrap;
           width: fit-content;
           border-radius: 24px;
           background: $green-2nd;
@@ -75,9 +78,6 @@
         background: $green;
         width: 100%;
       }
-      .plus-2nd-inner {
-      padding-top: 8px;
-    }
     }
 
     // .plus-container
@@ -345,7 +345,7 @@
         width: auto;
 
         position: relative;
-        background: $blue-4th;
+        background: $blue-4nd;
         border-radius: 4px;
         box-shadow: 0 4px 10px -4px $gray;
 
@@ -361,7 +361,7 @@
           right: 20px;
           width: 60px;
           height: 60px;
-          background-image: url("../images/icon/pin_blue.svg");
+          background-image: url("../images/icon/pin.svg");
           background-size: contain;
           background-repeat: no-repeat;
           z-index: 5;
@@ -548,7 +548,7 @@
               align-items: flex-start;
               flex: 1;
               gap: 2px;
-              @media (min-width: 786px) {
+              @media (min-width: 786px)  {
                 flex-direction: row;
                 align-items: center;
                 gap: 20px;

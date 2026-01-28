@@ -4,6 +4,8 @@
 <main id="plus">
   <section id="bg-container service">
 
+    <div class="bg-img"></div>
+
     <h4 class="service-head">就労継続支援B型 ぷらす</h4>
 
     <section id="plus-top">
@@ -27,10 +29,10 @@
           <div class="cc-2nd-inner">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/plus_img01.png" alt="plus_img01">
             <div class="cc-2nd-text">
-              <p class="plus-2nd-inner">まずは規則正しい毎日を送ることからスタートしたい。<br>
+              <p>まずは規則正しい毎日を送ることからスタートしたい。<br>
                 少しずつ、ゆっくり自分のペースで仕事を続けたい。</p>
 
-              <p class="plus-2nd-inner">就職を目指してできることから始めたい。<br>
+              <p>就職を目指してできることから始めたい。<br>
                 できたら工賃は少しでも多いところで働きたい…。</p>
             </div>
           </div>
@@ -38,7 +40,7 @@
           <div class="cc-2nd-inner">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/plus_img02.png" alt="plus_img02">
             <div class="cc-2nd-text">
-              <p>人それぞれ思いや悩みは違うもの。<br>
+              <p class="plus-2nd-inner">人それぞれ思いや悩みは違うもの。<br>
                 あなたの希望に合わせて、
                 私たちがしっかりサポートします。</p>
             </div>
@@ -254,8 +256,8 @@
             <div class="flow-2nd-title">対象となる方</div>
             <p>療育手帳か精神保健福祉手帳または
               自立支援医療受給者証をお持ちの方が対象です。
-              <span>※身体障害者手帳の方は要相談</span>
-            </p>
+            <span>※身体障害者手帳の方は要相談</span>
+</p>
           </li>
 
           <li>
@@ -293,23 +295,23 @@
       <!-- flow-2nd-outer -->
 
       <div class="flow-contact">
-
+        
         <h4>お気軽にご相談ください</h4>
         <p class="disc">見学・体験に関する事、ご利用に関する事など、お気軽にご相談ください。</p>
         <!-- <div class="flow-contact-outer"> -->
-        <div class="flow-contact-inner">
-          <div class="tell">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/tellphone.svg" alt="tell-icon">
-            <p class="tell-number">049-290-3966</p>
+          <div class="flow-contact-inner">
+            <div class="tell">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/tellphone.svg" alt="tell-icon">
+              <p class="tell-number">049-290-3966</p>
+            </div>
+            <span>平日 9:00~17:00まで</span>
           </div>
-          <span>平日 9:00~17:00まで</span>
-        </div>
 
-        <a class="btn contact" href="<?php echo esc_url(home_url('/contact')); ?>">
-          <img class="mail-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/mail.svg" alt="mail icon">
-          お問い合わせ
-          <span class="btn-circle"></span>
-        </a>
+          <a class="btn contact" href="<?php echo esc_url(home_url('/contact')); ?>">
+            <img class="mail-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon/mail.svg" alt="mail icon">
+            お問い合わせ
+            <span class="btn-circle"></span>
+          </a>
 
 
         <!-- </div> -->
@@ -367,7 +369,7 @@
       <!-- address-outer -->
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.78695502829!2d139.5058389!3d35.8542272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dceaefda1a5b%3A0x3529bacdcf2d3b55!2z44CSMzU2LTAwNTkg5Z-8546J55yM44G144GY44G_6YeO5biC5qGc44Kx5LiY77yR5LiB55uu77yT77yY4oiS77yT77yU!5e0!3m2!1sja!2sjp!4v1769065218657!5m2!1sja!2sjp" 　style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.78695502829!2d139.5058389!3d35.8542272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dceaefda1a5b%3A0x3529bacdcf2d3b55!2z44CSMzU2LTAwNTkg5Z-8546J55yM44G144GY44G_6YeO5biC5qGc44Kx5LiY77yR5LiB55uu77yT77yY4oiS77yT77yU!5e0!3m2!1sja!2sjp!4v1769065218657!5m2!1sja!2sjp"　style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="access">
@@ -409,7 +411,7 @@
             <p class="access-02">
               ・ふじみん号ご利用の場合：</p>
 
-            <div class="access-03"">
+              <div class="access-03"">
               <p>CまたはEコース<span>「大井支所」</span>下車 
               徒歩10分</p>
             </div>
@@ -419,29 +421,29 @@
         </div>
         <!-- access-brock -->
 
-        <p class=" access-car">お車、または自転車でお越しの際は、敷地内に
-              駐車場と駐輪場がございますのでご利用下さい。</p>
+        <p class="access-car">お車、または自転車でお越しの際は、敷地内に
+          駐車場と駐輪場がございますのでご利用下さい。</p>
 
-            </div>
-            <!-- access -->
+      </div>
+      <!-- access -->
 
-          </div>
-          <!-- address-container -->
+    </div>
+    <!-- address-container -->
 
 
   </section>
   <!-- address -->
 
 
-
-  <?php
-  $args = [
-    "top-wave" => "yellow",
-    "background" => "green",
-    "service" => true
-  ];
-  get_template_part("parts/footer_top", null, $args);
-  ?>
+  
+    <?php 
+        $args = [
+            "top-wave" => "yellow",
+            "background" => "green",
+            "service" => true
+        ];
+        get_template_part("parts/footer_top", null ,$args); 
+    ?>
 
 
 

@@ -1,6 +1,6 @@
-<?php get_header(); ?>
+<?php get_header();  ?>
 
-<!-- MAIN -->
+<!--  MAIN  -->
 <main id="top">
 
     <section id="bg-container">
@@ -12,8 +12,8 @@
             <div class="kv-container">
 
                 <div class="kv-photo">
-                    <img class="photo-sp" src="<?php echo get_theme_file_uri(); ?>/assets/images/kv_sp.png" alt="メインビジュアル" class="mainvisual">
-                    <img class="photo-pc" src="<?php echo get_theme_file_uri(); ?>/assets/images/kv_pc.png" alt="メインビジュアル" class="mainvisual">
+                    <img class="photo-sp" src="<?php echo  get_theme_file_uri();  ?>/assets/images/kv_sp.png" alt="メインビジュアル" class="mainvisual">
+                    <img class="photo-pc" src="<?php echo  get_theme_file_uri();  ?>/assets/images/kv_pc.png" alt="メインビジュアル" class="mainvisual">
 
                     <div class="catch_copy-outer">
 
@@ -25,7 +25,7 @@
                             瞬間を創造していきます。</p>
                     </div>
                 </div>
-                <!-- kv-photo -->
+                <!--  kv-photo  -->
 
 
                 <div class="kv-inner">
@@ -38,14 +38,14 @@
 
 
         </section>
-        <!-- kv -->
+        <!--  kv  -->
 
         <div class="cc-img"></div>
 
     </section>
 
 
-<div class="wave-top wave-yellow"></div>
+    <div class="wave-top  wave-yellow"></div>
     <section id="news">
 
 
@@ -61,7 +61,7 @@
                 <a href="news-page.html">
                     <div class="news-brock">
 
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/noimage.png" alt="no image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
 
                         <div class="date">
                             <span>25/12/31</span>
@@ -81,7 +81,7 @@
                 <a href="news-page.html">
                     <div class="news-brock">
 
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/noimage.png" alt="no image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
 
                         <div class="date">
                             <span>25/12/31</span>
@@ -100,7 +100,7 @@
                 <a href="news-page.html">
                     <div class="news-brock">
 
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/noimage.png" alt="no image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
 
                         <div class="date">
                             <span>25/12/31</span>
@@ -119,7 +119,7 @@
                 <a href="news-page.html">
                     <div class="news-brock">
 
-                        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/noimage.png" alt="no image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
 
                         <div class="date">
                             <span>25/12/31</span>
@@ -137,82 +137,82 @@
                 </a>
 
             </div>
-            <!-- news-outer -->
+            <!--  news-outer  -->
 
-            <a href="<?php echo esc_url( home_url('/news') ); ?>" class="btn more">一覧を見る<span class="btn-circle"></span></a>
+            <a href="<?php echo  esc_url(home_url('/news'));  ?>" class="btn  more">一覧を見る<span class="btn-circle"></span></a>
 
         </div>
-        <!-- news-contens -->
+        <!--  news-contens  -->
 
     </section>
-    <!-- news -->
-    
-    
+    <!--  news  -->
+
+
     <section id="service">
-        <div class="wave-bottom wave-yellow"></div>
+        <div class="wave-bottom  wave-yellow"></div>
 
 
         <div class="service-container">
 
             <h2 class="h2-02">事業内容</h2>
 
-            <div class=" service-outer">
+            <div class="  service-outer">
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/service/ponte/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型
-                        ぽんて">
+                    <a href="<?php echo  esc_url(home_url('/service/ponte/'));  ?>">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="就労継続支援B型
+                                                ぽんて">
                         <p>就労継続支援B型<br>
                             ぽんて</p>
                     </a>
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/service/plus/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="就労継続支援B型ぷらす">
+                    <a href="<?php echo  esc_url(home_url('/service/plus/'));  ?>">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="就労継続支援B型ぷらす">
                         <p class="service-title">就労継続支援B型<br>
                             ぷらす</p>
                     </a>
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/service/sakura/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="地域活動支援センターさくら">
+                    <a href="<?php echo  esc_url(home_url('/service/sakura/'));  ?>">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="地域活動支援センターさくら">
                         <p class="service-title">地域活動支援センター<br>
                             さくら</p>
                     </a>
                 </div>
 
                 <div class="service-block">
-                <a href="<?php echo esc_url( home_url('/service/ponte-pw/') ); ?>">
-                        <img class="top-logo-img" src="<?php echo get_theme_file_uri(); ?>/assets/images/svg/logo.svg" alt="相談支援ぽんて">
+                    <a href="<?php echo  esc_url(home_url('/service/ponte-pw/'));  ?>">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="相談支援ぽんて">
                         <p class="service-title">相談支援<br>
                             ぽんて</p>
                     </a>
                 </div>
 
             </div>
-            <!-- service-outer -->
+            <!--  service-outer  -->
 
         </div>
-        <!-- service-container -->
+        <!--  service-container  -->
 
     </section>
-    <!-- service -->
+    <!--  service  -->
 
 
 
-    <?php 
-        $args = [
-            "top-wave" => "green",
-            "background" => "pink",
-        ];
-        get_template_part("parts/footer_top", null ,$args); 
+    <?php
+    $args  =  [
+        "top-wave"  =>  "green",
+        "background"  =>  "pink",
+    ];
+    get_template_part("parts/footer_top",  null, $args);
     ?>
 
 
 </main>
-<!-- MAIN -->
+<!--  MAIN  -->
 
 
-<?php get_footer(); ?>
+<?php get_footer();  ?>

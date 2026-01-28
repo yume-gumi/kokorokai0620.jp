@@ -148,16 +148,16 @@
         align-self: start;
 
         @media (min-width: 600px) {
-          padding: 20px 8px 0;
+          padding: 0 8px;
         }
       }
 
       // p
 
-
-      @media (min-width: 600px) {
-        padding-top: 1rem;
+      .cc-3rd-inner {
+        padding-top: 8px;
       }
+
     }
 
   }

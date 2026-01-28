@@ -308,13 +308,11 @@ button {
 }
 @media (min-width: 600px) {
   .cc-2nd-outer .cc-2nd-inner .cc-2nd-text p {
-    padding: 20px 8px 0;
+    padding: 0 8px;
   }
 }
-@media (min-width: 600px) {
-  .cc-2nd-outer .cc-2nd-inner .cc-2nd-text {
-    padding-top: 1rem;
-  }
+.cc-2nd-outer .cc-2nd-inner .cc-2nd-text .cc-3rd-inner {
+  padding-top: 8px;
 }
 
 /* ===============================================
@@ -1101,8 +1099,6 @@ button {
 # page
 =============================================== */
 #plus {
-  padding-top: 80px;
-  background: #F8F8EC;
   /* ========事業所方針======= */
   /* ========1日のスケジュール======= */
   /* ========ご利用の流れ======= */
@@ -1121,7 +1117,7 @@ button {
   position: relative;
   width: 100%;
   aspect-ratio: 1920/600;
-  background-image: url(../images/svg/wave-top-service.svg);
+  background-image: url(../images/svg/wave-top-green.svg);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center 32vw;
@@ -1317,7 +1313,6 @@ button {
   #plus #flow .flow-container .flow-outer .flow-brock {
     width: 25%;
     max-width: 260px;
-    flex: 1;
   }
 }
 #plus #flow .flow-container .flow-outer .flow-brock .step-icon {
@@ -1340,7 +1335,7 @@ button {
   width: 100%;
   background: #fff;
   border-radius: 24px;
-  padding: 20px 20px 20px 48px;
+  padding: 12px 20px 20px 48px;
   box-shadow: 2px 4px 4px 0 #cbcbcb;
   line-height: 1.8;
   display: flex;
@@ -1349,20 +1344,19 @@ button {
 }
 @media (min-width: 1024px) {
   #plus #flow .flow-container .flow-outer .flow-brock .flow-card {
-    padding: 64px 20px 20px 20px;
+    padding: 56px 20px 20px 20px;
     justify-content: start;
   }
 }
 #plus #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
   font-size: 1.5rem;
-  padding-bottom: 8px;
   padding-right: 16px;
   font-weight: bold;
   text-align: center;
 }
 @media (min-width: 1024px) {
   #plus #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
-    padding-bottom: 16px;
+    padding-bottom: 4px;
     padding-right: 0px;
   }
 }
@@ -1404,7 +1398,7 @@ button {
   right: 20px;
   width: 60px;
   height: 60px;
-  background-image: url("../images/icon/pin.svg");
+  background-image: url("../images/icon/pin_blue.svg");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 5;
@@ -1633,18 +1627,463 @@ button {
 /* ===============================================
 # page
 =============================================== */
-/* ===============================================
-# page
-=============================================== */
+/*  ===============================================
+#  page
+===============================================  */
+#ponte-pw {
+  /*  ========ご利用の流れ=======  */
+  /*  =======アドレス=======  */
+}
+#ponte-pw .service-head {
+  margin: 0 auto 12px;
+  padding: 8px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 1.5rem;
+  border-radius: 24px;
+}
+#ponte-pw #pw-top {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920/600;
+  background-image: url(../images/svg/wave-top-blue.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center 32vw;
+}
+@media (min-width: 786px) {
+  #ponte-pw #pw-top {
+    background-position: center 300px;
+  }
+}
+#ponte-pw #pw-top .pw-container {
+  margin: 0 auto;
+  width: 100%;
+}
+#ponte-pw #pw-top .pw-container .pw-frame {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: calc(100% - 24px);
+}
+#ponte-pw #pw-top .pw-container .pw-frame img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+#ponte-pw #pw-top .pw-container .pw-frame .cc-pw {
+  position: relative;
+  margin: -2% auto 0;
+  padding: 12px 28px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 24px;
+  background: #369BD1;
+  z-index: 3;
+}
+#ponte-pw #pw-top .pw-container .pw-frame .cc-pw .pc-br {
+  display: none;
+}
+@media (min-width: 600px) {
+  #ponte-pw #pw-top .pw-container .pw-frame .cc-pw {
+    margin-top: -4%;
+    margin-left: 2%;
+    padding: 18px 28px;
+  }
+  #ponte-pw #pw-top .pw-container .pw-frame .cc-pw .pc-br {
+    display: block;
+  }
+  #ponte-pw #pw-top .pw-container .pw-frame .cc-pw .sp-br {
+    display: none;
+  }
+}
+#ponte-pw #pw-top .pw-container .pw-frame .cc-pw p {
+  font-size: 1.125em;
+  color: #fff;
+}
+#ponte-pw #pw-top .pw-container .div-blue {
+  background: #D3E5F4;
+  width: 100%;
+}
+#ponte-pw #flow {
+  background: #F8E7ED;
+}
+#ponte-pw #flow .flow-container {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 100%;
+  /*  ========ご利用の流れ詳細=======  */
+  /*  ========お気軽にご相談ください=======  */
+}
+#ponte-pw #flow .flow-container .flow-outer {
+  margin: 36px auto 30px;
+  padding: 0 20px 0 30px;
+  max-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer {
+    max-width: 1100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1240px) {
+  #ponte-pw #flow .flow-container .flow-outer {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer .flow-brock {
+    max-width: 260px;
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .step-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -28px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer .flow-brock .step-icon {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 12px 20px 20px 48px;
+  box-shadow: 2px 4px 4px 0 #cbcbcb;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card {
+    padding: 56px 12px 56px 12px;
+    min-height: 320px;
+    justify-content: start;
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
+  font-size: 1.5rem;
+  padding-right: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .flow-title {
+    padding-bottom: 4px;
+    padding-right: 0px;
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card p {
+  line-height: 1.7;
+  padding-left: 4px;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card p .pc-br {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card p .pc-br {
+    display: block;
+  }
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step1 {
+  color: #ACD086;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step2 {
+  color: #F5AC71;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step3 {
+  color: #F2B5C9;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step4 {
+  color: #93C7ED;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step5 {
+  color: #E8BF33;
+}
+#ponte-pw #flow .flow-container .flow-outer .flow-brock .flow-card .step6 {
+  color: #ACD086;
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer {
+  margin: 40px 0;
+  padding: 12px 16px;
+  width: auto;
+  position: relative;
+  background: #FFF5FD;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px -4px #cbcbcb;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-2nd-outer {
+    margin: 40px auto 0;
+    width: 100%;
+  }
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer::after {
+  content: "";
+  position: absolute;
+  top: -28px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/icon/pin_pink.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-2nd-outer::after {
+    left: 50%;
+    transform: translateX(480px);
+  }
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul {
+  margin: 0 auto;
+  max-width: 780px;
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul li {
+  padding: 20px 0;
+  border-bottom: 1px dashed #F2B5C9;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-2nd-outer ul li {
+    flex-direction: row;
+  }
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul li:last-child {
+  border-bottom: none;
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul li .flow-2nd-title {
+  padding-bottom: 8px;
+  min-width: 160px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #ponte-pw #flow .flow-container .flow-2nd-outer ul li .flow-2nd-title {
+    text-align: left;
+  }
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul li p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+#ponte-pw #flow .flow-container .flow-2nd-outer ul li p span {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+#ponte-pw #flow .flow-container .flow-contact {
+  margin: 32px auto 20px;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 20px 32px;
+  box-shadow: 3px 4px 0 0 #F2B5C9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-contact {
+    max-width: 780px;
+    padding: 28px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+  }
+}
+#ponte-pw #flow .flow-container .flow-contact h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-contact h4 {
+    order: 2;
+  }
+}
+#ponte-pw #flow .flow-container .flow-contact .disc {
+  font-size: 1rem;
+  padding-bottom: 8px;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-contact .disc {
+    order: 1;
+    width: 100%;
+    padding-bottom: 12px;
+  }
+}
+#ponte-pw #flow .flow-container .flow-contact .flow-contact-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-contact .flow-contact-inner {
+    order: 3;
+  }
+}
+#ponte-pw #flow .flow-container .flow-contact .flow-contact-inner .tell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+#ponte-pw #flow .flow-container .flow-contact .flow-contact-inner .tell .tell-number {
+  font-size: 1.6rem;
+  padding-bottom: 4px;
+}
+#ponte-pw #flow .flow-container .flow-contact .flow-contact-inner span {
+  display: block;
+  font-size: 0.875rem;
+  padding-bottom: 10px;
+}
+@media (min-width: 786px) {
+  #ponte-pw #flow .flow-container .flow-contact .btn {
+    order: 4;
+  }
+}
+#ponte-pw #flow .flow-container .flow-contact h4,
+#ponte-pw #flow .flow-container .flow-contact .flow-contact-inner,
+#ponte-pw #flow .flow-container .flow-contact .btn {
+  flex: 1;
+  text-align: center;
+}
+#ponte-pw #address {
+  background: #F7EDA0;
+}
+#ponte-pw #address .address-container {
+  padding: 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+@media (min-width: 786px) {
+  #ponte-pw #address .address-container {
+    max-width: 780px;
+  }
+}
+#ponte-pw #address .address-container .address-outer {
+  padding: 8px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 786px) {
+  #ponte-pw #address .address-container .address-outer {
+    max-width: 600px;
+  }
+}
+#ponte-pw #address .address-container .address-outer ul li {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px dashed #B44906;
+}
+#ponte-pw #address .address-container .address-outer ul li div {
+  width: 100px;
+  flex-shrink: 0;
+}
+#ponte-pw #address .address-container .address-outer ul li .address-tell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  gap: 2px;
+}
+@media (min-width: 786px) {
+  #ponte-pw #address .address-container .address-outer ul li .address-tell {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+}
+#ponte-pw #address .map {
+  position: relative;
+  margin: 20px auto;
+  width: 100%;
+  padding-top: 56.25%; /*  16:9のアスペクト比  */
+  height: 0;
+}
+#ponte-pw #address .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#ponte-pw #address .access {
+  padding: 8px 0px;
+}
+#ponte-pw #address .access .access-title {
+  font-size: 1.25rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B44906;
+}
+#ponte-pw #address .access .access-brock .access-tool {
+  margin: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #B44906;
+}
+#ponte-pw #address .access .access-brock .access-01 {
+  padding: 4px 0;
+}
+#ponte-pw #address .access .access-brock .access-02 {
+  padding: 4px 0 4px;
+}
+#ponte-pw #address .access .access-brock .access-03 {
+  padding: 0px 0 4px 1rem;
+}
+#ponte-pw #address .access .access-brock .access-03 p {
+  padding-top: 8px;
+}
+#ponte-pw #address .access .access-brock .access-03 p span {
+  border-bottom: 1px solid #E8BF33;
+}
+#ponte-pw #address .access .access-car {
+  padding: 12px;
+}
+
 /* ===============================================
 # page
 =============================================== */
 /* ===============================================
 # 投稿記事ページ
 =============================================== */
-/* ===============================================
-# parts
-=============================================== */
+/*  ===============================================
+#  parts
+===============================================  */
 /* ===============================================
 # header
 =============================================== */
@@ -2205,14 +2644,14 @@ footer small {
   z-index: 10;
 }
 
-/* ===============================================
-# footer footer-top
-=============================================== */
+/*  ===============================================
+#  footer  footer-top
+===============================================  */
 #footer_top {
   position: relative;
   width: 100%;
   padding-bottom: 20px;
-  /* ========topに戻るボタン======= */
+  /*  ========topに戻るボタン=======  */
 }
 #footer_top.bg-pink {
   background: var(--color-pink);
@@ -2402,7 +2841,7 @@ footer small {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  /* フッターに到達した時にJSでこのクラスをつける */
+  /*  フッターに到達した時にJSでこのクラスをつける  */
 }
 #footer_top #back-btn-containar #back-page-top.is-show {
   opacity: 1;
@@ -2410,7 +2849,7 @@ footer small {
 }
 #footer_top #back-btn-containar #back-page-top.is-stopped {
   position: absolute;
-  bottom: 40px; /* #footer_topの最下部からの距離 */
+  bottom: 40px; /*  #footer_topの最下部からの距離  */
   top: auto;
   right: 20px;
 }
@@ -2472,12 +2911,12 @@ footer small {
   background: #F8F8EC;
 }
 
-/* ===============================================
-# ボタン
-=============================================== */
-/* ===============================================
-# ボタン
-=============================================== */
+/*  ===============================================
+#  ボタン
+===============================================  */
+/*  ===============================================
+#  ボタン
+===============================================  */
 .btn {
   position: relative;
   margin: 0 auto;

@@ -5,6 +5,8 @@
 =============================================== */
 
 .service_page {
+  position: relative;
+  z-index: 2;
 
   .service-head {
     margin: 0 auto 12px;
@@ -16,37 +18,35 @@
   }
 
   .bg-img {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-  aspect-ratio: 1920 / 600;
-  z-index: 1;
+    aspect-ratio: 1920 / 600;
+    z-index: 1;
 
+    -webkit-mask-image: url("../images/svg/wave-top-mv.svg");
+    mask-image: url("../images/svg/wave-top-mv.svg");
 
-  /* SVGをマスクとして使用 */
-  -webkit-mask-image: url("../images/svg/wave-top-green.svg");
-  mask-image: url("../images/svg/wave-top-green.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+    -webkit-mask-size: 100% auto;
+    mask-size: 100% auto;
 
-  -webkit-mask-size: 100% auto;
-  mask-size: 100% auto;
+    -webkit-mask-position: center top;
+    mask-position: center top;
 
-  -webkit-mask-position: center top;
-  mask-position: center top;
-
-  @media (min-width: 786px) {
-    top: 30vw;
+    @media (min-width: 786px) {
+      top: 30vw;
+    }
   }
 
-}
-// bg-img
+  // bg-img
 
-  #plus-top {
+  #top-mv {
     position: relative;
     z-index: 2;
 
@@ -67,14 +67,13 @@
           height: auto;
         }
 
-        .cc-plus {
+        .cc {
           position: relative;
           margin: -2% auto 0;
           padding: 12px 28px;
           white-space: nowrap;
           width: fit-content;
           border-radius: 24px;
-          background: $green-2nd;
           z-index: 3;
 
           @media (min-width: 600px) {
@@ -100,6 +99,7 @@
         margin: 0 auto;
         padding: 20px 0;
         width: 100%;
+
         @media (min-width: 600px) {
           padding: 0 24px 0;
         }
@@ -139,6 +139,7 @@
 
               @media (min-width: 600px) {
                 padding: 0 8px;
+                width: 600px;
               }
             }
 
@@ -159,7 +160,7 @@
     // .service-container
   }
 
-  // #plus-top
+  // #top-mv
 
   /* ========事業所方針======= */
 
@@ -283,6 +284,7 @@
           .timeline-text {
             padding: 12px 20px 4px;
             line-height: 1.8;
+
             p {
               line-height: 1.6;
             }
@@ -300,10 +302,10 @@
 
   // schedule
 
+
   /* ========ご利用の流れ======= */
 
   #flow {
-    background: $blue;
 
     .flow-container {
       margin: 0 auto;
@@ -328,6 +330,7 @@
           justify-content: center;
           align-items: stretch;
         }
+
         @media (min-width: 1240px) {
           gap: 20px;
         }
@@ -336,6 +339,7 @@
           display: flex;
           width: 100%;
           position: relative;
+
           @media (min-width: 1024px) {
             width: 25%;
             max-width: 260px;
@@ -349,6 +353,7 @@
             width: 80px;
             height: 80px;
             z-index: 2;
+
             @media (min-width: 1024px) {
               top: -20px;
               left: 50%;
@@ -377,11 +382,13 @@
               padding-right: 16px;
               font-weight: bold;
               text-align: center;
+
               @media (min-width: 1024px) {
                 padding-bottom: 4px;
                 padding-right: 0px;
               }
             }
+
             // .flow-title
 
             p {
@@ -392,18 +399,23 @@
             .step1 {
               color: $green-3rd;
             }
+
             .step2 {
               color: $orange-3rd;
             }
+
             .step3 {
               color: $pink-3rd;
             }
+
             .step4 {
               color: $blue-3rd;
             }
+
             .step5 {
               color: $yellow-2nd;
             }
+
             .step6 {
               color: $green-3rd;
             }
@@ -425,7 +437,6 @@
         width: auto;
 
         position: relative;
-        background: $blue-4th;
         border-radius: 4px;
         box-shadow: 0 4px 10px -4px $gray;
 
@@ -441,23 +452,22 @@
           right: 20px;
           width: 60px;
           height: 60px;
-          background-image: url("../images/icon/pin_blue.svg");
           background-size: contain;
           background-repeat: no-repeat;
           z-index: 5;
+
           @media (min-width: 1024px) {
             left: 50%;
-            transform: translateX(480px);
+            transform: translateX(460px);
           }
         }
 
         ul {
           margin: 0 auto;
           max-width: 780px;
+
           li {
             padding: 20px 0;
-            border-bottom: 1px dashed $blue-3rd;
-
             display: flex;
             flex-direction: column;
 
@@ -475,6 +485,7 @@
               font-size: 1.125rem;
               font-weight: bold;
               text-align: center;
+
               @media (min-width: 1024px) {
                 text-align: left;
               }
@@ -483,6 +494,7 @@
             p {
               font-size: 1rem;
               line-height: 1.6;
+
               span {
                 display: block;
                 font-size: 0.875rem;
@@ -492,6 +504,7 @@
           }
         }
       }
+
       // .flow-2nd-outer
 
       /* ========お気軽にご相談ください======= */
@@ -502,7 +515,6 @@
         background: $white;
         border-radius: 24px;
         padding: 20px 32px;
-        box-shadow: 3px 4px 0 0 $blue-3rd;
         text-align: center;
 
         display: flex;
@@ -532,6 +544,7 @@
         .disc {
           font-size: 1rem;
           padding-bottom: 8px;
+
           @media (min-width: 786px) {
             order: 1;
             width: 100%;
@@ -543,6 +556,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
           @media (min-width: 786px) {
             order: 3;
           }
@@ -565,14 +579,17 @@
             padding-bottom: 10px;
           }
         }
+
         // .flow-contact-inner
 
         .btn {
+
           // width:;
           @media (min-width: 786px) {
             order: 4;
           }
         }
+
         h4,
         .flow-contact-inner,
         .btn {
@@ -580,8 +597,10 @@
           text-align: center;
         }
       }
+
       // .flow-contact
     }
+
     // .flow-container
   }
 
@@ -597,6 +616,7 @@
       margin: 0 auto;
       width: 100%;
       max-width: 600px;
+
       @media (min-width: 786px) {
         max-width: 780px;
       }
@@ -622,12 +642,14 @@
               width: 100px;
               flex-shrink: 0;
             }
+
             .address-tell {
               display: flex;
               flex-direction: column;
               align-items: flex-start;
               flex: 1;
               gap: 2px;
+
               @media (min-width: 786px) {
                 flex-direction: row;
                 align-items: center;
@@ -635,24 +657,29 @@
                 width: 100%;
               }
             }
-            p {
-            }
+
+            p {}
           }
+
           // li
         }
 
         // ul
       }
+
       // .address-container
     }
+
     // address-container
 
     .map {
       position: relative;
       margin: 20px auto;
       width: 100%;
-      padding-top: 56.25%; /* 16:9のアスペクト比 */
+      padding-top: 56.25%;
+      /* 16:9のアスペクト比 */
       height: 0;
+
       iframe {
         position: absolute;
         top: 0;
@@ -679,14 +706,17 @@
           padding-bottom: 12px;
           border-bottom: 1px dashed $text;
         }
+
         // .access-tool
 
         .access-01 {
           padding: 4px 0;
         }
+
         .access-02 {
           padding: 4px 0 4px;
         }
+
         .access-03 {
           padding: 0px 0 4px 1rem;
 
@@ -699,15 +729,16 @@
           }
         }
       }
+
       // .access-brock
       .access-car {
         padding-top: 12px;
       }
     }
     // .access
+    
   }
-
   // #address
-}
 
-// #plus
+}
+// #service-page

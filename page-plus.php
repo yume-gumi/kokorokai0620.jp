@@ -7,14 +7,14 @@
 
   <div class="bg-img wave-green"></div>
   
-  <section id="plus-top">
+  <section id="top-mv">
 
     <div class="service-container">
 
       <div class="mv-frame">
         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_mv.png" alt="" class="ぷらすmainvisual">
 
-        <div class="cc-plus">
+        <div class="cc bg-green-2nd">
           <p>あなたが持っている力を引き出し、<br>
             あなたの人生にとっても、<br>
             そして社会にとっても【ぷらす】を<br>
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="cc-outer div-green">
+      <div class="cc-outer bg-green">
 
         <div class="cc-inner">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_img01.png" alt="plus_img01">
@@ -54,7 +54,7 @@
   <!--  plus-top  -->
 
 
-  <section id="policy">
+  <section id="policy" class="bg-orange">
 
     <div class="wave-bottom  wave-green"></div>
 
@@ -95,7 +95,7 @@
   <!--  policy  -->
 
 
-  <section id="schedule">
+  <section id="schedule" class="bg-pink">
 
     <div class="wave-bottom  wave-orange"></div>
 
@@ -179,9 +179,9 @@
   </section>
   <!--  schedule  -->
 
-  <section id="flow">
+  <section id="flow" class="bg-blue">
 
-    <div class="wave-bottom  wave-pink"></div>
+    <div class="wave-bottom wave-pink"></div>
 
 
     <div class="flow-container">
@@ -248,7 +248,7 @@
       </div>
       <!--  flow-outer  -->
 
-      <div class="flow-2nd-outer">
+      <div class="flow-2nd-outer bg-blue-4th">
         <ul>
           <li>
             <div class="flow-2nd-title">対象となる方</div>
@@ -325,7 +325,7 @@
   <!--  flow  -->
 
 
-  <section id="address">
+  <section id="address" class="bg-yellow">
     <div class="wave-bottom  wave-blue"></div>
 
 

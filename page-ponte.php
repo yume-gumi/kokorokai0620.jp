@@ -1,20 +1,20 @@
-<?php get_header(); ?>
+<?php get_header();  ?>
 
-<!-- MAIN -->
+<!--  MAIN  -->
 <main id="ponte">
 
 
-  
-    <?php 
-        $args = [
-            "top-wave" => "yellow",
-            "background" => "green",
-            "service" => true
-        ];
-        get_template_part("parts/footer_top", null ,$args); 
+
+    <?php
+    $args  =  [
+        "top-wave"  =>  "orange",
+        "background"  =>  "pink",
+        "service"  =>  true
+    ];
+    get_template_part("parts/footer_top",  null, $args);
     ?>
 </main>
-<!-- MAIN -->
+<!--  MAIN  -->
 
 
-<?php get_footer(); ?>
+<?php get_footer();  ?>

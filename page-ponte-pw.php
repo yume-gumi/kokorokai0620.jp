@@ -7,7 +7,7 @@
 
         <div class="bg-img wave-blue"></div>
 
-        <section id="pw-top">
+        <section id="top-mv">
 
 
             <div class="service-container">
@@ -16,13 +16,13 @@
                 <div class="mv-frame">
                     <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_mv.png" alt="" class="ぷらすmainvisual">
 
-                    <div class="cc-pw">
+                    <div class="cc bg-blue-2nd">
                         <p>一人ひとりが その人らしく 生きて<br class="sp-br">いくために、<br class="pc-br">
                             私たちは、あなたの<br class="sp-br">想いにそっと寄り添います。</p>
                     </div>
                 </div>
 
-                <div class="cc-outer div-blue">
+                <div class="cc-outer bg-blue">
 
                     <div class="cc-inner">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_img01.png" alt="pw_img01">
@@ -45,17 +45,12 @@
                 </div>
 
             </div>
-            <!--  plus-container  -->
+            <!-- container  -->
         </section>
         <!--  bg-img  -->
 
-    </section>
-    <!--  plus-top  -->
 
-
-
-
-    <section id="flow">
+    <section id="flow" class="bg-pink">
 
         <div class="wave-bottom  wave-blue"></div>
 
@@ -87,6 +82,7 @@
                     <div class="flow-card  step2">
                         <div class="flow-title  step2">計画</div>
                         <p class="step2">相談支援専門員がご相談を元に<br class="pc-br">サービス等利用計画案・<br class="pc-br">障害児支援利用計画案<br class="pc-br">（プランニング）を作成します。
+</p>
                     </div>
 
                 </div>
@@ -102,8 +98,8 @@
                     </div>
 
                 </div>
+                <br class="pc-br">
                 <div class="flow-brock">
-
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
                     </span>
@@ -112,6 +108,7 @@
                         <div class="flow-title  step4">決定</div>
                         <p class="step4">作成したサービス等利用計画案<br class="pc-br">・障害児支援利用計画案などをもとに、申請を行なった後にサービス利用の決定を受けます。</p>
                     </div>
+
 
                 </div>
                 <div class="flow-brock">
@@ -142,9 +139,9 @@
             </div>
             <!--  flow-outer  -->
 
-            <div class="flow-2nd-outer">
+            <div class="flow-2nd-outer bg-pink-4th">
                 <ul>
-                    <li>
+                    <li class="pw-flow-li">
                         <div class="flow-2nd-title">対象となる方</div>
                         <p>療育手帳か精神保健福祉手帳または
                             自立支援医療受給者証をお持ちの方が対象です。

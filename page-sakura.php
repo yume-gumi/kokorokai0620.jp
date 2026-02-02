@@ -7,8 +7,8 @@
 
     <?php
     $args  =  [
-        "top-wave"  =>  "yellow",
-        "background"  =>  "green",
+        "top-wave"  =>  "green",
+        "background"  =>  "orange",
         "service"  =>  true
     ];
     get_template_part("parts/footer_top",  null, $args);

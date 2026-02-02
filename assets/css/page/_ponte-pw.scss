@@ -4,44 +4,46 @@
 #  page
 ===============================================  */
 
-.cc {
-  p {
+#ponte-pw {
 
-    .pc-br {
-      display: none;
+  .cc {
+    p {
 
-      @media (min-width: 600px) {
+      .pc-br {
+        display: none;
+
+        @media (min-width: 600px) {
           display: block;
+        }
       }
-    }
 
-    .sp-br {
-      display: block;
+      .sp-br {
+        display: block;
 
-      @media (min-width: 600px) {
+        @media (min-width: 600px) {
           display: none;
+        }
+
       }
 
     }
 
+    // p
   }
 
-  // p
-}
-
-// cc
+  // cc
 
 
-/*  ========ご利用の流れ=======  */
+  /*  ========ご利用の流れ=======  */
 
-.flow-pw {
-  @media (min-width: 1024px) {
-    margin-top: 32px !important;
+  .flow-pw {
+    @media (min-width: 1024px) {
+      margin-top: 32px !important;
 
-    flex-wrap: wrap;
-    row-gap: 28px !important;
+      flex-wrap: wrap;
+      row-gap: 28px !important;
+    }
   }
-}
 
 
   .flow-block-pw {
@@ -52,64 +54,67 @@
     }
 
     .flow-card {
-      
+
       @media (min-width: 1024px) {
         padding: 56px 12px 56px 12px !important;
       }
-      
+
       .pc-br {
         display: none;
-        
+
         @media (min-width: 1024px) {
           display: block;
           width: 100%;
           background: $blue;
         }
       }
-      
+
     }
-    
+
     //  flow-card
   }
+
   // flow-block
 
 
 
-/*  ========ご利用の流れ詳細=======  */
+  /*  ========ご利用の流れ詳細=======  */
 
-.bg-pink-4th {
-  
-  &::after {
-    content: "";
+  .bg-pink-4th {
 
-    background-image: url("../images/icon/pin_pink.svg");
+    &::after {
+      content: "";
 
-    @media (min-width: 1024px) {
-      left: 50%;
-      transform: translateX(460px);
+      background-image: url("../images/icon/pin_pink.svg");
+
+      @media (min-width: 1024px) {
+        left: 50%;
+        transform: translateX(460px);
+      }
+    }
+
+    ul {
+      .flow-li-pw {
+        border-bottom: 1px dashed $pink-3rd;
+      }
     }
   }
 
-  ul {
-    .flow-li-pw {
-      border-bottom: 1px dashed $pink-3rd;
-    }
+  //  .flow-2nd-outer
+
+  /*  ========お気軽にご相談ください=======  */
+
+  .flow-contact-pw {
+    box-shadow: 3px 4px 0 0 $pink-3rd;
   }
-}
 
-//  .flow-2nd-outer
-
-/*  ========お気軽にご相談ください=======  */
-
-.flow-contact-pw {
-  box-shadow: 3px 4px 0 0 $pink-3rd;
-}
-
-//  .flow-contact
+  //  .flow-contact
 
 
-/*  =======アドレス=======  */
+  /*  =======アドレス=======  */
 
-.access-car {
-  padding: 12px;
+  .access-car {
+    padding: 12px;
+  }
+
 }

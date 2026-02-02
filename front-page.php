@@ -3,9 +3,9 @@
 <!--  MAIN  -->
 <main id="top">
 
-    <section id="bg-container">
+    <section id="top-container">
 
-        <div class="bg-img"></div>
+        <div class="top-bg"></div>
 
         <section id="kv">
 

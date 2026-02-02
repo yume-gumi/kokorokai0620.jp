@@ -34,15 +34,27 @@
 
 /*  ========ご利用の流れ=======  */
 
-.flow-outer {
+.flow-pw {
+  @media (min-width: 1024px) {
+    margin-top: 32px !important;
 
-  .flow-block {
+    flex-wrap: wrap;
+    row-gap: 28px !important;
+  }
+}
+
+
+  .flow-block-pw {
+    @media (min-width: 1024px) {
+      flex: none !important;
+      width: 30% !important;
+      max-width: 260px;
+    }
 
     .flow-card {
       
       @media (min-width: 1024px) {
-        padding: 56px 12px 56px 12px;
-        min-height: 320px;
+        padding: 56px 12px 56px 12px !important;
       }
       
       .pc-br {
@@ -61,13 +73,11 @@
   }
   // flow-block
 
-}
-  // flow-outer
 
 
 /*  ========ご利用の流れ詳細=======  */
 
-.flow-2nd-outer {
+.bg-pink-4th {
   
   &::after {
     content: "";
@@ -81,7 +91,7 @@
   }
 
   ul {
-    .pw-flow-li {
+    .flow-li-pw {
       border-bottom: 1px dashed $pink-3rd;
     }
   }
@@ -91,7 +101,7 @@
 
 /*  ========お気軽にご相談ください=======  */
 
-.flow-contact {
+.flow-contact-pw {
   box-shadow: 3px 4px 0 0 $pink-3rd;
 }
 

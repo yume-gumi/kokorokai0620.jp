@@ -17,14 +17,14 @@
     border-radius: 24px;
   }
 
-  .bg-img {
+  .top-bg {
     position: absolute;
-    top: 20%;
+    top: 200px;
     left: 0;
     width: 100%;
     height: 100%;
 
-    aspect-ratio: 1920 / 600;
+    max-height: 600px;
     z-index: 1;
 
     -webkit-mask-image: url("../images/svg/wave-top-mv.svg");
@@ -39,8 +39,18 @@
     -webkit-mask-position: center top;
     mask-position: center top;
 
-    @media (min-width: 786px) {
-      top: 30vw;
+    @media (min-width: 600px) {
+      top: 300px;
+    }
+
+    @media (min-width: 1240px) {
+      top: 400px;
+
+      -webkit-mask-repeat: repeat-x;
+      mask-repeat: repeat-x;
+
+      -webkit-mask-size: 100% auto;
+      mask-size: 100% auto;
     }
   }
 
@@ -50,7 +60,7 @@
     position: relative;
     z-index: 2;
 
-    .service-container {
+    .mv-container {
       margin: 0 auto;
       width: 100%;
 
@@ -99,9 +109,13 @@
         margin: 0 auto;
         padding: 20px 0;
         width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         @media (min-width: 600px) {
-          padding: 0 24px 0;
+          padding: 12px 24px 0;
         }
 
         @media (min-width: 786px) {
@@ -114,33 +128,37 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          max-width: 900px;
 
-          @media (min-width: 600px) {
+          @media (min-width: 786px) {
             padding-top: 0;
             flex-direction: row-reverse;
+            img {
+              width: 40%;
+            }
           }
 
-          @media (min-width: 600px) {
+          @media (min-width: 786px) {
             &:nth-child(even) {
               flex-direction: row;
             }
           }
 
           img {
-            display: block;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             height: auto;
           }
 
+
           .cc-text {
+            @media (min-width: 600px) {
+              padding: 0 8px;
+            }
             p {
               padding: 0 28px;
               align-self: start;
-
-              @media (min-width: 600px) {
-                padding: 0 8px;
-                width: 600px;
-              }
+              line-height: 1.5;
             }
 
             // p
@@ -302,11 +320,9 @@
 
   // schedule
 
-
   /* ========ご利用の流れ======= */
 
   #flow {
-
     .flow-container {
       margin: 0 auto;
       padding-bottom: 20px;
@@ -316,17 +332,13 @@
         margin: 20px auto 30px;
         padding: 0 20px 0 30px;
         max-width: 520px;
-
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         gap: 16px;
 
         @media (min-width: 1024px) {
-          max-width: 1100px;
-
+          max-width: 900px;
           flex-direction: row;
-          flex-wrap: nowrap;
           justify-content: center;
           align-items: stretch;
         }
@@ -337,11 +349,10 @@
 
         .flow-brock {
           display: flex;
-          width: 100%;
           position: relative;
 
           @media (min-width: 1024px) {
-            width: 25%;
+            width: 22%;
             max-width: 260px;
           }
 
@@ -373,7 +384,7 @@
             justify-content: center;
 
             @media (min-width: 1024px) {
-              padding: 56px 20px 20px 20px;
+              padding: 56px 20px 32px 20px;
               justify-content: start;
             }
 
@@ -471,6 +482,7 @@
             display: flex;
             flex-direction: column;
 
+
             @media (min-width: 1024px) {
               flex-direction: row;
             }
@@ -510,7 +522,7 @@
       /* ========お気軽にご相談ください======= */
 
       .flow-contact {
-        margin: 32px auto 20px;
+        margin: 40px auto 20px;
         max-width: 360px;
         background: $white;
         border-radius: 24px;
@@ -522,7 +534,7 @@
         align-items: center;
 
         @media (min-width: 786px) {
-          max-width: 780px;
+          max-width: 760px;
           padding: 28px;
           flex-direction: row;
           flex-wrap: wrap;
@@ -583,7 +595,6 @@
         // .flow-contact-inner
 
         .btn {
-
           // width:;
           @media (min-width: 786px) {
             order: 4;
@@ -639,7 +650,7 @@
             border-bottom: 1px dashed $text;
 
             div {
-              width: 100px;
+              width: 130px;
               flex-shrink: 0;
             }
 
@@ -658,7 +669,8 @@
               }
             }
 
-            p {}
+            p {
+            }
           }
 
           // li
@@ -675,12 +687,12 @@
     .map {
       position: relative;
       margin: 20px auto;
+      aspect-ratio: 16 /9;
       width: 100%;
-      padding-top: 56.25%;
-      /* 16:9のアスペクト比 */
-      height: 0;
-
+      height: 100%;
+      
       iframe {
+        padding: 0 16px;
         position: absolute;
         top: 0;
         left: 0;
@@ -736,9 +748,7 @@
       }
     }
     // .access
-    
   }
   // #address
-
 }
 // #service-page

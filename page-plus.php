@@ -5,11 +5,11 @@
   
   <h4 class="service-head">就労継続支援B型 ぷらす</h4>
 
-  <div class="bg-img wave-green"></div>
+  <div class="top-bg wave-green"></div>
   
   <section id="top-mv">
 
-    <div class="service-container">
+    <div class="mv-container">
 
       <div class="mv-frame">
         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_mv.png" alt="" class="ぷらすmainvisual">
@@ -46,7 +46,7 @@
       </div>
 
     </div>
-    <!--  plus-container  -->
+    <!--  mv-container  -->
   </section>
   <!--  bg-img  -->
 
@@ -188,7 +188,7 @@
 
       <h3>ご利用の流れ</h3>
 
-      <div class="flow-outer">
+      <div class="flow-outer flow-plus">
 
         <div class="flow-brock">
 
@@ -250,7 +250,7 @@
 
       <div class="flow-2nd-outer bg-blue-4th">
         <ul>
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">対象となる方</div>
             <p>療育手帳か精神保健福祉手帳または
               自立支援医療受給者証をお持ちの方が対象です。
@@ -258,29 +258,29 @@
             </p>
           </li>
 
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">ご利用料金</div>
             <p>所得に応じて異なります(1カ月0円～37,800円)<br>
               詳細についてはお電話やメールでお問い合わせください。<br>
               基本的に週５日のご利用とさせていただきます。</p>
           </li>
 
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">お食事について</div>
             <p>給食はございません。お弁当をご持参いただくか、事業所で仕出し弁当（1食350円）をご注文ください。</p>
           </li>
 
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">送迎について</div>
             <p>なるべくご希望に沿うように送迎をしておりますが、都合により乗降場所、送迎時間はご希望に添えない場合もございます。</p>
           </li>
 
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">工賃について</div>
             <p>時給200円です。9時から作業を始める方は月2万円、10時から作業を始める方は月1万6千円です。(週5日ご利用の場合)</p>
           </li>
 
-          <li>
+          <li class="flow-li-plus">
             <div class="flow-2nd-title">その他</div>
             <p>施設内に地域活動支援センターを併設しております。当作業所との併用も可能です。<br>
               また、利用計画相談のご利用も可能です。
@@ -292,7 +292,7 @@
       </div>
       <!--  flow-2nd-outer  -->
 
-      <div class="flow-contact">
+      <div class="flow-contact flow-contact-plus">
 
         <h4>お気軽にご相談ください</h4>
         <p class="disc">見学・体験に関する事、ご利用に関する事など、お気軽にご相談ください。</p>

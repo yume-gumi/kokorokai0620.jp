@@ -3,51 +3,51 @@
 <!--  MAIN  -->
 <main id="ponte-pw" class="service_page">
 
-        <h4 class="service-head">相談支援 ぽんて</h4>
+    <h4 class="service-head">相談支援 ぽんて</h4>
 
-        <div class="bg-img wave-blue"></div>
+    <div class="top-bg wave-blue"></div>
 
-        <section id="top-mv">
-
-
-            <div class="service-container">
+    <section id="top-mv">
 
 
-                <div class="mv-frame">
-                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_mv.png" alt="" class="ぷらすmainvisual">
+        <div class="mv-container">
 
-                    <div class="cc bg-blue-2nd">
-                        <p>一人ひとりが その人らしく 生きて<br class="sp-br">いくために、<br class="pc-br">
-                            私たちは、あなたの<br class="sp-br">想いにそっと寄り添います。</p>
-                    </div>
+
+            <div class="mv-frame">
+                <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_mv.png" alt="" class="ぷらすmainvisual">
+
+                <div class="cc bg-blue-2nd">
+                    <p>一人ひとりが その人らしく 生きて<br class="sp-br">いくために、<br class="pc-br">
+                        私たちは、あなたの<br class="sp-br">想いにそっと寄り添います。</p>
                 </div>
-
-                <div class="cc-outer bg-blue">
-
-                    <div class="cc-inner">
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_img01.png" alt="pw_img01">
-                        <div class="cc-text">
-                            <p>「できること」や「やってみたいこと」その人が大切にしている想いや暮らしを、一緒に考え、支えていく。<br>
-                                日々の小さな困りごとから、将来への不安まで。</p>
-                        </div>
-                    </div>
-
-                    <div class="cc-inner">
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_img02.png" alt="pw_img02">
-                        <div class="cc-text">
-                            <p>福祉サービスを使いたいけど、何から始めたらいいかわからない。<br>
-                                ひとり暮らしや就労のことが心配。<br>
-                                手続きや制度が難しくて不安…なんでもご相談ください。</p>
-
-                            <p class="cc-2nd-text">専門的なことはもちろん、日々のちょっとした気持ちの変化にも、ていねいに寄り添う支援を心がけています。</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <!-- container  -->
-        </section>
-        <!--  bg-img  -->
+
+            <div class="cc-outer bg-blue">
+
+                <div class="cc-inner">
+                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_img01.png" alt="pw_img01">
+                    <div class="cc-text">
+                        <p>「できること」や「やってみたいこと」その人が大切にしている想いや暮らしを、一緒に考え、支えていく。<br>
+                            日々の小さな困りごとから、将来への不安まで。</p>
+                    </div>
+                </div>
+
+                <div class="cc-inner">
+                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_img02.png" alt="pw_img02">
+                    <div class="cc-text">
+                        <p>福祉サービスを使いたいけど、何から始めたらいいかわからない。<br>
+                            ひとり暮らしや就労のことが心配。<br>
+                            手続きや制度が難しくて不安…なんでもご相談ください。</p>
+
+                        <p class="cc-2nd-text">専門的なことはもちろん、日々のちょっとした気持ちの変化にも、ていねいに寄り添う支援を心がけています。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- mv-container  -->
+    </section>
+    <!--  bg-img  -->
 
 
     <section id="flow" class="bg-pink">
@@ -59,9 +59,9 @@
 
             <h3>ご利用の流れ</h3>
 
-            <div class="flow-outer">
+            <div class="flow-outer flow-pw">
 
-                <div class="flow-brock">
+                <div class="flow-brock flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step1.svg" alt="step1">
@@ -69,11 +69,11 @@
 
                     <div class="flow-card  step1">
                         <div class="flow-title  step1">ご相談</div>
-                        <p class="step1">障がいのある方ご本人の意向、<br class="pc-br">お悩みや課題などをお聞きしながら必要なサービスや状況を整理します。</p>
+                        <p class="step1">障がいのある方ご本人の意向、お悩みや課題などをお聞きしながら必要なサービスや状況を整理します。</p>
                     </div>
 
                 </div>
-                <div class="flow-brock">
+                <div class="flow-brock flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step2.svg" alt="step2">
@@ -81,12 +81,12 @@
 
                     <div class="flow-card  step2">
                         <div class="flow-title  step2">計画</div>
-                        <p class="step2">相談支援専門員がご相談を元に<br class="pc-br">サービス等利用計画案・<br class="pc-br">障害児支援利用計画案<br class="pc-br">（プランニング）を作成します。
-</p>
+                        <p class="step2">相談支援専門員がご相談を元にサービス等利用計画案・<br class="pc-br">障害児支援利用計画案<br class="pc-br">（プランニング）を作成します。
+                        </p>
                     </div>
 
                 </div>
-                <div class="flow-brock">
+                <div class="flow-brock flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step3.svg" alt="step3">
@@ -98,20 +98,21 @@
                     </div>
 
                 </div>
-                <br class="pc-br">
-                <div class="flow-brock">
+
+
+                <div class="flow-brock flow-block-pw">
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
                     </span>
 
                     <div class="flow-card  step4">
                         <div class="flow-title  step4">決定</div>
-                        <p class="step4">作成したサービス等利用計画案<br class="pc-br">・障害児支援利用計画案などをもとに、申請を行なった後にサービス利用の決定を受けます。</p>
+                        <p class="step4">作成したサービス等利用計画案・障害児支援利用計画案などをもとに、申請を行なった後にサービス利用の決定を受けます。</p>
                     </div>
 
 
                 </div>
-                <div class="flow-brock">
+                <div class="flow-brock flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step5.svg" alt="step5">
@@ -119,11 +120,11 @@
 
                     <div class="flow-card  step5">
                         <div class="flow-title  step5">会議</div>
-                        <p class="step5">ご本人や自治体スタッフなどの<br class="pc-br">関係者が、サービス担当者会議<br class="pc-br">で話し合い、正式な計画が決定します。</p>
+                        <p class="step5">ご本人や自治体スタッフなど<br class="pc-br">の関係者が、サービス担当者会議で話し合い、正式な計画が決定します。</p>
                     </div>
 
                 </div>
-                <div class="flow-brock">
+                <div class="flow-brock flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step6.svg" alt="step6">
@@ -141,7 +142,7 @@
 
             <div class="flow-2nd-outer bg-pink-4th">
                 <ul>
-                    <li class="pw-flow-li">
+                    <li class="flow-li-pw">
                         <div class="flow-2nd-title">対象となる方</div>
                         <p>療育手帳か精神保健福祉手帳または
                             自立支援医療受給者証をお持ちの方が対象です。
@@ -149,7 +150,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="flow-li-pw">
                         <div class="flow-2nd-title">ご利用料金</div>
                         <p>所得に応じて異なります(1カ月0円～37,800円)<br>
                             詳細についてはお電話やメールでお問い合わせください。<br>
@@ -162,7 +163,8 @@
             </div>
             <!--  flow-2nd-outer  -->
 
-            <div class="flow-contact">
+            <div class="flow-contact 
+  flow-contact-pw">
 
                 <h4>お気軽にご相談ください</h4>
                 <p class="disc">見学・体験に関する事、ご利用に関する事など、お気軽にご相談ください。</p>

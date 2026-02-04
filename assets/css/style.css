@@ -2715,6 +2715,71 @@ footer small {
 /* ===============================================
 # page
 =============================================== */
+.service_page #policy.bg-blue {
+  background: #D3E5F4;
+}
+
+.service_page #schedule.bg-yellow {
+  background: #F7EDA0;
+}
+
+.service_page #address.bg-orange {
+  background: #F8E2CF;
+}
+
+.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(5)::before {
+  background-image: url(../images/icon/1400.svg);
+}
+
+.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(6)::before {
+  background-image: url(../images/icon/1500.svg);
+}
+
+#ponte {
+  /*  ========ご利用の流れ=======  */
+  /*  ========ご利用の流れ詳細=======  */
+  /*  ========お気軽にご相談ください=======  */
+}
+@media (min-width: 1024px) {
+  #ponte .flow-plus {
+    max-width: 100% !important;
+    flex-wrap: nowrap;
+    row-gap: 28px !important;
+  }
+}
+@media (min-width: 1024px) {
+  #ponte .flow-outer .flow-block .flow-card {
+    padding: 56px 12px 32px 12px;
+    min-height: 260px;
+  }
+}
+#ponte .flow-outer .flow-block .flow-card .pc-br {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #ponte .flow-outer .flow-block .flow-card .pc-br {
+    display: block;
+    width: 100%;
+    background: #DAE8C0;
+  }
+}
+#ponte .bg-green-4th::after {
+  content: "";
+  background-image: url("../images/icon/pin_green.svg");
+}
+@media (min-width: 1024px) {
+  #ponte .bg-green-4th::after {
+    left: 50%;
+    transform: translateX(460px);
+  }
+}
+#ponte .bg-green-4th ul .flow-li-plus {
+  border-bottom: 1px dashed #ACD086;
+}
+#ponte .flow-contact-plus {
+  box-shadow: 3px 4px 0 0 #ACD086;
+}
+
 /*  ===============================================
 #  page
 ===============================================  */
@@ -2794,4 +2859,4 @@ footer small {
 =============================================== */
 /* ===============================================
 # 投稿記事ページ
-=============================================== *//*# sourceMappingURL=style.css.map */
+=============================================== */

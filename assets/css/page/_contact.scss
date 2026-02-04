@@ -1,100 +1,148 @@
 @use "../global" as *;
 
 /* ===============================================
-# page
+# page contact
 =============================================== */
 
 #contact {
-    h4 {
-        z-index: 3;
-    }
-  .top-bg {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: relative;
 
-    -webkit-mask-image: url("../images/svg/wave-top-mv.svg");
-    mask-image: url("../images/svg/wave-top-mv.svg");
 
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-
-    -webkit-mask-size: 100% auto;
-    mask-size: 100% auto;
-
-    -webkit-mask-position: center top;
-    mask-position: center top;
-
-    @media (min-width: 600px) {
-      top: 120px;
-    }
-
-    @media (min-width: 1240px) {
-      top: 160px;
-
-      -webkit-mask-repeat: repeat-x;
-      mask-repeat: repeat-x;
-
-      -webkit-mask-size: 100% auto;
-      mask-size: 100% auto;
-    }
+  .wave-top {
+    max-height: 80px;
+    // top: 120px;
   }
 
-  #tell-container {
+  #tell-contact {
     position: relative;
     width: 100%;
-    padding: 0 16px;
+    padding-bottom: 40px;
     z-index: 2;
 
     h3 {
-      padding-top: 4px;      
+      padding-top: 0;
+      padding-bottom: 12px;
+      margin-bottom: 4px;
       border-bottom: 1px solid $text;
     }
 
     .tell-outer {
-        margin: 0 auto;
-        max-width: 1200px;
+      margin: 0 auto;
+      max-width: 1200px;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 600px) {
+        flex-direction: row;
+      }
+
+      .tell-card {
+        padding: 12px;
+        width: 80%;
+        border-bottom: 1px dashed $text;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
 
-        .tell-brock {
-            padding: 12px;
-            width: 50%;
-            border-bottom: 1px dashed $text;
+        position: relative;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        @media (min-width: 600px) {
+          width: 40%;
 
-            .tell-title {
-                margin-bottom: 4px;
-                border-bottom: 1px solid $green-2nd;
+          &:nth-of-type(3),
+          &:nth-of-type(4) {
+            border-bottom: 0;
+          }
+
+          &:nth-of-type(odd) {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 10%;
+              right: 0%;
+              height: 80%;
+              border-right: 1px dashed $text;
             }
-            p {
-                text-align: center;
-
-            }
-            // tell-title
-
-            .tell-flex {
-                display: flex;
-                align-items: center;
-
-            }
-            // tell-flex
-
+          }
         }
-        // tell-brock
+        // @media (min-width: 600px)
 
+        @media (min-width: 786px) {
+          width: 22%;
+          border-bottom: 0;
 
+          &:nth-of-type(2) {
+            &::after {
+              content: "";
+              position: absolute;
+              top: 10%;
+              right: 0%;
+              height: 80%;
+              border-right: 1px dashed $text;
+            }
+          }
+        }
+
+        .tell-title {
+          padding-bottom: 2px;
+        }
+        // tell-title
+
+        .line-green {
+          border-bottom: 1px solid $green-3rd;
+        }
+        .line-pink {
+          border-bottom: 1px solid $pink-3rd;
+        }
+        .line-orange {
+          border-bottom: 1px solid $orange-3rd;
+        }
+        .line-blue {
+          border-bottom: 1px solid $blue-3rd;
+        }
+
+        p {
+          padding: 6px 0;
+          text-align: center;
+          font-size: 1.175rem;
+          font-weight: bold;
+        }
+        // tell-title
+
+        .tell-flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 4px;
+
+          .tell-number {
+            font-size: 1.375rem;
+            font-weight: bold;
+            padding-bottom: 4px;
+          }
+        }
+        // tell-flex
+      }
+      // tell-card
     }
     // tell-outer
   }
-  // #tell-container
+  // #tell-contact
+
+  #mail-contact {
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    padding: 10px 0 40px;
+    z-index: 2;
+  }
+
+  // #form
 }
 
 // #contact

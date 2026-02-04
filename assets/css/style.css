@@ -2076,76 +2076,171 @@ footer small {
 }
 
 /* ===============================================
-# page
+# page contact
 =============================================== */
-#contact h4 {
-  z-index: 3;
+#contact {
+  position: relative;
 }
-#contact .top-bg {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-mask-image: url("../images/svg/wave-top-mv.svg");
-  mask-image: url("../images/svg/wave-top-mv.svg");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% auto;
-  mask-size: 100% auto;
-  -webkit-mask-position: center top;
-  mask-position: center top;
+#contact .wave-top {
+  max-height: 80px;
 }
-@media (min-width: 600px) {
-  #contact .top-bg {
-    top: 120px;
-  }
-}
-@media (min-width: 1240px) {
-  #contact .top-bg {
-    top: 160px;
-    -webkit-mask-repeat: repeat-x;
-    mask-repeat: repeat-x;
-    -webkit-mask-size: 100% auto;
-    mask-size: 100% auto;
-  }
-}
-#contact #tell-container {
+#contact #tell-contact {
   position: relative;
   width: 100%;
-  padding: 0 16px;
+  padding-bottom: 40px;
   z-index: 2;
 }
-#contact #tell-container h3 {
-  padding-top: 4px;
+#contact #tell-contact h3 {
+  padding-top: 0;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
   border-bottom: 1px solid #B44906;
 }
-#contact #tell-container .tell-outer {
+#contact #tell-contact .tell-outer {
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#contact #tell-container .tell-outer .tell-brock {
+@media (min-width: 600px) {
+  #contact #tell-contact .tell-outer {
+    flex-direction: row;
+  }
+}
+#contact #tell-contact .tell-outer .tell-card {
   padding: 12px;
-  width: 50%;
+  width: 80%;
   border-bottom: 1px dashed #B44906;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
-#contact #tell-container .tell-outer .tell-brock .tell-title {
-  margin-bottom: 4px;
-  border-bottom: 1px solid #85D136;
+@media (min-width: 600px) {
+  #contact #tell-contact .tell-outer .tell-card {
+    width: 40%;
+  }
+  #contact #tell-contact .tell-outer .tell-card:nth-of-type(3), #contact #tell-contact .tell-outer .tell-card:nth-of-type(4) {
+    border-bottom: 0;
+  }
+  #contact #tell-contact .tell-outer .tell-card:nth-of-type(odd)::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    height: 80%;
+    border-right: 1px dashed #B44906;
+  }
 }
-#contact #tell-container .tell-outer .tell-brock p {
+@media (min-width: 786px) {
+  #contact #tell-contact .tell-outer .tell-card {
+    width: 22%;
+    border-bottom: 0;
+  }
+  #contact #tell-contact .tell-outer .tell-card:nth-of-type(2)::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    height: 80%;
+    border-right: 1px dashed #B44906;
+  }
+}
+#contact #tell-contact .tell-outer .tell-card .tell-title {
+  padding-bottom: 2px;
+}
+#contact #tell-contact .tell-outer .tell-card .line-green {
+  border-bottom: 1px solid #ACD086;
+}
+#contact #tell-contact .tell-outer .tell-card .line-pink {
+  border-bottom: 1px solid #F2B5C9;
+}
+#contact #tell-contact .tell-outer .tell-card .line-orange {
+  border-bottom: 1px solid #F5AC71;
+}
+#contact #tell-contact .tell-outer .tell-card .line-blue {
+  border-bottom: 1px solid #93C7ED;
+}
+#contact #tell-contact .tell-outer .tell-card p {
+  padding: 6px 0;
   text-align: center;
+  font-size: 1.175rem;
+  font-weight: bold;
 }
-#contact #tell-container .tell-outer .tell-brock .tell-flex {
+#contact #tell-contact .tell-outer .tell-card .tell-flex {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+#contact #tell-contact .tell-outer .tell-card .tell-flex .tell-number {
+  font-size: 1.375rem;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+#contact #mail-contact {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  padding: 10px 0 40px;
+  z-index: 2;
+}
+
+/* ===============================================
+# page privacy
+=============================================== */
+#privacy {
+  position: relative;
+  width: 100%;
+}
+#privacy h4 {
+  margin: 0 auto 12px;
+  padding: 8px 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #fff;
+  font-size: 1.5rem;
+  border-radius: 24px;
+}
+#privacy .wave-top {
+  max-height: 80px;
+}
+#privacy #privacy-policy {
+  position: relative;
+  width: 100%;
+  padding: 12px 16px 40px;
+  z-index: 2;
+}
+#privacy #privacy-policy h3 {
+  padding-top: 0;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #B44906;
+}
+#privacy #privacy-policy .privacy-outer {
+  margin: 0 auto;
+  padding: 16px 16px 40px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  #privacy #privacy-policy .privacy-outer {
+    padding: 32px 28px 40px;
+  }
+}
+#privacy #privacy-policy .privacy-outer .privacy-block {
+  padding-bottom: 40px;
+  line-height: 1.5;
 }
 
 /* ===============================================

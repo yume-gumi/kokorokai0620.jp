@@ -4,94 +4,94 @@
 
     <h4 class="service-head">お問い合わせ</h4>
 
-    <div class="top-bg wave-yellow"></div>
+    <div class="wave-top wave-yellow"></div>
 
 
-    <section id="tell-container">
-         
+    <section id="tell-contact" class="bg-yellow">
+
         <h3>お電話でのお問い合わせ</h3>
         <div class="tell-outer">
 
-        <div class="tell-brock">
+            <div class="tell-card">
 
-            <span class="tell-title">
-                就労継続支援B型事業所
-            </span>
+                <span class="tell-title line-green">
+                    就労継続支援B型事業所
+                </span>
 
-            <p>ぷらす</p>
+                <p>ぷらす</p>
 
-            <div class="tell-flex">
-                <div class="tell-image">
-                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                <div class="tell-flex">
+                    <div class="tell-image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                    </div>
+                    <div class="tell-number">
+                        049-293-6729
+                    </div>
                 </div>
-                <div class="tell-number">
-                    049-293-6729
-                </div>
+                <!-- tell-flex -->
+
             </div>
-            <!-- tell-flex -->
+            <!-- tell-card -->
+            <div class="tell-card">
 
-        </div>
-        <!-- tell-brock -->
-        <div class="tell-brock">
+                <span class="tell-title line-pink">
+                    就労継続支援B型事業所
+                </span>
 
-            <span class="tell-title">
-                就労継続支援B型事業所
-            </span>
+                <p>ぽんて</p>
 
-            <p>ぽんて</p>
-
-            <div class="tell-flex">
-                <div class="tell-image">
-                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                <div class="tell-flex">
+                    <div class="tell-image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                    </div>
+                    <div class="tell-number">
+                        049-290-3966
+                    </div>
                 </div>
-                <div class="tell-number">
-                049-290-3966
-                </div>
+                <!-- tell-flex -->
+
             </div>
-            <!-- tell-flex -->
+            <!-- tell-card -->
+            <div class="tell-card">
 
-        </div>
-        <!-- tell-brock -->
-        <div class="tell-brock">
+                <span class="tell-title line-orange">
+                    地域活動センター
+                </span>
 
-            <span class="tell-title">
-                地域活動センター
-            </span>
+                <p>さくら</p>
 
-            <p>さくら</p>
-
-            <div class="tell-flex">
-                <div class="tell-image">
-                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                <div class="tell-flex">
+                    <div class="tell-image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                    </div>
+                    <div class="tell-number">
+                        049-293-6739
+                    </div>
                 </div>
-                <div class="tell-number">
-                049-293-6739
-                </div>
+                <!-- tell-flex -->
+
             </div>
-            <!-- tell-flex -->
+            <!-- tell-card -->
+            <div class="tell-card">
 
-        </div>
-        <!-- tell-brock -->
-        <div class="tell-brock">
+                <span class="tell-title line-blue">
+                    相談支援
+                </span>
 
-            <span class="tell-title">
-                相談支援
-            </span>
+                <p>ぽんて</p>
 
-            <p>ぽんて</p>
-
-            <div class="tell-flex">
-                <div class="tell-image">
-                    <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                <div class="tell-flex">
+                    <div class="tell-image">
+                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="電話アイコン">
+                    </div>
+                    <div class="tell-number">
+                        049-290-3966
+                    </div>
                 </div>
-                <div class="tell-number">
-                049-290-3966
-                </div>
+                <!-- tell-flex -->
+
             </div>
-            <!-- tell-flex -->
-
-        </div>
-        <!-- tell-brock -->
+            <!-- tell-card -->
 
 
 
@@ -102,24 +102,26 @@
     <!-- tell-container -->
 
 
-    <section id="form" class="bg-yellow">
-        
+    <section id="mail-contact" class="bg-yellow">
+
         <?php the_content(); ?>
 
     </section>
-    <!-- ＃フォrm -->
-    
-
+    <!-- ＃mail-contact -->
 
 
     <?php
     $args  =  [
-        "top-wave"  =>  "blue",
-        "background"  =>  "yellow",
-        "no-wave"  =>  true,
+        "top-wave"  =>  "yellow",
+        "background"  =>  "blue",
+        "service"  =>  true
     ];
     get_template_part("parts/footer_top",  null, $args);
     ?>
+
+
+
+
 </main>
 
 <?php get_footer();  ?>

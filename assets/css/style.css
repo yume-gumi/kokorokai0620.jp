@@ -2184,9 +2184,176 @@ footer small {
 #contact #mail-contact {
   position: relative;
   width: 100%;
-  height: 40vw;
-  padding: 10px 0 40px;
+  height: 100%;
+  padding: 10px 16px 40px;
   z-index: 2;
+}
+#contact #mail-contact #form {
+  margin: 0 auto;
+  padding: 16px 16px 40px;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 2px 4px 4px 0 #cbcbcb;
+}
+#contact #mail-contact #form h3 {
+  padding-top: 8px;
+  border-bottom: 1px solid #B44906;
+}
+#contact #mail-contact #form .form-desc {
+  padding: 16px 0;
+  text-align: center;
+}
+#contact #mail-contact #form .form-outer {
+  margin: 0 auto;
+  max-width: 700px;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer {
+    max-width: 560px;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner {
+  padding-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner .form-title {
+  text-align: center;
+  width: 350px;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner .form-title {
+    text-align: left;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner .form-title::after {
+  content: " *";
+  color: #D95B0D;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#contact #mail-contact #form .form-outer .form-inner p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner p {
+    max-width: 600px;
+    flex-direction: row;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner p .reply {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 350px;
+  text-align: center;
+  display: block;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #B44906;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner p .reply {
+    width: 350px;
+    text-align: left;
+    border: none;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner p .wpcf7-radio {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+}
+#contact #mail-contact #form .form-outer .form-inner p .wpcf7-radio .wpcf7-list-item {
+  margin: 0;
+  padding-top: 6px;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner p .wpcf7-radio {
+    padding-bottom: 16px;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner span {
+  width: 100%;
+}
+#contact #mail-contact #form .form-outer .form-inner span .from-text {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: 30px;
+  border: 1px solid #F8E2CF;
+}
+@media (min-width: 786px) {
+  #contact #mail-contact #form .form-outer .form-inner span .from-text {
+    text-align: left;
+  }
+}
+#contact #mail-contact #form .form-outer .form-inner .form-dropdown {
+  display: block;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 350px;
+  height: 30px;
+  border: 1px solid #F8E2CF;
+  position: relative;
+}
+#contact #mail-contact #form .form-outer .form-inner .form-dropdown::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-70%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #F8E2CF;
+  border-bottom: 2px solid #F8E2CF;
+  pointer-events: none;
+}
+#contact #mail-contact #form .form-outer .form-inner .form-message {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  height: 7rem;
+  border: 1px solid #F8E2CF;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row {
+  padding: 16px 0;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row .wpcf7-list-item {
+  margin: 0;
+}
+#contact #mail-contact #form .form-outer .privacy-text {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#contact #mail-contact #form .form-outer .privacy-text a {
+  display: inline-block;
+  color: #F5AC71;
+  text-decoration: underline;
+}
+#contact #mail-contact #form .form-outer .send-btn {
+  display: block;
+  text-align: center;
 }
 
 /* ===============================================

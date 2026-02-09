@@ -17,12 +17,10 @@
 
                     <div class="catch_copy-outer">
 
-                        <p class="catch_copy">一人の幸せが、水の波紋のように<br>
-                            周りに広がり、地域の幸せに繋がる ー</p>
-                        <p class="catch_copy">誰もが幸せに暮らせるように、<br>
-                            最初の小さな幸せづくりを、</p>
-                        <p class="catch_copy">そして、一人ひとりが輝ける<br>
-                            瞬間を創造していきます。</p>
+                        <p class="catch_copy">
+                        ひとりの小さな幸せが、波紋のように<br>やさしく広がり、地域の幸せへ</p>
+                        <p class="catch_copy">誰もが自分らしく輝ける瞬間を<br>丁寧につくっていきます。</p>
+
                     </div>
                 </div>
                 <!--  kv-photo  -->
@@ -54,31 +52,52 @@
         <div class="news-container">
 
 
-
             <div class="news-outer">
 
+            <?php
+            // ページ番号の取得
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+            $args = array(
+                'post_type' => 'post', //投稿タイプ
+                'posts_per_page' => 4, //１ページの表示数
+                'paged' => $paged //何ページ目の情報を取得するかを指定
+            );
 
-                <a href="news-page.html">
+            // 以下、ループ構造
+            $the_query = new WP_Query($args);
+            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
+            ?>
+
+                <a href="<?php the_permalink(); ?>">
                     <div class="news-brock">
 
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
+                        <img src="<?= get_thumbnail(); ?>" alt="<?php the_title(); ?>">
 
                         <div class="date">
-                            <span>25/12/31</span>
+                            <span> <?php the_time("Y/m/d"); ?></span>
                             <p>お知らせ</p>
                         </div>
 
                         <div class="news-inner">
 
-                            <p class="news-title">タイトルタイトルタイトルタイトル</p>
-                            <p class="news-text">テキストテキストテキストテキスト</p>
+                            <p class="news-title">
+                                <?php the_title(); ?>
+                            </p>
+
+                            <p class="news-text">
+                                <?php the_excerpt(); ?>
+                            </p>
 
                         </div>
 
                     </div>
                 </a>
+                <?php
+                endwhile;
+            endif;
+            ?>
 
-                <a href="news-page.html">
+                <!-- <a href="news-page.html">
                     <div class="news-brock">
 
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
@@ -134,7 +153,7 @@
                         </div>
 
                     </div>
-                </a>
+                </a> -->
 
             </div>
             <!--  news-outer  -->
@@ -160,7 +179,7 @@
 
                 <div class="service-block">
                     <a href="<?php echo  esc_url(home_url('/service/ponte/'));  ?>">
-                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="就労継続支援B型
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_simple.svg" alt="就労継続支援B型
                                                 ぽんて">
                         <p>就労継続支援B型<br>
                             ぽんて</p>
@@ -169,7 +188,7 @@
 
                 <div class="service-block">
                     <a href="<?php echo  esc_url(home_url('/service/plus/'));  ?>">
-                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="就労継続支援B型ぷらす">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_simple.svg" alt="就労継続支援B型ぷらす">
                         <p class="service-title">就労継続支援B型<br>
                             ぷらす</p>
                     </a>
@@ -177,7 +196,7 @@
 
                 <div class="service-block">
                     <a href="<?php echo  esc_url(home_url('/service/sakura/'));  ?>">
-                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="地域活動支援センターさくら">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_simple.svg" alt="地域活動支援センターさくら">
                         <p class="service-title">地域活動支援センター<br>
                             さくら</p>
                     </a>
@@ -185,7 +204,7 @@
 
                 <div class="service-block">
                     <a href="<?php echo  esc_url(home_url('/service/ponte-pw/'));  ?>">
-                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/svg/logo.svg" alt="相談支援ぽんて">
+                        <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_simple.svg" alt="相談支援ぽんて">
                         <p class="service-title">相談支援<br>
                             ぽんて</p>
                     </a>

@@ -2877,12 +2877,12 @@ footer small {
   }
 }
 #top #news .news-container .news-outer a .news-brock .date p {
-  padding: 0 10px;
+  padding: 2px 8px;
   display: inline-block;
   font-size: 0.875rem;
   color: white;
   background: #D17E36;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 @media (min-width: 600px) {
   #top #news .news-container .news-outer a .news-brock .date p {
@@ -3126,4 +3126,80 @@ footer small {
 =============================================== */
 /* ===============================================
 # 投稿記事ページ
-=============================================== *//*# sourceMappingURL=style.css.map */
+=============================================== */
+/* ===============================================
+# news
+=============================================== */
+#news {
+  position: relative;
+  width: 100% h4;
+  width-margin: 0 auto 12px;
+  width-padding: 8px 16px;
+  width-width: fit-content;
+  width-background: #fff;
+  width-font-size: 1.5rem;
+  width-border-radius: 24px;
+}
+#news .wave-top {
+  max-height: 80px;
+}
+#news #news-home {
+  width: 100%;
+  padding: 12px 16px 40px;
+  z-index: 2;
+}
+#news #news-home .news-outer {
+  margin: 0 auto;
+  padding: 16px 40px 40px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.8);
+}
+#news #news-home .news-outer .news-inner .news-card {
+  padding: 8px 0;
+  width: 100%;
+  line-height: 1.5;
+  border-bottom: 1px dashed #F8E2CF;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#news #news-home .news-outer .news-inner .news-card .date-outer {
+  display: flex;
+  justify-content: space-between;
+}
+#news #news-home .news-outer .news-inner .news-card .date-outer .date {
+  font-weight: bold;
+  font-size: 1rem;
+}
+#news #news-home .news-outer .news-inner .news-card .date-outer .category {
+  padding: 0 8px;
+  color: #fff;
+  font-size: 0.875rem;
+  background: #D17E36;
+  border-radius: 8px;
+}
+#news #news-home .news-outer .news-inner .news-card .title {
+  overflow: hidden;
+  height: 1.2rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#news #news-home .news-outer .news-btn-outer {
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+#news #news-home .news-outer .news-btn-outer .news-btn {
+  padding: 8px 12px;
+  color: #fff;
+  background: #B44906;
+  border-radius: 10px;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=style.css.map */

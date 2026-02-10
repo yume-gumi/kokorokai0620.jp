@@ -1,0 +1,109 @@
+@use "../global" as *;
+/* ===============================================
+# news
+=============================================== */
+
+#news {
+  position: relative;
+  width: 100% h4 {
+    margin: 0 auto 12px;
+    padding: 8px 16px;
+    width: fit-content;
+    background: $white;
+    font-size: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .wave-top {
+    max-height: 80px;
+  }
+
+  #news-home {
+    width: 100%;
+    padding: 12px 16px 40px;
+    z-index: 2;
+
+    .news-outer {
+      margin: 0 auto;
+      padding: 16px 40px 40px;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+
+      border-radius: 24px;
+      background: rgba($white, 0.8);
+
+      @media (min-width: 600px) {
+        //   flex-direction: row;
+      }
+
+      .news-inner {
+        .news-card {
+          padding: 8px 0;
+          width: 100%;
+          line-height: 1.5;
+          border-bottom: 1px dashed $orange;
+
+          display: flex;
+          flex-direction: column;
+
+          position: relative;
+
+          .date-outer {
+            display: flex;
+            justify-content: space-between;
+
+            .date {
+              font-weight: bold;
+              font-size: 1rem;
+            }
+
+            .category {
+              padding: 0 8px;
+              color: $white;
+              font-size: 0.875rem;
+              background: $orange-2nd;
+              border-radius: 8px;
+            }
+          }
+          // date-outer
+
+          .title {
+            overflow: hidden;
+            height: 1.2rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
+        }
+        // news-card
+      }
+
+      //   news-inner
+
+      .news-btn-outer {
+        margin: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        .news-btn {
+          padding: 8px 12px;
+          color: $white;
+          background: $text;
+          border-radius: 10px;
+          font-size: 0.875rem;
+        }
+
+
+      }
+
+      //   news-btn-outer
+    }
+    // news-outer
+  }
+  // #news-home
+}
+// #news

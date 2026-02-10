@@ -77,7 +77,7 @@ function  GetNewsPostsTop()
   return  $my_posts;
 }
 
-    /*  ===============================================
+/*  ===============================================
     #  ページネーション
     ===============================================  */
 /**
@@ -173,7 +173,9 @@ function  create_individual_pages()
 {
   //  通常の固定ページ
   $pages  =  [
+    ['slug'  =>  'top',      'title'  =>  'トップ'],
     ['slug'  =>  'about',      'title'  =>  '会社概要'],
+    ['slug'  =>  'news',      'title'  =>  'お知らせ'],
     ['slug'  =>  'contact',  'title'  =>  'お問い合わせ'],
     ['slug'  =>  'privacy',  'title'  =>  'プライバシーポリシー'],
   ];
@@ -225,31 +227,6 @@ add_action('wp_enqueue_scripts',  'my_theme_enqueue_scripts');
 
 
 
-//  news
-
-function  post_has_archive($args, $post_type)
-{
-  if ('post'  ==  $post_type) {
-    $args['rewrite']  =  true;
-    $args['has_archive']  =  'news'; //スラッグ名
-  }
-  return  $args;
-}
-add_filter('register_post_type_args', 'post_has_archive', 10, 2);
-
-//  WordPressのデフォルトの投稿アーカイブを「news」ページに設定
-function  custom_news_archive_page()
-{
-  $news_page  =  get_page_by_path('news');
-  if ($news_page) {
-    //  「投稿ページ」の設定を「お知らせ」ページに自動設定
-    update_option('page_for_posts',  $news_page->ID);
-    //  「フロントページの表示」を「固定ページ」に設定し、フロントページは設定しない（投稿ページが設定されるため）
-    update_option('show_on_front',  'posts');  //  この行で「最新の投稿」に設定
-  }
-}
-add_action('init',  'custom_news_archive_page');
-
 //  パーマリンクを自動的に再生成する
 function  auto_flush_rewrite_rules()
 {
@@ -266,3 +243,37 @@ add_theme_support("post-thumbnails");
 
 //  管理バー非表示
 add_filter('show_admin_bar',  '__return_false');
+
+
+//  抜粋の文字数を制限する（お知らせ）
+
+function my_excerpt_length($length) {
+  return 30; // 表示したい文字数
+}
+add_filter('excerpt_mblength', 'my_excerpt_length');
+
+
+/**
+ * 投稿内の最初の画像を取得する関数
+ */
+function get_thumbnail() {
+  global $post;
+  
+  // global $post が空（ループ外など）の場合は終了
+  if ( !isset($post) ) return get_template_directory_uri() . '/images/default.png';
+
+  $first_img = '';
+  
+  // 投稿内のHTMLから<img>タグを検索
+  if ( preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches) ) {
+      // 画像が見つかった場合、そのURLを取得
+      $first_img = $matches[1][0];
+  }
+
+  if ($first_img) {
+      return $first_img;
+  } else {
+      // デフォルト画像のパス
+      return get_template_directory_uri() . '/assets/images/noimage.png';
+  }
+}

@@ -16,9 +16,9 @@
         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_mv.png" alt="" class="ぽんてmainvisual">
 
         <div class="cc bg-pink-2nd">
-          <p>長く在宅生活を送られている方の社会生活が、<br>
-            労働やその他の活動を通していきいきしたものに<br>
-            なるようお手伝いします。</p>
+          <p>長く在宅生活を送られている方の<br class="sp-br">社会生活が、<br class="pc-br">
+            労働やその他の活動を<br class="sp-br">通していきいきしたものに<br class="pc-br">
+            なるよう<br class="sp-br">お手伝いします。</p>
         </div>
       </div>
 
@@ -372,7 +372,7 @@
       <!--  address-outer  -->
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12932.859472812632!2d139.5089669668786!3d35.868250949099235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcb288e45ea1%3A0xd155c15816bbd7fd!2z77yI5qCq77yJ44Kr44Oz44OI44O85ZWG5LqL!5e0!3m2!1sja!2sjp!4v1770174914341!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.0454264083346!2d139.523132311752!3d35.872403619333454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcb288efae59%3A0x4c32e0a3d4ab7a16!2z44CSMzU2LTAwMjcg5Z-8546J55yM44G144GY44G_6YeO5biC5p2-5bGx77yR5LiB55uu77yS4oiS77yV!5e0!3m2!1sja!2sjp!4v1770265152614!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="access">

@@ -27,6 +27,34 @@
 
       /*  ========ご利用の流れ=======  */
 
+ .cc {
+    p {
+
+      .pc-br {
+        display: none;
+
+        @media (min-width: 600px) {
+          display: block;
+        }
+      }
+
+      .sp-br {
+        display: block;
+
+        @media (min-width: 600px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+    // p
+  }
+
+  // cc
+
+
   .flow-plus {
 
     @media (min-width: 1024px) {

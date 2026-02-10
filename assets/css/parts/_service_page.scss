@@ -1,0 +1,754 @@
+@use "../global" as *;
+
+/* ===============================================
+# 事業内容
+=============================================== */
+
+.service_page {
+  position: relative;
+  z-index: 2;
+
+  .service-head {
+    margin: 0 auto 12px;
+    padding: 8px 16px;
+    width: fit-content;
+    background: $white;
+    font-size: 1.5rem;
+    border-radius: 24px;
+  }
+
+  .top-bg {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    max-height: 600px;
+    z-index: 1;
+
+    -webkit-mask-image: url("../images/svg/wave-top-mv.svg");
+    mask-image: url("../images/svg/wave-top-mv.svg");
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-size: 100% auto;
+    mask-size: 100% auto;
+
+    -webkit-mask-position: center top;
+    mask-position: center top;
+
+    @media (min-width: 600px) {
+      top: 300px;
+    }
+
+    @media (min-width: 1240px) {
+      top: 400px;
+
+      -webkit-mask-repeat: repeat-x;
+      mask-repeat: repeat-x;
+
+      -webkit-mask-size: 100% auto;
+      mask-size: 100% auto;
+    }
+  }
+
+  // bg-img
+
+  #top-mv {
+    position: relative;
+    z-index: 2;
+
+    .mv-container {
+      margin: 0 auto;
+      width: 100%;
+
+      .mv-frame {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: calc(100% - 24px);
+        z-index: 2;
+
+        img {
+          display: block;
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+        }
+
+        .cc {
+          position: relative;
+          margin: -2% auto 0;
+          padding: 12px 28px;
+          white-space: nowrap;
+          width: fit-content;
+          border-radius: 24px;
+          z-index: 3;
+
+          @media (min-width: 600px) {
+            margin-top: -4%;
+            margin-left: 2%;
+            padding: 18px 28px;
+          }
+
+          p {
+            font-size: 1.125em;
+            color: $white;
+          }
+        }
+
+        // .cc-plus
+      }
+
+      // .plus-frame
+
+      /* ========事業内容キャッチコピー======= */
+
+      .cc-outer {
+        margin: 0 auto;
+        padding: 20px 0;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 600px) {
+          padding: 12px 24px 0;
+        }
+
+        @media (min-width: 786px) {
+          width: 100%;
+        }
+
+        .cc-inner {
+          padding-bottom: 16px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          max-width: 900px;
+
+          @media (min-width: 786px) {
+            padding-top: 0;
+            flex-direction: row-reverse;
+            img {
+              width: 40%;
+            }
+          }
+
+          @media (min-width: 786px) {
+            &:nth-child(even) {
+              flex-direction: row;
+            }
+          }
+
+          img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+          }
+
+
+          .cc-text {
+            @media (min-width: 600px) {
+              padding: 0 8px;
+            }
+            p {
+              padding: 0 28px;
+              align-self: start;
+              line-height: 1.5;
+            }
+
+            // p
+
+            .cc-2nd-inner {
+              padding-top: 8px;
+            }
+          }
+        }
+
+        // .cc-inner
+      }
+
+      // .cc-outer
+    }
+
+    // .service-container
+  }
+
+  // #top-mv
+
+  /* ========事業所方針======= */
+
+  #policy {
+    background: $orange;
+
+    .policy-container {
+      margin: 0 auto;
+      padding: 12px 0 20px;
+      width: 100%;
+
+      .policy-outer {
+        margin: 0 auto;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 376px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          max-width: 900px;
+        }
+
+        .policy-brock {
+          max-width: 240px;
+          height: auto;
+        }
+
+        // .policy-brock
+      }
+
+      // .policy-outer
+    }
+
+    // .policy-container
+  }
+
+  // #policy
+
+  /* ========1日のスケジュール======= */
+
+  #schedule {
+    background: $pink;
+    padding-bottom: 20px;
+
+    .timeline-container {
+      margin: 0 auto;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 600px;
+
+      @media (min-width: 1024px) {
+        max-width: 800px;
+      }
+
+      .timeline {
+        margin-left: 50px;
+        padding-top: 20px;
+        position: relative;
+        border-left: 2px solid $pink-2nd;
+
+        .timeline-brock {
+          margin-bottom: 20px;
+          padding-left: 30px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: -21px;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            border-radius: 50%;
+          }
+
+          &:nth-child(1)::before {
+            background-image: url("../images/icon/9000.svg");
+          }
+
+          &:nth-child(2)::before {
+            background-image: url("../images/icon/1000.svg");
+          }
+
+          &:nth-child(3)::before {
+            background-image: url("../images/icon/1200.svg");
+          }
+
+          &:nth-child(4)::before {
+            background-image: url("../images/icon/1300.svg");
+          }
+
+          &:nth-child(5)::before {
+            background-image: url("../images/icon/1500.svg");
+          }
+
+          // 時計アイコン
+
+          .time {
+            padding-bottom: 2px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            border-bottom: 2px dotted $pink-2nd;
+            width: fit-content;
+          }
+
+          img {
+            margin: 0 auto;
+            display: block;
+            padding-top: 8px;
+            max-width: 240px;
+            height: auto;
+          }
+
+          .timeline-text {
+            padding: 12px 20px 4px;
+            line-height: 1.8;
+
+            p {
+              line-height: 1.6;
+            }
+          }
+        }
+
+        // .timeline-brock
+      }
+
+      // .timeline
+    }
+
+    // .timeline-container
+  }
+
+  // schedule
+
+  /* ========ご利用の流れ======= */
+
+  #flow {
+    .flow-container {
+      margin: 0 auto;
+      padding-bottom: 20px;
+      width: 100%;
+
+      .flow-outer {
+        margin: 20px auto 30px;
+        padding: 0 20px 0 30px;
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (min-width: 1024px) {
+          max-width: 900px;
+          flex-direction: row;
+          justify-content: center;
+          align-items: stretch;
+        }
+
+        @media (min-width: 1240px) {
+          gap: 20px;
+        }
+
+        .flow-brock {
+          display: flex;
+          position: relative;
+
+          @media (min-width: 1024px) {
+            width: 22%;
+            max-width: 260px;
+          }
+
+          .step-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -28px;
+            width: 80px;
+            height: 80px;
+            z-index: 2;
+
+            @media (min-width: 1024px) {
+              top: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .flow-card {
+            width: 100%;
+            background: $white;
+            border-radius: 24px;
+            padding: 12px 20px 20px 48px;
+            box-shadow: 2px 4px 4px 0 $gray;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media (min-width: 1024px) {
+              padding: 56px 20px 32px 20px;
+              justify-content: start;
+            }
+
+            .flow-title {
+              font-size: 1.5rem;
+              padding-right: 16px;
+              font-weight: bold;
+              text-align: center;
+
+              @media (min-width: 1024px) {
+                padding-bottom: 4px;
+                padding-right: 0px;
+              }
+            }
+
+            // .flow-title
+
+            p {
+              line-height: 1.5;
+              padding-left: 4px;
+            }
+
+            .step1 {
+              color: $green-3rd;
+            }
+
+            .step2 {
+              color: $orange-3rd;
+            }
+
+            .step3 {
+              color: $pink-3rd;
+            }
+
+            .step4 {
+              color: $blue-3rd;
+            }
+
+            .step5 {
+              color: $yellow-2nd;
+            }
+
+            .step6 {
+              color: $green-3rd;
+            }
+          }
+
+          // flow-card
+        }
+
+        // flow-brock
+      }
+
+      // flow-outer
+
+      /* ========ご利用の流れ詳細======= */
+
+      .flow-2nd-outer {
+        margin: 40px 0;
+        padding: 12px 16px;
+        width: auto;
+
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0 4px 10px -4px $gray;
+
+        @media (min-width: 786px) {
+          margin: 40px auto 0;
+          width: 100%;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -28px;
+          right: 20px;
+          width: 60px;
+          height: 60px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          z-index: 5;
+
+          @media (min-width: 1024px) {
+            left: 50%;
+            transform: translateX(460px);
+          }
+        }
+
+        ul {
+          margin: 0 auto;
+          max-width: 780px;
+
+          li {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+
+
+            @media (min-width: 1024px) {
+              flex-direction: row;
+            }
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .flow-2nd-title {
+              padding-bottom: 8px;
+              min-width: 160px;
+              font-size: 1.125rem;
+              font-weight: bold;
+              text-align: center;
+
+              @media (min-width: 1024px) {
+                text-align: left;
+              }
+            }
+
+            p {
+              font-size: 1rem;
+              line-height: 1.6;
+
+              span {
+                display: block;
+                font-size: 0.875rem;
+                margin-top: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      // .flow-2nd-outer
+
+      /* ========お気軽にご相談ください======= */
+
+      .flow-contact {
+        margin: 40px auto 20px;
+        max-width: 360px;
+        background: $white;
+        border-radius: 24px;
+        padding: 20px 32px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 786px) {
+          max-width: 760px;
+          padding: 28px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          flex: 1;
+        }
+
+        h4 {
+          font-size: 1.25rem;
+          font-weight: bold;
+          padding-bottom: 8px;
+
+          @media (min-width: 786px) {
+            order: 2;
+          }
+        }
+
+        .disc {
+          font-size: 1rem;
+          padding-bottom: 8px;
+
+          @media (min-width: 786px) {
+            order: 1;
+            width: 100%;
+            padding-bottom: 12px;
+          }
+        }
+
+        .flow-contact-inner {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          @media (min-width: 786px) {
+            order: 3;
+          }
+
+          .tell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+
+            .tell-number {
+              font-size: 1.6rem;
+              padding-bottom: 4px;
+            }
+          }
+
+          span {
+            display: block;
+            font-size: 0.875rem;
+            padding-bottom: 10px;
+          }
+        }
+
+        // .flow-contact-inner
+
+        .btn {
+          // width:;
+          @media (min-width: 786px) {
+            order: 4;
+          }
+        }
+
+        h4,
+        .flow-contact-inner,
+        .btn {
+          flex: 1;
+          text-align: center;
+        }
+      }
+
+      // .flow-contact
+    }
+
+    // .flow-container
+  }
+
+  // #flow
+
+  /* =======アドレス======= */
+
+  #address {
+    background: $yellow;
+
+    .address-container {
+      padding: 20px 0;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+
+      @media (min-width: 786px) {
+        max-width: 780px;
+      }
+
+      .address-outer {
+        padding: 8px 20px;
+        margin: 0 auto;
+        width: 100%;
+
+        @media (min-width: 786px) {
+          max-width: 600px;
+        }
+
+        ul {
+          li {
+            padding: 10px 0;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            border-bottom: 1px dashed $text;
+
+            div {
+              width: 130px;
+              flex-shrink: 0;
+            }
+
+            .address-tell {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              flex: 1;
+              gap: 2px;
+
+              @media (min-width: 786px) {
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+              }
+            }
+
+            p {
+            }
+          }
+
+          // li
+        }
+
+        // ul
+      }
+
+      // .address-container
+    }
+
+    // address-container
+
+    .map {
+      position: relative;
+      margin: 20px auto;
+      aspect-ratio: 16 /9;
+      width: 100%;
+      height: 100%;
+      
+      iframe {
+        padding: 0 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    // map
+
+    .access {
+      padding: 8px 0px;
+
+      .access-title {
+        font-size: 1.25rem;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $text;
+      }
+
+      .access-brock {
+        .access-tool {
+          margin: 8px;
+          padding-bottom: 12px;
+          border-bottom: 1px dashed $text;
+        }
+
+        // .access-tool
+
+        .access-01 {
+          padding: 4px 0;
+        }
+
+        .access-02 {
+          padding: 4px 0 4px;
+        }
+
+        .access-03 {
+          padding: 0px 0 4px 1rem;
+
+          p {
+            padding-top: 8px;
+
+            span {
+              border-bottom: 1px solid $yellow-2nd;
+            }
+          }
+        }
+      }
+
+      // .access-brock
+      .access-car {
+        padding-top: 12px;
+      }
+    }
+    // .access
+  }
+  // #address
+}
+// #service-page

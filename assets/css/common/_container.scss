@@ -1,8 +1,9 @@
+@use "../global" as *;
+
 .container {
   width: 100%;
   padding: 0 3rem;
 }
-
 
 .svg-outer {
   line-height: 0;
@@ -15,155 +16,181 @@
   height: auto;
   z-index: -1;
   margin-bottom: 0;
-
 }
-  /* ========ウェーブライン======= */
 
 
-  .wave-top {
-    width: 100%;
-    height: 40px;
-    
-    -webkit-mask-image: url("../images/svg/wave-top-sp.svg");
-    mask-image: url("../images/svg/wave-top-sp.svg");
-    
-    -webkit-mask-repeat: repeat-x;
-    mask-repeat: repeat-x;
-    
-    -webkit-mask-position: center top;
-    mask-position: center top;
-    
-    -webkit-mask-size: 786px auto;
-    mask-size: 786px auto;
-    
-    @media (min-width: 600px) {
-      // background-image: url("../images/svg/wave-top-pc.svg");
-      height: 100px;
-      -webkit-mask-size: 1920px auto;
-      mask-size: 1920px auto;
-    }
+/* ========ウェーブライン======= */
+
+.wave-top {
+  width: 100%;
+  height: 40px;
+
+  -webkit-mask-image: url("../images/svg/wave-top-sp.svg");
+  mask-image: url("../images/svg/wave-top-sp.svg");
+
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+
+  -webkit-mask-position: center top;
+  mask-position: center top;
+
+  -webkit-mask-size: 786px auto;
+  mask-size: 786px auto;
+
+  @media (min-width: 600px) {
+    // background-image: url("../images/svg/wave-top-pc.svg");
+    height: 100px;
+    -webkit-mask-size: 1920px auto;
+    mask-size: 1920px auto;
   }
+}
 
-  .wave-bottom {
-    width: 100%;
-    height: 40px;
-    
-    -webkit-mask-image: url("../images/svg/wave-under-sp.svg");
-    mask-image: url("../images/svg/wave-under-sp.svg");
-    
-    -webkit-mask-repeat: repeat-x;
-    mask-repeat: repeat-x;
-    
-    -webkit-mask-position: center bottom;
-    mask-position: center bottom;
-    
-    -webkit-mask-size: 786px auto;
-    mask-size: 786px auto;
+.wave-bottom {
+  width: 100%;
+  height: 40px;
 
-    
-    @media (min-width: 600px) {
-      // background-image: url("../images/svg/wave-under-pc.svg");
-      height: 100px;
-      -webkit-mask-size: 1920px auto;
-      mask-size: 1920px auto;
-    }
+  -webkit-mask-image: url("../images/svg/wave-under-sp.svg");
+  mask-image: url("../images/svg/wave-under-sp.svg");
+
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+
+  -webkit-mask-position: center bottom;
+  mask-position: center bottom;
+
+  -webkit-mask-size: 786px auto;
+  mask-size: 786px auto;
+
+  @media (min-width: 600px) {
+    // background-image: url("../images/svg/wave-under-pc.svg");
+    height: 100px;
+    -webkit-mask-size: 1920px auto;
+    mask-size: 1920px auto;
   }
-
+}
 
 .wave-yellow {
-  background-color: var(--color-yellow); 
+  background-color: var(--color-yellow);
 }
 
 .wave-green {
-  background-color: var(--color-green); 
+  background-color: var(--color-green);
 }
 
 .wave-pink {
-  background-color: var(--color-pink); 
+  background-color: var(--color-pink);
 }
 
 .wave-orange {
-  background-color: var(--color-orange); 
+  background-color: var(--color-orange);
 }
 
 .wave-blue {
-  background-color: var(--color-blue); 
+  background-color: var(--color-blue);
 }
 
+/* ========背景色======= */
 
-/* ========事業内容見出し======= */
-
-.service-head {
-  margin: 0 auto 16px;
-  padding: 6px 16px;
-  width: fit-content;
-  text-align: center;
-  line-height: 1.2;
-  background: white;
-  border-radius: 50px;
-}
-
-/* ========事業内容2ndキャッチコピー======= */
-
-.cc-2nd-outer {
-  margin: 0 auto;
-  padding: 20px 0;
+.bg-green {
+  background: $green;
   width: 100%;
-  @media (min-width: 600px) {
-    padding: 0 24px 0;
-  }
-
-  @media (min-width: 786px) {
-    width: 100%;
-  }
-
-  .cc-2nd-inner {
-    padding-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @media (min-width: 600px) {
-      padding-top: 0;
-      flex-direction: row-reverse;
-    }
-
-    @media (min-width:600px) {
-      &:nth-child(even) {
-        flex-direction: row;
-      }
-    }
-
-    img {
-      display: block;
-      width: 300px;
-      height: auto;
-    }
-
-    .cc-2nd-text {
-
-      p {
-        padding: 0 28px;
-        align-self: start;
-
-        @media (min-width: 600px) {
-          padding: 20px 8px 0;
-        }
-      }
-
-      // p
-
-
-      @media (min-width: 600px) {
-        padding-top: 1rem;
-      }
-    }
-
-  }
-
-  // .cc-2nd-inner
-
 }
 
-// .cc-2nd-outer
+.bg-blue {
+  background: $blue;
+  width: 100%;
+}
+
+.bg-pink {
+  background: $pink;
+  width: 100%;
+}
+
+.bg-orange {
+  background: $orange;
+  width: 100%;
+}
+
+.bg-yellow {
+  background: $yellow;
+  width: 100%;
+}
+
+/* ========背景色2nd======= */
+
+.bg-green-2nd {
+  background: $green-2nd;
+  width: 100%;
+}
+
+.bg-blue-2nd {
+  background: $blue-2nd;
+  width: 100%;
+}
+
+.bg-pink-2nd {
+  background: $pink-2nd;
+}
+
+.bg-orange-2nd {
+  background: $orange-2nd;
+  width: 100%;
+}
+
+.bg-yellow-2nd {
+  background: $yellow-2nd;
+  width: 100%;
+}
+
+/* ========背景色3rd======= */
+
+.bg-green-3rd {
+  background: $green-3rd;
+  width: 100%;
+}
+
+.bg-blue-3rd {
+  background: $blue-3rd;
+  width: 100%;
+}
+
+.bg-pink-3rd {
+  background: $pink-3rd;
+}
+
+.bg-orange-3rd {
+  background: $orange-3rd;
+  width: 100%;
+}
+
+.bg-yellow-3rd {
+  background: $yellow-3rd;
+  width: 100%;
+}
+
+
+/* ========背景色4th======= */
+
+.bg-green-4th {
+  background: $green-4th;
+  width: 100%;
+}
+
+.bg-blue-4th {
+  background: $blue-4th;
+  width: 100%;
+}
+
+.bg-pink-4th {
+  background: $pink-4th;
+}
+
+.bg-orange-4th {
+  background: $orange-4th;
+  width: 100%;
+}
+
+.bg-yellow-4th {
+  background: $yellow-4th;
+  width: 100%;
+}

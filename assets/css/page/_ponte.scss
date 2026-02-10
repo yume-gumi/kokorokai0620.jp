@@ -3,7 +3,133 @@
 /* ===============================================
 # page
 =============================================== */
+.service_page #policy.bg-blue {
+  background: $blue;
+}
+.service_page #schedule.bg-yellow {
+  background: $yellow;
+}
+.service_page #address.bg-orange {
+  background: $orange;
+}
+
+
+.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(5)::before
+ {
+    background-image: url(../images/icon/1400.svg);
+}
+.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(6)::before
+ {
+    background-image: url(../images/icon/1500.svg);
+}
 
 #ponte{
+
+      /*  ========ご利用の流れ=======  */
+
+ .cc {
+    p {
+
+      .pc-br {
+        display: none;
+
+        @media (min-width: 600px) {
+          display: block;
+        }
+      }
+
+      .sp-br {
+        display: block;
+
+        @media (min-width: 600px) {
+          display: none;
+        }
+
+      }
+
+    }
+
+    // p
+  }
+
+  // cc
+
+
+  .flow-plus {
+
+    @media (min-width: 1024px) {
+      max-width: 100% !important;
+      flex-wrap: nowrap;
+      row-gap: 28px !important;
+    }
     
+
+    }
+    .flow-outer {
+    
+      .flow-block {
+    
+        .flow-card {
+          
+          @media (min-width: 1024px) {
+            padding: 56px 12px 32px 12px;
+            min-height: 260px;
+          }
+          
+          .pc-br {
+            display: none;
+            
+            @media (min-width: 1024px) {
+              display: block;
+              width: 100%;
+              background: $green;
+            }
+          }
+          
+        }
+        
+        //  flow-card
+      }
+      // flow-block
+    
+    }
+      // flow-outer
+    
+
+
+      /*  ========ご利用の流れ詳細=======  */
+
+  .bg-green-4th {
+    
+      &::after {
+        content: "";
+    
+        background-image: url("../images/icon/pin_green.svg");
+    
+        @media (min-width: 1024px) {
+          left: 50%;
+          transform: translateX(460px);
+        }
+      }
+    
+      ul {
+        .flow-li-plus {
+          border-bottom: 1px dashed $green-3rd;
+        }
+      }
+    }
+    
+    //  .flow-2nd-outer
+
+
+    /*  ========お気軽にご相談ください=======  */
+
+  .flow-contact-plus {
+      box-shadow: 3px 4px 0 0 $green-3rd;
+    }
+    
+    //  .flow-contact
+
+
+
 }

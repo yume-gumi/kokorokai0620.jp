@@ -14,7 +14,7 @@
 
 
             <div class="mv-frame">
-                <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_mv.png" alt="" class="ぷらすmainvisual">
+                <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/pw_mv.webp" alt="ぷらすmainvisual">
 
                 <div class="cc bg-blue-2nd">
                     <p>一人ひとりが その人らしく 生きて<br class="sp-br">いくために、<br class="pc-br">
@@ -52,7 +52,7 @@
 
     <section id="flow" class="bg-pink">
 
-        <div class="wave-bottom  wave-blue"></div>
+        <div class="wave-bottom wave-blue"></div>
 
 
         <div class="flow-container">

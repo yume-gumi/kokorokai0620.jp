@@ -13,7 +13,7 @@
     <div class="mv-container">
 
       <div class="mv-frame">
-        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_mv.png" alt="" class="ぽんてmainvisual">
+        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_mv.webp" alt="ぽんてmainvisual">
 
         <div class="cc bg-pink-2nd">
           <p>長く在宅生活を送られている方の<br class="sp-br">社会生活が、<br class="pc-br">

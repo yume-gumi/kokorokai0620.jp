@@ -13,12 +13,12 @@
 
                 <div class="kv-photo">
                     <img class="photo-sp" src="<?php echo  get_theme_file_uri();  ?>/assets/images/kv_sp.png" alt="メインビジュアル" class="mainvisual">
-                    <img class="photo-pc" src="<?php echo  get_theme_file_uri();  ?>/assets/images/kv_pc.png" alt="メインビジュアル" class="mainvisual">
+                    <img class="photo-pc" src="<?php echo  get_theme_file_uri();  ?>/assets/images/kv_pc.webp" alt="メインビジュアル" class="mainvisual">
 
                     <div class="catch_copy-outer">
 
                         <p class="catch_copy">
-                        ひとりの小さな幸せが、波紋のように<br>やさしく広がり、地域の幸せへ</p>
+                            ひとりの小さな幸せが、波紋のように<br>やさしく広がり、地域の幸せへ</p>
                         <p class="catch_copy">誰もが自分らしく輝ける瞬間を<br>丁寧につくっていきます。</p>
 
                     </div>
@@ -54,106 +54,54 @@
 
             <div class="news-outer">
 
-            <?php
-            // ページ番号の取得
-            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-            $args = array(
-                'post_type' => 'post', //投稿タイプ
-                'posts_per_page' => 4, //１ページの表示数
-                'paged' => $paged //何ページ目の情報を取得するかを指定
-            );
-
-            // 以下、ループ構造
-            $the_query = new WP_Query($args);
-            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
-            ?>
-
-                <a href="<?php the_permalink(); ?>">
-                    <div class="news-brock">
-
-                        <img src="<?= get_thumbnail(); ?>" alt="<?php the_title(); ?>">
-
-                        <div class="date">
-                            <span> <?php the_time("Y/m/d"); ?></span>
-                            <p>お知らせ</p>
-                        </div>
-
-                        <div class="news-inner">
-
-                            <p class="news-title">
-                                <?php the_title(); ?>
-                            </p>
-
-                            <p class="news-text">
-                                <?php the_excerpt(); ?>
-                            </p>
-
-                        </div>
-
-                    </div>
-                </a>
                 <?php
-                endwhile;
-            endif;
-            ?>
+                // ページ番号の取得
+                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+                $args = array(
+                    'post_type' => 'post', //投稿タイプ
+                    'posts_per_page' => 4, //１ページの表示数
+                    'paged' => $paged //何ページ目の情報を取得するかを指定
+                );
 
-                <!-- <a href="news-page.html">
-                    <div class="news-brock">
+                // 以下、ループ構造
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
+                ?>
 
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="news-block">
 
-                        <div class="date">
-                            <span>25/12/31</span>
-                            <p>お知らせ</p>
-                        </div>
+                                <img src="<?= get_thumbnail(); ?>" alt="<?php the_title(); ?>">
 
-                        <div class="news-inner">
+                                <div class="date">
+                                    <span> <?php the_time("Y/m/d"); ?></span>
+                                    <p>お知らせ</p>
+                                </div>
 
-                            <p class="news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                            <p class="news-text">テキストテキストテキストテキストテキストテキスト</p>
+                                <div class="news-inner">
 
-                        </div>
+                                    <p class="news-title">
+                                        <?php the_title(); ?>
+                                    </p>
 
-                    </div>
-                </a>
-                <a href="news-page.html">
-                    <div class="news-brock">
+                                    <p class="news-text">
+                                        <?php
+                                        if (has_excerpt()) {
+                                            the_excerpt();
+                                        } else {
+                                            echo wp_trim_words(get_the_content(), 30, '...');
+                                        }
+                                        ?>
+                                    </p>
 
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
+                                </div>
 
-                        <div class="date">
-                            <span>25/12/31</span>
-                            <p>お知らせ</p>
-                        </div>
-
-                        <div class="news-inner">
-
-                            <p class="news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                            <p class="news-text">テキストテキストテキストテキストテキストテキスト</p>
-
-                        </div>
-
-                    </div>
-                </a>
-                <a href="news-page.html">
-                    <div class="news-brock">
-
-                        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/noimage.png" alt="no  image">
-
-                        <div class="date">
-                            <span>25/12/31</span>
-                            <p>お知らせ</p>
-                        </div>
-
-                        <div class="news-inner">
-
-                            <p class="news-title">タイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-                            <p class="news-text">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-
-                        </div>
-
-                    </div>
-                </a> -->
+                            </div>
+                        </a>
+                <?php
+                    endwhile;
+                endif;
+                ?>
 
             </div>
             <!--  news-outer  -->

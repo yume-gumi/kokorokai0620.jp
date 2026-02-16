@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /* ===============================================
-# global
-=============================================== */
-/* ===============================================
 # フォントのCDN
 =============================================== */
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap");
@@ -47,7 +44,7 @@
 # ミックスイン
 =============================================== */
 /* ===============================================
-# common
+# global
 =============================================== */
 /* ===============================================
 # 共通ベース
@@ -92,6 +89,7 @@ a {
 
 h2 {
   margin: 0 auto;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -355,6 +353,17 @@ button {
 /* ===============================================
 # アニメーション
 =============================================== */
+@-webkit-keyframes open_menu {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes open_menu {
   0% {
     opacity: 0;
@@ -367,56 +376,71 @@ button {
   }
 }
 .key-open_menu {
-  animation-name: open_menu;
+  -webkit-animation-name: open_menu;
+          animation-name: open_menu;
 }
 
 .anime {
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .anime.loop {
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .anime.delay-1s {
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .anime.delay-2s {
-  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .anime.delay-3s {
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 .anime.delay-4s {
-  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 .anime.delay-5s {
-  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .anime.fast {
-  animation-duration: 500ms;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
 }
 .anime.slow-2s {
-  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 .anime.slow-10s {
-  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 .anime.slow-20s {
-  animation-duration: 20s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
 }
 .anime.ease-in {
-  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 .anime.ease-out {
-  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 /* ===============================================
 # hover
 =============================================== */
-/*  ===============================================
-#  parts
-===============================================  */
+/* ===============================================
+# common
+=============================================== */
 /* ===============================================
 # header
 =============================================== */
@@ -444,7 +468,17 @@ header.header-sticky {
   width: 100% !important;
   z-index: 999 !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15) !important;
-  animation: slideDown 0.3s ease-in-out;
+  -webkit-animation: slideDown 0.3s ease-in-out;
+          animation: slideDown 0.3s ease-in-out;
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes slideDown {
@@ -516,6 +550,7 @@ header.header-sticky {
 }
 .header_nav__pc ul li {
   margin: 0 auto;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -1138,6 +1173,7 @@ footer small {
 }
 #footer_top .footer_top-container .bg-img .footer_top-outer .footer_top-inner .footer_top-block {
   display: block;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1357,6 +1393,7 @@ footer small {
 .service_page .service-head {
   margin: 0 auto 12px;
   padding: 8px 16px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background: #fff;
@@ -1420,6 +1457,7 @@ footer small {
   margin: -2% auto 0;
   padding: 12px 28px;
   white-space: nowrap;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 24px;
@@ -1579,6 +1617,7 @@ footer small {
   font-size: 1.5rem;
   letter-spacing: 1px;
   border-bottom: 2px dotted #ED83A6;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1946,10 +1985,9 @@ footer small {
   padding-top: 12px;
 }
 
-/* ===============================================
-# page
-=============================================== */
-/* ===============================================
+/*  ===============================================
+#  parts
+===============================================  */ /* ===============================================
 # page
 =============================================== */
 #about .about__top {
@@ -2009,6 +2047,7 @@ footer small {
   }
 }
 #about .about__company dl > div dd ul {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -2254,6 +2293,7 @@ footer small {
 }
 #contact #mail-contact #form .form-outer .form-inner p .reply {
   margin: 0 auto;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 350px;
@@ -2343,6 +2383,7 @@ footer small {
   margin: 0;
 }
 #contact #mail-contact #form .form-outer .privacy-text {
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2366,6 +2407,7 @@ footer small {
 #privacy h4 {
   margin: 0 auto 12px;
   padding: 8px 16px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background: #fff;
@@ -2558,6 +2600,7 @@ footer small {
   top: 80%;
   left: 0;
   width: 100%;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -2568,6 +2611,7 @@ footer small {
 }
 @media (min-width: 600px) {
   #top #top-container #kv .kv-container .catch_copy-outer {
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     gap: 1.5vw;
@@ -2590,6 +2634,7 @@ footer small {
   background: #FEFBF3;
   border-radius: 50px;
   box-shadow: 3px 3px 0 0 #9C7F4D;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   white-space: nowrap;
@@ -2823,8 +2868,14 @@ footer small {
 }
 #top #news .news-container .news-outer a {
   display: block;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+#top #news .news-container .news-outer a:hover {
+  opacity: 0.8;
 }
 @media (max-width: 350px) {
   #top #news .news-container .news-outer a:nth-child(n+3) {
@@ -2849,6 +2900,15 @@ footer small {
   #top #news .news-container .news-outer a .news-block {
     max-width: 200px;
   }
+}
+#top #news .news-container .news-outer a .news-block .top-news-thumbnail {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  border: 1px solid #9C7F4D;
 }
 #top #news .news-container .news-outer a .news-block .date {
   display: flex;
@@ -3381,6 +3441,7 @@ footer small {
 .deta-outer-single .category {
   padding: 0 8px;
   margin-bottom: 16px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 20px;
@@ -3443,6 +3504,7 @@ footer small {
 #news h4 {
   margin: 0 auto 12px;
   padding: 8px 16px;
+  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background: #fff;
@@ -3577,4 +3639,8 @@ footer small {
   background: #FEFBF3;
   color: #B44906;
   border: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ===============================================
+# page
+=============================================== *//*# sourceMappingURL=style.css.map */

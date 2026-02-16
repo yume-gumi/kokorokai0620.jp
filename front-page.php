@@ -70,9 +70,9 @@
 
                         <a href="<?php the_permalink(); ?>">
                             <div class="news-block">
-
-                                <img src="<?= get_thumbnail(); ?>" alt="<?php the_title(); ?>">
-
+                            <div class="top-news-thumbnail" style="background-image: url(<?php echo get_thumbnail(); ?>);">
+</div>
+                                
                                 <div class="date">
                                     <span> <?php the_time("Y/m/d"); ?></span>
                                     <p>お知らせ</p>

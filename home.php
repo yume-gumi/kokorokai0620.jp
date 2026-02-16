@@ -14,17 +14,9 @@
             <div class="news-inner">
 
                 <?php
-                $paged = get_query_var('paged') ? get_query_var('paged') : 10;
-                $args = array(
-                    'post_type' => 'post',
-                    'posts_per_page' => 1,
-                    'paged' => $paged
-                );
-
-                $the_query = new WP_Query($args);
-                if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) :
-                        $the_query->the_post();
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post();
                 ?>
 
                         <a href="<?php the_permalink(); ?>" class="news-card">

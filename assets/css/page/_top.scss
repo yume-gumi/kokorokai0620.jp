@@ -417,6 +417,12 @@
         a {
           display: block;
           width: fit-content;
+          opacity: 1;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
 
           @media (max-width: 350px) {
             &:nth-child(n + 3) {
@@ -443,6 +449,17 @@
             @media (min-width: 600px) {
               max-width: 200px;
             }
+            .top-news-thumbnail {
+              width: 100%;
+              aspect-ratio: 4 / 3;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+
+              border-radius: 24px;
+              border: 1px solid $shadow;
+            }
+
 
             .date {
               display: flex;

@@ -57,6 +57,11 @@
       .privacy-block {
         padding-bottom: 40px;
         line-height: 1.5;
+
+        span {
+          display: block;
+          font-weight: bold;
+        }
       }
     }
     // privacy-outer

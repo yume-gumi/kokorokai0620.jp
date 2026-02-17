@@ -2,7 +2,13 @@
 
 <!--  MAIN  -->
 <main id="top">
-
+    <div class="loading">
+        <div class="loading__mask"></div>
+        <div class="loading__inner">
+            <img src="<?= get_theme_file_uri(); ?>/assets/images/logo.svg" alt="" class="loading__logo">
+            <div class="loading__percent"><span id="percent-text"></span>％</div>
+        </div>
+    </div>
     <section id="top-container">
 
         <div class="top-bg"></div>
@@ -232,6 +238,6 @@
 
 </main>
 <!--  MAIN  -->
-
+<script src="<?php echo  get_theme_file_uri();  ?>/assets/js/kv.js"></script>
 
 <?php get_footer();  ?>

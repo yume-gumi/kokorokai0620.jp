@@ -7,11 +7,9 @@ header {
   width: 100%;
   min-height: 72px;
   padding: 8px 20px;
-  top: 0;
   background-color: $bg-main;
   display: flex;
   align-items: center;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -100,6 +98,8 @@ header {
         display: block;
         width: 150px;
         height: auto;
+        position: absolute;
+        top: 14px;
       }
     }
   }

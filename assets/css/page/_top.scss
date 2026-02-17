@@ -7,6 +7,67 @@
   padding-top: 80px; //headerの分
   background: $bg-main;
 
+  position: relative;
+
+
+  .loading{
+    width: 100vw;
+    height: 100dvh;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    &__mask{
+      width: 100vw;
+      height: 100dvh;
+      background: $bg-main;
+      display: block;
+      position: absolute;
+      z-index: 999;
+      transition: translate 1s,opacity 1s;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      &.hidden{
+        translate: 0 -100%;
+        opacity: 0;
+      }
+
+    }
+    &__inner{
+      max-width: 1080px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100dvh;
+
+    }
+
+    &__logo{
+      width: 150px;
+      position: absolute;
+      z-index: 1000;
+      top: 14px;
+      right: 0;
+      transition: opacity .5s;
+      opacity: 0;
+    }
+
+    &__percent{
+      position: absolute;
+      z-index: 1000;
+      top: 32px;
+      transition: opacity .5s;
+      opacity: 0;
+      right: 180px;
+    }
+  }
+
+
+
   #top-container {
     position: relative;
     width: 100%;

@@ -6,6 +6,8 @@
 
 #contact {
   position: relative;
+  width: 100%;
+  height: auto;
 
   .wave-top {
     max-height: 80px;
@@ -186,7 +188,6 @@
               text-align: left;
             }
 
-
             &::after {
               content: " *";
               color: $text-sub;
@@ -213,7 +214,7 @@
               display: block;
               padding-bottom: 2px;
               border-bottom: 1px dashed $text;
-              
+
               @media (min-width: 786px) {
                 width: 350px;
                 text-align: left;
@@ -225,7 +226,7 @@
               display: block;
               margin: 0 auto;
               max-width: 350px;
-              
+
               .wpcf7-list-item {
                 margin: 0;
                 padding-top: 6px;
@@ -255,6 +256,28 @@
             }
           }
           // span
+
+          // // ドロップダウンがある時だけ矢印を表示させる
+          // &:has(.form-dropdown)::after {
+          //   content: "";
+          //   position: absolute;
+          //   right: 15px; // PC・スマホ共通の右端からの距離
+          //   top: 50%;
+          //   transform: translateY(-50%) rotate(45deg); // ど真ん中に配置して回転
+          //   width: 8px;
+          //   height: 8px;
+          //   border-right: 2px solid $orange;
+          //   border-bottom: 2px solid $orange;
+          //   pointer-events: none;
+          //   z-index: 5;
+
+          //   // スマホ時（縦並び）の矢印位置微調整
+          //   @media (max-width: 785px) {
+          //     top: auto;
+          //     bottom: 12px; // 下側の入力欄の中央に来るよう調整
+          //     right: calc(50% - 165px); // 入力欄max-width:350pxの右端付近
+          //   }
+          // }
 
           .form-dropdown {
             display: block;

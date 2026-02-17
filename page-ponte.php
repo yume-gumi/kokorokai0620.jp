@@ -3,17 +3,17 @@
 <!--  MAIN  -->
 <main id="ponte" class="service_page">
 
-  
+
   <h4 class="service-head">就労継続支援B型 ぽんて</h4>
 
   <div class="top-bg wave-pink"></div>
-  
+
   <section id="top-mv">
 
     <div class="mv-container">
 
       <div class="mv-frame">
-        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_mv.png" alt="" class="ぽんてmainvisual">
+        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_mv.webp" alt="ぽんてmainvisual">
 
         <div class="cc bg-pink-2nd">
           <p>長く在宅生活を送られている方の<br class="sp-br">社会生活が、<br class="pc-br">
@@ -28,8 +28,8 @@
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_img01.png" alt="ponte_img01">
           <div class="cc-text">
             <p>ご自身の持っている力を発揮し、自分のペースで一歩ずつ<br>
-                新しい生活を始めたいあなたを、わたしたちが地域との<br>
-                架け橋としてサポートします。</p>
+              新しい生活を始めたいあなたを、わたしたちが地域との<br>
+              架け橋としてサポートします。</p>
           </div>
         </div>
 
@@ -37,8 +37,8 @@
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_img02.png" alt="ponte_img02">
           <div class="cc-text">
             <p>退院したばかりなので、まずは生活リズムを整えたい。<br>
-                今はデイケアに通っているけど、そこからステップアップする自信がない。<br>
-                一度は就職したけど挫折してしまったから、ゆっくり再チャレンジしたい…何でもご相談ください。</p>
+              今はデイケアに通っているけど、そこからステップアップする自信がない。<br>
+              一度は就職したけど挫折してしまったから、ゆっくり再チャレンジしたい…何でもご相談ください。</p>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@
             <span>※送迎の方は15：00から順次送り</span>
           </div>
 
-          <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_tl05.png" alt="plus_tl04">
+          <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_tl05.png" alt="plus_tl05">
 
         </li>
 
@@ -175,7 +175,7 @@
             <p>作業終了です。送迎の方は順次ご自宅までお送りします。</p>
           </div>
 
-          <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_tl06.png" alt="plus_tl05">
+          <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_tl06.png" alt="plus_tl06">
 
         </li>
 
@@ -249,7 +249,7 @@
           <div class="flow-card  step4">
             <div class="flow-title  step4">ご利用開始</div>
             <p class="step4">いよいよ利用開始！<br>
-                自分のペースで楽しく作業しましょう。</p>
+              自分のペースで楽しく作業しましょう。</p>
           </div>
 
         </div>
@@ -279,13 +279,13 @@
           <li class="flow-li-plus">
             <div class="flow-2nd-title">お食事について</div>
             <p>給食はございません。お弁当をご持参いただくか、<br>
-                事業所で仕出し弁当（1食350円）をご注文ください。</p>
+              事業所で仕出し弁当（1食350円）をご注文ください。</p>
           </li>
 
           <li class="flow-li-plus">
             <div class="flow-2nd-title">送迎について</div>
             <p>なるべくご希望に沿うように送迎をしておりますが、都合により乗降場所、<br>
-                送迎時間はご希望に添えない場合もございます。</p>
+              送迎時間はご希望に添えない場合もございます。</p>
           </li>
 
         </ul>
@@ -372,7 +372,7 @@
       <!--  address-outer  -->
 
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.0454264083346!2d139.523132311752!3d35.872403619333454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcb288efae59%3A0x4c32e0a3d4ab7a16!2z44CSMzU2LTAwMjcg5Z-8546J55yM44G144GY44G_6YeO5biC5p2-5bGx77yR5LiB55uu77yS4oiS77yV!5e0!3m2!1sja!2sjp!4v1770265152614!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.0454264083346!2d139.523132311752!3d35.872403619333454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018dcb288efae59%3A0x4c32e0a3d4ab7a16!2z44CSMzU2LTAwMjcg5Z-8546J55yM44G144GY44G_6YeO5biC5p2-5bGx77yR5LiB55uu77yS4oiS77yV!5e0!3m2!1sja!2sjp!4v1770265152614!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="access">
@@ -385,17 +385,17 @@
           </div>
         </div>
 
-                </div>
-                <!--  access-brock  -->
+      </div>
+      <!--  access-brock  -->
 
-                <p  class=" access-car">お車、または自転車でお越しの際は、敷地内に
-              駐車場と駐輪場がございますのでご利用下さい。</p>
+      <p class=" access-car">お車、または自転車でお越しの際は、敷地内に
+        駐車場と駐輪場がございますのでご利用下さい。</p>
 
-            </div>
-            <!--  access  -->
+    </div>
+    <!--  access  -->
 
-          </div>
-          <!--  address-container  -->
+    </div>
+    <!--  address-container  -->
 
 
   </section>
@@ -404,14 +404,14 @@
 
 
 
-    <?php
-    $args  =  [
-        "top-wave"  =>  "orange",
-        "background"  =>  "pink",
-        "service"  =>  true
-    ];
-    get_template_part("parts/footer_top",  null, $args);
-    ?>
+  <?php
+  $args  =  [
+    "top-wave"  =>  "orange",
+    "background"  =>  "pink",
+    "service"  =>  true
+  ];
+  get_template_part("parts/footer_top",  null, $args);
+  ?>
 </main>
 <!--  MAIN  -->
 

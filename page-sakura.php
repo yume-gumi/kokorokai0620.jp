@@ -12,7 +12,7 @@
     <div class="mv-container">
 
       <div class="mv-frame">
-        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_mv.png" alt="" class="さくらmainvisual">
+        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_mv.webp" alt="さくらmainvisual">
 
         <div class="cc bg-orange-2nd">
           <p>障害がある方の地域生活や社会生活が<br class="sp-br">充実するよう<br class="pc-br">
@@ -192,7 +192,7 @@
   </section>
   <!--  schedule  -->
 
-  <section id="flow" class="bg-white">
+  <section id="flow" class="bg-yellow">
 
     <div class="wave-bottom wave-blue"></div>
 
@@ -333,7 +333,7 @@
 
 
   <section id="address" class="bg-green">
-    <div class="wave-bottom  wave-green"></div>
+    <div class="wave-bottom  wave-yellow"></div>
 
 
     <div class="address-container">

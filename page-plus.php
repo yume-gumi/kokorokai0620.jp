@@ -12,7 +12,7 @@
     <div class="mv-container">
 
       <div class="mv-frame">
-        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_mv.png" alt="" class="ぷらすmainvisual">
+        <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_mv.webp" alt="ぷらすmainvisual">
 
         <div class="cc bg-green-2nd">
           <p>あなたが持っている力を引き出し、<br>

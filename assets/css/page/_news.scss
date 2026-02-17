@@ -5,7 +5,9 @@
 
 #news {
   position: relative;
-  width: 100% h4 {
+  width: 100%;
+
+  h4 {
     margin: 0 auto 12px;
     padding: 8px 16px;
     width: fit-content;
@@ -28,7 +30,7 @@
       padding: 16px 40px 40px;
       font-size: 1rem;
       width: 100%;
-      max-width: 900px;
+      max-width: 880px;
       height: auto;
 
       border-radius: 24px;
@@ -39,35 +41,57 @@
       }
 
       .news-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        @media (min-width: 600px) {
+          gap: 8px;
+        }
+
         .news-card {
-          padding: 8px 0;
+          padding: 8px 0 12px;
           width: 100%;
           line-height: 1.5;
           border-bottom: 1px dashed $orange;
 
           display: flex;
           flex-direction: column;
+          @media (min-width: 600px) {
+            flex-direction: row;
+            justify-content: start;
+            gap: 8px;
+          }
 
           position: relative;
 
-          .date-outer {
+          .deta-outer {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            gap: 8px;
 
-            .date {
+            .deta {
               font-weight: bold;
               font-size: 1rem;
+              letter-spacing: 1px;
             }
 
             .category {
               padding: 0 8px;
+              width: 5rem;
+              height: 20px;
+              line-height: 20px;
+
               color: $white;
-              font-size: 0.875rem;
               background: $orange-2nd;
               border-radius: 8px;
+              
+              span {
+                font-size: 0.75rem;
+              }
             }
           }
-          // date-outer
+          // deta-outer
 
           .title {
             overflow: hidden;
@@ -82,23 +106,71 @@
 
       //   news-inner
 
-      .news-btn-outer {
-        margin: 16px;
+      /* ページネーション全体のコンテナ */
+      .pagination {
         display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 8px;
+      }
+
+      /* 各ボタンの共通スタイル */
+      .pagination .page-numbers {
+        display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 16px;
+        transform: all 0.2s ease;
+        background: $btn-cc;
+        color: $text;
+        border: 1px solid $text;
+        box-shadow: 2px 2px 0 0 $text;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
 
-        .news-btn {
-          padding: 8px 12px;
-          color: $white;
-          background: $text;
-          border-radius: 10px;
-          font-size: 0.875rem;
-        }
+      /* 現在のページ (押せないボタン) */
+      .pagination .page-numbers.current {
+        background: $text;
+        color: $white;
+        cursor: default;
+      }
 
+      /* 前へ・次へ ボタン（薄い色の背景） */
+      .pagination .prev.page-numbers,
+      .pagination .next.page-numbers {
+        width: 28px;
+        height: 28px;
+        background-color: $btn-cc;
+        color: $text;
+        font-size: .75rem;
+        align-self: center;
+        border-radius: 50%;
 
       }
+
+      /* ホバー時の挙動 */
+      .pagination a.page-numbers:hover {
+        box-shadow: 0 0 0 0 $text;
+        transform: translate(2px, 2px);
+      }
+
+      /* 点々（...）のスタイル */
+      .pagination .dots {
+        opacity: 0.8;
+        background: $btn-cc;
+        color: $text;
+        border: 0;
+      }
+
 
       //   news-btn-outer
     }

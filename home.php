@@ -13,187 +13,47 @@
 
             <div class="news-inner">
 
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                <div class="news-card">
-
-                    <div class="date-outer">
-
-                        <span class="date">2026.01.01</span>
-                        <span class="category">お知らせ</span>
-
-                    </div>
-                    <!-- date-outer -->
-
-                    <p class="title">お知らせお知らせタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-
-
-                </div>
-                <!-- news-card -->
-                
+                <?php
+                if (have_posts()) :
+                    while (have_posts()) :
+                        the_post();
+                ?>
+
+                        <a href="<?php the_permalink(); ?>" class="news-card">
+
+                            <div class="deta-outer">
+
+                                <span class="deta">
+                                    <?php the_time("Y.m.d"); ?>
+                                </span>
+
+                                <span class="category">
+                                    <?php
+                                    $category = get_the_category();
+                                    if ($category) {
+                                        echo '<span>' . $category[0]->name . '</span>';
+                                    }
+                                    ?>
+                                </span>
+                            </div>
+
+                            <span class="title"><?php the_title(); ?></span>
+
+                        </a>
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_postdata();
+                ?>
+                <?php
+the_posts_pagination( array(
+    'mid_size' => 2,      // 現在のページの両側に表示する数字の数
+    'prev_text' => '<', // 「前へ」リンクのテキスト
+    'next_text' => '>', // 「次へ」リンクのテキスト
+) );
+?>
             </div>
-            <!-- news-inner -->
-
-            <div class="news-btn-outer">
-                <div class="page-back "><</div>
-                <div class="news-btn one-btn">1</div>
-                <div class="news-btn two-btn">2</div>
-                <div class="news-btn three-btn">3</div>
-                <div class="news-btn four-btn">4</div>
-                <div class="page-next">></div>
-            </div>
-
-
-        </div>
-        <!-- news-outer -->
+            <!-- news-outer -->
 
     </section>
     <!-- #news -->

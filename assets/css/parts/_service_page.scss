@@ -109,7 +109,7 @@
         margin: 0 auto;
         padding: 20px 0;
         width: 100%;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,7 +149,6 @@
             max-width: 300px;
             height: auto;
           }
-
 
           .cc-text {
             @media (min-width: 600px) {
@@ -205,12 +204,12 @@
           max-width: 900px;
         }
 
-        .policy-brock {
+        .policy-block {
           max-width: 240px;
           height: auto;
         }
 
-        // .policy-brock
+        // .policy-block
       }
 
       // .policy-outer
@@ -238,12 +237,17 @@
       }
 
       .timeline {
-        margin-left: 50px;
+        margin-left: 20px;
         padding-top: 20px;
         position: relative;
         border-left: 2px solid $pink-2nd;
 
-        .timeline-brock {
+        @media (min-width: 600px) {
+          margin-left: 50px;
+        }
+  
+
+        .timeline-block {
           margin-bottom: 20px;
           padding-left: 30px;
           position: relative;
@@ -287,7 +291,7 @@
             padding-bottom: 2px;
             font-size: 1.5rem;
             letter-spacing: 1px;
-            border-bottom: 2px dotted $pink-2nd;
+            border-bottom: 1px dashed $pink-2nd;
             width: fit-content;
           }
 
@@ -309,7 +313,7 @@
           }
         }
 
-        // .timeline-brock
+        // .timeline-block
       }
 
       // .timeline
@@ -347,7 +351,7 @@
           gap: 20px;
         }
 
-        .flow-brock {
+        .flow-block {
           display: flex;
           position: relative;
 
@@ -435,7 +439,7 @@
           // flow-card
         }
 
-        // flow-brock
+        // flow-block
       }
 
       // flow-outer
@@ -481,7 +485,6 @@
             padding: 20px 0;
             display: flex;
             flex-direction: column;
-
 
             @media (min-width: 1024px) {
               flex-direction: row;
@@ -690,7 +693,7 @@
       aspect-ratio: 16 /9;
       width: 100%;
       height: 100%;
-      
+
       iframe {
         padding: 0 16px;
         position: absolute;
@@ -712,7 +715,7 @@
         border-bottom: 1px solid $text;
       }
 
-      .access-brock {
+      .access-block {
         .access-tool {
           margin: 8px;
           padding-bottom: 12px;
@@ -742,9 +745,9 @@
         }
       }
 
-      // .access-brock
+      // .access-block
       .access-car {
-        padding-top: 12px;
+        padding: 12px;
       }
     }
     // .access

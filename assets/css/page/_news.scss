@@ -78,15 +78,18 @@
 
             .category {
               padding: 0 8px;
-              width: 5rem;
+              width: fit-content;
               height: 20px;
               line-height: 20px;
-
+              
               color: $white;
               background: $orange-2nd;
               border-radius: 8px;
               
               span {
+                display: block;
+                height: 20px;
+                line-height: 20px;
                 font-size: 0.75rem;
               }
             }

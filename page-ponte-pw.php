@@ -61,7 +61,7 @@
 
             <div class="flow-outer flow-pw">
 
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step1.svg" alt="step1">
@@ -73,7 +73,7 @@
                     </div>
 
                 </div>
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step2.svg" alt="step2">
@@ -86,7 +86,7 @@
                     </div>
 
                 </div>
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step3.svg" alt="step3">
@@ -100,7 +100,7 @@
                 </div>
 
 
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
                     </span>
@@ -112,7 +112,7 @@
 
 
                 </div>
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step5.svg" alt="step5">
@@ -124,7 +124,7 @@
                     </div>
 
                 </div>
-                <div class="flow-brock flow-block-pw">
+                <div class="flow-block flow-block-pw">
 
                     <span class="step-icon">
                         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step6.svg" alt="step6">
@@ -241,7 +241,7 @@
             <div class="access">
                 <p class="access-title">アクセス</p>
 
-                <div class="access-brock">
+                <div class="access-block">
                     <div class="access-tool">
                         <div class="access-01">【電車】</div>
                         <p class="access-02">・東武東上線上福岡駅より徒歩15分</p>

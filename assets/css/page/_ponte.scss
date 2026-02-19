@@ -13,123 +13,159 @@
   background: $orange;
 }
 
-
-.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(5)::before
- {
-    background-image: url(../images/icon/1400.svg);
+.service_page
+  #schedule
+  .timeline-container
+  .timeline
+  .timeline-block:nth-child(5)::before {
+  background-image: url(../images/icon/1400.svg);
 }
-.service_page #schedule .timeline-container .timeline .timeline-brock:nth-child(6)::before
- {
-    background-image: url(../images/icon/1500.svg);
+.service_page
+  #schedule
+  .timeline-container
+  .timeline
+  .timeline-block:nth-child(6)::before {
+  background-image: url(../images/icon/1500.svg);
 }
 
-#ponte{
+#ponte {
+  /*  ========キャッチコピー=======  */
+  #top-mv {
+    .mv-container {
+      .mv-frame {
+        .cc {
+          padding: 12px 24px;
+                    p {
+            .pc-br {
+              display: none;
 
-      /*  ========ご利用の流れ=======  */
+              @media (min-width: 600px) {
+                display: block;
+              }
+            }
 
- .cc {
-    p {
+            .sp-br {
+              display: block;
 
-      .pc-br {
-        display: none;
+              @media (min-width: 600px) {
+                display: none;
+              }
+            }
+          }
 
-        @media (min-width: 600px) {
-          display: block;
+          // p
         }
       }
+      // .mv-frame
 
-      .sp-br {
-        display: block;
+      .cc-outer {
+        .cc-text {
+          p {
+            .pc-br {
+              display: none;
 
-        @media (min-width: 600px) {
-          display: none;
+              @media (min-width: 600px) {
+                display: block;
+              }
+            }
+
+            .sp-br {
+              display: block;
+
+              @media (min-width: 600px) {
+                display: none;
+              }
+            }
+          }
+
+          // p
         }
-
       }
+      // .cc-outer
 
     }
-
-    // p
+    // .mv-container
   }
+  // #top-mv
 
+
+  /*  ========1日のスケジュール=======  */
+  #schedule {
+    .timeline-container {
+      .timeline {
+        border-left: 2px solid $yellow-2nd;
+
+        .timeline-block {
+          .time {
+            border-bottom: 1px dashed $yellow-2nd;
+          }
+        }
+      }
+    }
+  }
   // cc
 
-
+  /*  ========ご利用の流れ=======  */
   .flow-plus {
-
     @media (min-width: 1024px) {
       max-width: 100% !important;
       flex-wrap: nowrap;
       row-gap: 28px !important;
     }
-    
-
-    }
-    .flow-outer {
-    
-      .flow-block {
-    
-        .flow-card {
-          
-          @media (min-width: 1024px) {
-            padding: 56px 12px 32px 12px;
-            min-height: 260px;
-          }
-          
-          .pc-br {
-            display: none;
-            
-            @media (min-width: 1024px) {
-              display: block;
-              width: 100%;
-              background: $green;
-            }
-          }
-          
+  }
+  .flow-outer {
+    .flow-block {
+      .flow-card {
+        @media (min-width: 1024px) {
+          padding: 56px 12px 32px 12px;
+          min-height: 260px;
         }
-        
-        //  flow-card
+
+        .pc-br {
+          display: none;
+
+          @media (min-width: 1024px) {
+            display: block;
+            width: 100%;
+            background: $green;
+          }
+        }
       }
-      // flow-block
-    
+
+      //  flow-card
     }
-      // flow-outer
-    
+    // flow-block
+  }
+  // flow-outer
 
-
-      /*  ========ご利用の流れ詳細=======  */
+  /*  ========ご利用の流れ詳細=======  */
 
   .bg-green-4th {
-    
-      &::after {
-        content: "";
-    
-        background-image: url("../images/icon/pin_green.svg");
-    
-        @media (min-width: 1024px) {
-          left: 50%;
-          transform: translateX(460px);
-        }
-      }
-    
-      ul {
-        .flow-li-plus {
-          border-bottom: 1px dashed $green-3rd;
-        }
+    &::after {
+      content: "";
+
+      background-image: url("../images/icon/pin_green.svg");
+
+      @media (min-width: 1024px) {
+        left: 50%;
+        transform: translateX(460px);
       }
     }
-    
-    //  .flow-2nd-outer
 
+    ul {
+      .flow-li-plus {
+        border-bottom: 1px dashed $green-3rd;
+      }
+    }
+  }
 
-    /*  ========お気軽にご相談ください=======  */
+  //  .flow-2nd-outer
+
+  /*  ========お気軽にご相談ください=======  */
 
   .flow-contact-plus {
-      box-shadow: 3px 4px 0 0 $green-3rd;
-    }
-    
-    //  .flow-contact
+    box-shadow: 3px 4px 0 0 $green-3rd;
+  }
 
-
-
+  //  .flow-contact
 }

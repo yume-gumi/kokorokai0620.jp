@@ -17,48 +17,102 @@
   #schedule
   .timeline-container
   .timeline
-  .timeline-brock:nth-child(1)::before {
+  .timeline-block:nth-child(1)::before {
   background-image: url(../images/icon/1000.svg);
 }
 .service_page
   #schedule
   .timeline-container
   .timeline
-  .timeline-brock:nth-child(2)::before {
+  .timeline-block:nth-child(2)::before {
   background-image: url(../images/icon/1100.svg);
 }
 .service_page
   #schedule
   .timeline-container
   .timeline
-  .timeline-brock:nth-child(5)::before {
+  .timeline-block:nth-child(5)::before {
   background-image: url(../images/icon/1500.svg);
 }
 
 #sakura {
-  /*  ========ご利用の流れ=======  */
+  /*  ========キャッチコピー=======  */
+  #top-mv {
+    .mv-container {
+      .mv-frame {
+        .cc {
+          padding: 12px 20px;
+          p {
+            .pc-br {
+              display: none;
 
-  .cc {
-    p {
+              @media (min-width: 600px) {
+                display: block;
+              }
+            }
 
-      .pc-br {
-        display: none;
+            .sp-br {
+              display: block;
 
-        @media (min-width: 600px) {
-          display: block;
+              @media (min-width: 600px) {
+                display: none;
+              }
+            }
+          }
+
+          // p
         }
       }
+      // .mv-frame
 
-      .sp-br {
-        display: block;
+      .cc-outer {
+        .cc-text {
+          p {
+            .pc-br {
+              display: none;
 
-        @media (min-width: 600px) {
-          display: none;
+              @media (min-width: 600px) {
+                display: block;
+              }
+            }
+
+            .sp-br {
+              display: block;
+
+              @media (min-width: 600px) {
+                display: none;
+              }
+            }
+          }
+
+          // p
+        }
+      }
+      // .cc-outer
+
+    }
+    // .mv-container
+  }
+  // #top-mv
+
+  /*  ========1日のスケジュール=======  */
+  #schedule {
+    .timeline-container {
+      .timeline {
+        border-left: 2px solid $blue-3rd;
+
+        .timeline-block {
+          .time {
+            border-bottom: 1px dashed $blue-2nd;
+          }
         }
       }
     }
+  }
 
-    // p
+  /*  ========ご利用の流れ=======  */
+
+  .cc {
   }
 
   // cc
@@ -214,4 +268,21 @@
   }
 
   //  .flow-contact
+
+  /*  ========アクセス=======  */
+
+  #address {
+    .access {
+      .access-block {
+        .access-03 {
+          p {
+            span {
+              border-bottom: 1px solid $green-2nd;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+// #sakura

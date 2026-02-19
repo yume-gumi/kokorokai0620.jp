@@ -283,9 +283,10 @@ footer {
   small {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    translate: -50% 0;
     z-index: 10;
+
+    width: 100%;
+    text-align: center;
   }
 }
 

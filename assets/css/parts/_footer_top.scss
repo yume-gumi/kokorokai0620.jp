@@ -47,7 +47,7 @@
       gap: 12px;
     }
     .service-block {
-      width: 50%;
+      width: 70%;
       max-width: 280px;
 
       a {
@@ -64,6 +64,7 @@
             display: block;
             font-size: 16px;
             font-weight: normal;
+            white-space: nowrap;
             margin-bottom: 8px;
             @include tb() {
               font-size: 14px;

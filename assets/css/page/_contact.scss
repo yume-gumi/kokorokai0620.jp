@@ -73,7 +73,7 @@
         // @media (min-width: 600px)
 
         @media (min-width: 786px) {
-          width: 22%;
+          width: 25%;
           border-bottom: 0;
 
           &:nth-of-type(2) {
@@ -207,13 +207,12 @@
             }
 
             .reply {
-              margin: 0 auto;
+              margin: 1rem auto 0;
               width: fit-content;
               max-width: 350px;
               text-align: center;
 
               display: block;
-              padding-bottom: 2px;
               border-bottom: 1px dashed $text;
 
               @media (min-width: 786px) {
@@ -259,24 +258,24 @@
           // span
 
           .wpcf7-form-control-wrap[data-name="select-type"] {
-            position: relative; 
+            position: relative;
             display: block;
             margin: 0 auto;
             width: 100%;
             max-width: 350px;
-        
+
             &::before {
               content: "";
               position: absolute;
               top: 50%;
               right: 12px;
               transform: translateY(-70%) rotate(45deg);
-        
+
               width: 8px;
               height: 8px;
               border-right: 1px solid $orange;
               border-bottom: 1px solid $orange;
-        
+
               pointer-events: none;
               z-index: 2;
             }
@@ -289,14 +288,13 @@
               max-width: 350px;
               height: 30px;
               border: 1px solid $orange;
-  
+
               appearance: none;
               -webkit-appearance: none;
             }
             // form-dropdown
           }
           // .wpcf7-form-control-wrap
-
 
           .form-message {
             display: block;
@@ -310,10 +308,9 @@
         }
         // form-inner
 
-
         // プライバシーポリシー
         .privacy-check-row {
-          padding: 16px 0;
+          padding: 16px 0 24px;
 
           p {
             width: 100%;
@@ -321,6 +318,41 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
+
+            .wpcf7-form-control-wrap {
+              .wpcf7-acceptance {
+                .wpcf7-list-item {
+                  label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+
+                    .wpcf7-list-item-label {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: fit-content;
+
+                      font-size: .95rem;
+                      
+                      a {
+                        color: $text-sub;
+                        font-size: .95rem;
+                      }
+                    }
+                  }
+                }
+
+              }
+            }
+
+            .wpcf7-not-valid-tip {
+              position: absolute;
+              width: 240px;
+              top: 100%;
+              left: 0;
+            }
           }
 
           .wpcf7-list-item {
@@ -350,7 +382,6 @@
             max-width: 200px;
             font-size: 1.075rem;
           }
-
 
           &::before {
             content: "";

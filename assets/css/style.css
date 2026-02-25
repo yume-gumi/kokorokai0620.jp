@@ -279,7 +279,7 @@ button {
 
 /* ========背景色2nd======= */
 .bg-green-2nd {
-  background: #85D136;
+  background: #72BF21;
   width: 100%;
 }
 
@@ -598,12 +598,14 @@ header.header-sticky {
   background-color: #F8F8EC;
   padding: 20px 40px;
   font-size: 1rem;
-  /* =======ハンバーガーメニューアクティブ====== */
 }
 @media screen and (max-width: 800px) {
   .header_nav__sp {
     display: block;
   }
+}
+.header_nav__sp {
+  /* =======ハンバーガーメニューアクティブ====== */
 }
 .header_nav__sp.active {
   transform: translateX(0);
@@ -612,7 +614,6 @@ header.header-sticky {
 .header_nav__sp ul {
   max-width: 540px;
   margin: 0 auto;
-  /* ======アコーディオンメニュー====== */
 }
 .header_nav__sp ul li {
   padding: 4px 0;
@@ -665,6 +666,9 @@ header.header-sticky {
   background-color: #B44906;
   transform: translateX(-50%);
   transform: rotate(90deg);
+}
+.header_nav__sp ul {
+  /* ======アコーディオンメニュー====== */
 }
 .header_nav__sp ul .btn-accordion {
   display: flex;
@@ -798,7 +802,6 @@ footer .footer-container {
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
-  /* ========footer-menu======= */
 }
 @media screen and (max-width: 800px) {
   footer .footer-container {
@@ -817,6 +820,9 @@ footer .footer-container .address {
 }
 footer .footer-container .address p {
   line-height: 1.5;
+}
+footer .footer-container {
+  /* ========footer-menu======= */
 }
 footer .footer-container .footer_nav__pc {
   display: flex;
@@ -871,7 +877,6 @@ footer .footer-container .footer_nav__sp {
 footer .footer-container .footer_nav__sp ul {
   max-width: 540px;
   font-size: 1rem;
-  /* ======アコーディオンメニュー====== */
 }
 footer .footer-container .footer_nav__sp ul li {
   padding: 4px 0;
@@ -907,6 +912,9 @@ footer .footer-container .footer_nav__sp ul li a .arrow::before {
 }
 footer .footer-container .footer_nav__sp ul li a .arrow::after {
   transform: rotate(-45deg);
+}
+footer .footer-container .footer_nav__sp ul {
+  /* ======アコーディオンメニュー====== */
 }
 footer .footer-container .footer_nav__sp ul .btn-accordion {
   display: flex;
@@ -985,7 +993,6 @@ footer small {
   position: relative;
   width: 100%;
   padding-bottom: 20px;
-  /*  ========topに戻るボタン=======  */
 }
 #footer_top.bg-pink {
   background: var(--color-pink);
@@ -1026,7 +1033,7 @@ footer small {
   }
 }
 #footer_top .service-outer .service-block {
-  width: 50%;
+  width: 70%;
   max-width: 280px;
 }
 #footer_top .service-outer .service-block a {
@@ -1041,20 +1048,21 @@ footer small {
     width: 80px;
   }
 }
-#footer_top .service-outer .service-block a p {
-  font-size: 18px;
-  font-weight: bold;
-}
 #footer_top .service-outer .service-block a p span {
   display: block;
   font-size: 16px;
   font-weight: normal;
+  white-space: nowrap;
   margin-bottom: 8px;
 }
 @media screen and (max-width: 800px) {
   #footer_top .service-outer .service-block a p span {
     font-size: 14px;
   }
+}
+#footer_top .service-outer .service-block a p {
+  font-size: 18px;
+  font-weight: bold;
 }
 @media screen and (max-width: 800px) {
   #footer_top .service-outer .service-block a p {
@@ -1170,6 +1178,9 @@ footer small {
     font-size: 1.175rem;
   }
 }
+#footer_top {
+  /*  ========topに戻るボタン=======  */
+}
 #footer_top #back-btn-containar #back-page-top {
   position: fixed;
   bottom: 40px;
@@ -1178,11 +1189,13 @@ footer small {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  /*  フッターに到達した時にJSでこのクラスをつける  */
 }
 #footer_top #back-btn-containar #back-page-top.is-show {
   opacity: 1;
   visibility: visible;
+}
+#footer_top #back-btn-containar #back-page-top {
+  /*  フッターに到達した時にJSでこのクラスをつける  */
 }
 #footer_top #back-btn-containar #back-page-top.is-stopped {
   position: absolute;
@@ -1202,7 +1215,6 @@ footer small {
   border: 1px solid #FEFBF3;
   z-index: 2;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 @media (min-width: 600px) {
   #footer_top #back-btn-containar #back-page-top .btn-top {
@@ -1217,6 +1229,9 @@ footer small {
     margin-right: 1rem;
     margin-bottom: -2rem;
   }
+}
+#footer_top #back-btn-containar #back-page-top .btn-top {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 #footer_top #back-btn-containar #back-page-top .btn-top::before {
   content: "";
@@ -1350,10 +1365,6 @@ footer small {
 .service_page {
   position: relative;
   z-index: 2;
-  /* ========事業所方針======= */
-  /* ========1日のスケジュール======= */
-  /* ========ご利用の流れ======= */
-  /* =======アドレス======= */
 }
 .service_page .service-head {
   margin: 0 auto 12px;
@@ -1402,7 +1413,6 @@ footer small {
 .service_page #top-mv .mv-container {
   margin: 0 auto;
   width: 100%;
-  /* ========事業内容キャッチコピー======= */
 }
 .service_page #top-mv .mv-container .mv-frame {
   margin: 0 auto;
@@ -1436,6 +1446,9 @@ footer small {
 .service_page #top-mv .mv-container .mv-frame .cc p {
   font-size: 1.125em;
   color: #fff;
+}
+.service_page #top-mv .mv-container {
+  /* ========事業内容キャッチコピー======= */
 }
 .service_page #top-mv .mv-container .cc-outer {
   margin: 0 auto;
@@ -1495,6 +1508,9 @@ footer small {
 .service_page #top-mv .mv-container .cc-outer .cc-inner .cc-text .cc-2nd-inner {
   padding-top: 8px;
 }
+.service_page {
+  /* ========事業所方針======= */
+}
 .service_page #policy {
   background: #F8E2CF;
 }
@@ -1522,6 +1538,9 @@ footer small {
   max-width: 240px;
   height: auto;
 }
+.service_page {
+  /* ========1日のスケジュール======= */
+}
 .service_page #schedule {
   background: #F8E7ED;
   padding-bottom: 20px;
@@ -1538,15 +1557,10 @@ footer small {
   }
 }
 .service_page #schedule .timeline-container .timeline {
-  margin-left: 20px;
+  margin-left: 20px !important;
   padding-top: 20px;
   position: relative;
   border-left: 2px solid #ED83A6;
-}
-@media (min-width: 600px) {
-  .service_page #schedule .timeline-container .timeline {
-    margin-left: 50px;
-  }
 }
 .service_page #schedule .timeline-container .timeline .timeline-block {
   margin-bottom: 20px;
@@ -1602,12 +1616,13 @@ footer small {
 .service_page #schedule .timeline-container .timeline .timeline-block .timeline-text p {
   line-height: 1.6;
 }
+.service_page {
+  /* ========ご利用の流れ======= */
+}
 .service_page #flow .flow-container {
   margin: 0 auto;
   padding-bottom: 20px;
   width: 100%;
-  /* ========ご利用の流れ詳細======= */
-  /* ========お気軽にご相談ください======= */
 }
 .service_page #flow .flow-container .flow-outer {
   margin: 20px auto 30px;
@@ -1688,6 +1703,8 @@ footer small {
 .service_page #flow .flow-container .flow-outer .flow-block .flow-card p {
   line-height: 1.5;
   padding-left: 4px;
+  text-spacing-trim: space-first;
+  hanging-punctuation: last allow-end;
 }
 .service_page #flow .flow-container .flow-outer .flow-block .flow-card .step1 {
   color: #ACD086;
@@ -1706,6 +1723,9 @@ footer small {
 }
 .service_page #flow .flow-container .flow-outer .flow-block .flow-card .step6 {
   color: #ACD086;
+}
+.service_page #flow .flow-container {
+  /* ========ご利用の流れ詳細======= */
 }
 .service_page #flow .flow-container .flow-2nd-outer {
   margin: 40px 0;
@@ -1775,6 +1795,9 @@ footer small {
   display: block;
   font-size: 0.875rem;
   margin-top: 4px;
+}
+.service_page #flow .flow-container {
+  /* ========お気軽にご相談ください======= */
 }
 .service_page #flow .flow-container .flow-contact {
   margin: 40px auto 20px;
@@ -1854,6 +1877,9 @@ footer small {
 .service_page #flow .flow-container .flow-contact .btn {
   flex: 1;
   text-align: center;
+}
+.service_page {
+  /* =======アドレス======= */
 }
 .service_page #address {
   background: #F7EDA0;
@@ -2144,7 +2170,7 @@ footer small {
 }
 @media (min-width: 786px) {
   #contact #tell-contact .tell-outer .tell-card {
-    width: 22%;
+    width: 25%;
     border-bottom: 0;
   }
   #contact #tell-contact .tell-outer .tell-card:nth-of-type(2)::after {
@@ -2262,13 +2288,12 @@ footer small {
   }
 }
 #contact #mail-contact #form .form-outer .form-inner p .reply {
-  margin: 0 auto;
+  margin: 1rem auto 0;
   width: -moz-fit-content;
   width: fit-content;
   max-width: 350px;
   text-align: center;
   display: block;
-  padding-bottom: 2px;
   border-bottom: 1px dashed #B44906;
 }
 @media (min-width: 786px) {
@@ -2349,7 +2374,7 @@ footer small {
   border: 1px solid #F8E2CF;
 }
 #contact #mail-contact #form .form-outer .privacy-check-row {
-  padding: 16px 0;
+  padding: 16px 0 24px;
 }
 #contact #mail-contact #form .form-outer .privacy-check-row p {
   width: 100%;
@@ -2357,6 +2382,30 @@ footer small {
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row p .wpcf7-form-control-wrap .wpcf7-acceptance .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row p .wpcf7-form-control-wrap .wpcf7-acceptance .wpcf7-list-item label .wpcf7-list-item-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.95rem;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row p .wpcf7-form-control-wrap .wpcf7-acceptance .wpcf7-list-item label .wpcf7-list-item-label a {
+  color: #D95B0D;
+  font-size: 0.95rem;
+}
+#contact #mail-contact #form .form-outer .privacy-check-row p .wpcf7-not-valid-tip {
+  position: absolute;
+  width: 240px;
+  top: 100%;
+  left: 0;
 }
 #contact #mail-contact #form .form-outer .privacy-check-row .wpcf7-list-item {
   margin: 0;
@@ -2480,8 +2529,6 @@ footer small {
   padding-top: 80px;
   background: #F8F8EC;
   position: relative;
-  /* ========topのお知らせ======= */
-  /* ========topの事業内容======= */
 }
 #top .loading {
   width: 100vw;
@@ -2537,7 +2584,6 @@ footer small {
 #top #top-container {
   position: relative;
   width: 100%;
-  /* ========二人ペアイラスト======= */
 }
 #top #top-container .top-bg {
   position: absolute;
@@ -2803,6 +2849,9 @@ footer small {
     font-size: 2rem;
   }
 }
+#top #top-container {
+  /* ========二人ペアイラスト======= */
+}
 #top #top-container .cc-img {
   position: relative;
   margin: 0 auto;
@@ -2901,6 +2950,9 @@ footer small {
     height: 170px;
     top: -8vw;
   }
+}
+#top {
+  /* ========topのお知らせ======= */
 }
 #top #news {
   margin: 0 auto;
@@ -3017,7 +3069,6 @@ footer small {
 }
 #top #news .news-container .news-outer a .news-block .news-title {
   overflow: hidden;
-  height: 2.2em;
   font-size: 1rem;
   line-height: 1.2;
   display: -webkit-box;
@@ -3047,10 +3098,8 @@ footer small {
     font-size: 1rem;
   }
 }
-@media (min-width: 1024px) {
-  #top #news .news-container .news-outer a .news-block .news-text {
-    font-size: 1.125rem;
-  }
+#top {
+  /* ========topの事業内容======= */
 }
 #top #service {
   margin: 0 auto;
@@ -3126,8 +3175,6 @@ footer small {
 ===============================================  */
 #plus {
   /*  ========ご利用の流れ=======  */
-  /*  ========ご利用の流れ詳細=======  */
-  /*  ========お気軽にご相談ください=======  */
 }
 @media (min-width: 1024px) {
   #plus .flow-plus {
@@ -3152,6 +3199,9 @@ footer small {
     background: #D3E5F4;
   }
 }
+#plus {
+  /*  ========ご利用の流れ詳細=======  */
+}
 #plus .bg-blue-4th::after {
   content: "";
   background-image: url("../images/icon/pin_blue.svg");
@@ -3164,6 +3214,9 @@ footer small {
 }
 #plus .bg-blue-4th ul .flow-li-plus {
   border-bottom: 1px dashed #93C7ED;
+}
+#plus {
+  /*  ========お気軽にご相談ください=======  */
 }
 #plus .flow-contact-plus {
   box-shadow: 3px 4px 0 0 #93C7ED;
@@ -3194,10 +3247,6 @@ footer small {
 
 #ponte {
   /*  ========キャッチコピー=======  */
-  /*  ========1日のスケジュール=======  */
-  /*  ========ご利用の流れ=======  */
-  /*  ========ご利用の流れ詳細=======  */
-  /*  ========お気軽にご相談ください=======  */
 }
 #ponte #top-mv .mv-container .mv-frame .cc {
   padding: 12px 24px;
@@ -3234,11 +3283,17 @@ footer small {
     display: none;
   }
 }
+#ponte {
+  /*  ========1日のスケジュール=======  */
+}
 #ponte #schedule .timeline-container .timeline {
   border-left: 2px solid #E8BF33;
 }
 #ponte #schedule .timeline-container .timeline .timeline-block .time {
   border-bottom: 1px dashed #E8BF33;
+}
+#ponte {
+  /*  ========ご利用の流れ=======  */
 }
 @media (min-width: 1024px) {
   #ponte .flow-plus {
@@ -3263,6 +3318,9 @@ footer small {
     background: #DAE8C0;
   }
 }
+#ponte {
+  /*  ========ご利用の流れ詳細=======  */
+}
 #ponte .bg-green-4th::after {
   content: "";
   background-image: url("../images/icon/pin_green.svg");
@@ -3276,6 +3334,9 @@ footer small {
 #ponte .bg-green-4th ul .flow-li-plus {
   border-bottom: 1px dashed #ACD086;
 }
+#ponte {
+  /*  ========お気軽にご相談ください=======  */
+}
 #ponte .flow-contact-plus {
   box-shadow: 3px 4px 0 0 #ACD086;
 }
@@ -3283,12 +3344,6 @@ footer small {
 /*  ===============================================
 #  page
 ===============================================  */
-#ponte-pw {
-  /*  ========ご利用の流れ=======  */
-  /*  ========ご利用の流れ詳細=======  */
-  /*  ========お気軽にご相談ください=======  */
-  /*  =======アドレス=======  */
-}
 #ponte-pw .cc p .pc-br {
   display: none;
 }
@@ -3304,6 +3359,9 @@ footer small {
   #ponte-pw .cc p .sp-br {
     display: none;
   }
+}
+#ponte-pw {
+  /*  ========ご利用の流れ=======  */
 }
 @media (min-width: 1024px) {
   #ponte-pw .flow-pw {
@@ -3334,6 +3392,9 @@ footer small {
     background: #D3E5F4;
   }
 }
+#ponte-pw {
+  /*  ========ご利用の流れ詳細=======  */
+}
 #ponte-pw .bg-pink-4th::after {
   content: "";
   background-image: url("../images/icon/pin_pink.svg");
@@ -3347,8 +3408,14 @@ footer small {
 #ponte-pw .bg-pink-4th ul .flow-li-pw {
   border-bottom: 1px dashed #F2B5C9;
 }
+#ponte-pw {
+  /*  ========お気軽にご相談ください=======  */
+}
 #ponte-pw .flow-contact-pw {
   box-shadow: 3px 4px 0 0 #F2B5C9;
+}
+#ponte-pw {
+  /*  =======アドレス=======  */
 }
 #ponte-pw .access-car {
   padding: 12px;
@@ -3383,11 +3450,6 @@ footer small {
 
 #sakura {
   /*  ========キャッチコピー=======  */
-  /*  ========1日のスケジュール=======  */
-  /*  ========ご利用の流れ=======  */
-  /*  ========ご利用の流れ詳細=======  */
-  /*  ========お気軽にご相談ください=======  */
-  /*  ========アクセス=======  */
 }
 #sakura #top-mv .mv-container .mv-frame .cc {
   padding: 12px 20px;
@@ -3424,11 +3486,17 @@ footer small {
     display: none;
   }
 }
+#sakura {
+  /*  ========1日のスケジュール=======  */
+}
 #sakura #schedule .timeline-container .timeline {
   border-left: 2px solid #93C7ED;
 }
 #sakura #schedule .timeline-container .timeline .timeline-block .time {
   border-bottom: 1px dashed #369BD1;
+}
+#sakura {
+  /*  ========ご利用の流れ=======  */
 }
 #sakura .circle {
   margin: 0 auto 32px;
@@ -3451,8 +3519,11 @@ footer small {
   height: 95px;
   background-color: #e0f2ff;
   border-radius: 50%;
-  text-align: center;
+  display: grid;
   align-content: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -3539,6 +3610,9 @@ footer small {
     background: #D3E5F4;
   }
 }
+#sakura {
+  /*  ========ご利用の流れ詳細=======  */
+}
 #sakura .bg-yellow-4th::after {
   content: "";
   background-image: url("../images/icon/pin_yellow.svg");
@@ -3552,11 +3626,17 @@ footer small {
 #sakura .bg-yellow-4th ul .flow-li-plus {
   border-bottom: 1px dashed #F4E46C;
 }
+#sakura {
+  /*  ========お気軽にご相談ください=======  */
+}
 #sakura .flow-contact-plus {
   box-shadow: 3px 4px 0 0 #F4E46C;
 }
+#sakura {
+  /*  ========アクセス=======  */
+}
 #sakura #address .access .access-block .access-03 p span {
-  border-bottom: 1px solid #85D136;
+  border-bottom: 1px solid #72BF21;
 }
 
 /* ===============================================
@@ -3604,6 +3684,9 @@ footer small {
     font-size: 1.125rem;
     margin-bottom: 16px;
   }
+}
+.text-single p {
+  line-height: 1.5;
 }
 
 .news-pagination {
@@ -3659,12 +3742,6 @@ footer small {
   height: auto;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.8);
-  /* ページネーション全体のコンテナ */
-  /* 各ボタンの共通スタイル */
-  /* 現在のページ (押せないボタン) */
-  /* 前へ・次へ ボタン（薄い色の背景） */
-  /* ホバー時の挙動 */
-  /* 点々（...）のスタイル */
 }
 #news #news-home .news-outer .news-inner {
   display: flex;
@@ -3679,11 +3756,11 @@ footer small {
 #news #news-home .news-outer .news-inner .news-card {
   padding: 8px 0 12px;
   width: 100%;
+  min-width: 0;
   line-height: 1.5;
   border-bottom: 1px dashed #F8E2CF;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 @media (min-width: 600px) {
   #news #news-home .news-outer .news-inner .news-card {
@@ -3692,11 +3769,15 @@ footer small {
     gap: 8px;
   }
 }
+#news #news-home .news-outer .news-inner .news-card {
+  position: relative;
+}
 #news #news-home .news-outer .news-inner .news-card .deta-outer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
 }
 #news #news-home .news-outer .news-inner .news-card .deta-outer .deta {
   font-weight: bold;
@@ -3704,6 +3785,8 @@ footer small {
   letter-spacing: 1px;
 }
 #news #news-home .news-outer .news-inner .news-card .deta-outer .category {
+  display: flex;
+  flex-shrink: 0;
   padding: 0 8px;
   width: -moz-fit-content;
   width: fit-content;
@@ -3720,11 +3803,23 @@ footer small {
   font-size: 0.75rem;
 }
 #news #news-home .news-outer .news-inner .news-card .title {
+  flex-grow: 1;
+  min-width: 0;
   overflow: hidden;
-  height: 1.2rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* 表示行数 */
+  -webkit-box-orient: vertical; /* 方向を垂直に */
+}
+@media (min-width: 600px) {
+  #news #news-home .news-outer .news-inner .news-card .title {
+    display: block;
+    flex: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+#news #news-home .news-outer {
+  /* ページネーション全体のコンテナ */
 }
 #news #news-home .news-outer .pagination {
   display: flex;
@@ -3736,6 +3831,9 @@ footer small {
   display: flex;
   gap: 8px;
 }
+#news #news-home .news-outer {
+  /* 各ボタンの共通スタイル */
+}
 #news #news-home .news-outer .pagination .page-numbers {
   display: inline-flex;
   align-items: center;
@@ -3745,17 +3843,23 @@ footer small {
   text-decoration: none;
   font-weight: bold;
   border-radius: 16px;
-  transform: all 0.2s ease;
+  transform: 0.2s ease;
   background: #FEFBF3;
   color: #B44906;
   border: 1px solid #B44906;
   box-shadow: 2px 2px 0 0 #B44906;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+#news #news-home .news-outer {
+  /* 現在のページ (押せないボタン) */
+}
 #news #news-home .news-outer .pagination .page-numbers.current {
   background: #B44906;
   color: #fff;
   cursor: default;
+}
+#news #news-home .news-outer {
+  /* 前へ・次へ ボタン（薄い色の背景） */
 }
 #news #news-home .news-outer .pagination .prev.page-numbers,
 #news #news-home .news-outer .pagination .next.page-numbers {
@@ -3767,9 +3871,15 @@ footer small {
   align-self: center;
   border-radius: 50%;
 }
+#news #news-home .news-outer {
+  /* ホバー時の挙動 */
+}
 #news #news-home .news-outer .pagination a.page-numbers:hover {
   box-shadow: 0 0 0 0 #B44906;
   transform: translate(2px, 2px);
+}
+#news #news-home .news-outer {
+  /* 点々（...）のスタイル */
 }
 #news #news-home .news-outer .pagination .dots {
   opacity: 0.8;

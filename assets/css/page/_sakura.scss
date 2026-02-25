@@ -89,7 +89,6 @@
         }
       }
       // .cc-outer
-
     }
     // .mv-container
   }
@@ -138,8 +137,13 @@
     height: 95px;
     background-color: #e0f2ff;
     border-radius: 50%;
-    text-align: center;
+
+    display: grid;
     align-content: center;
+    justify-content: center;
+    text-align: center;
+    // align-content: center;
+    flex-wrap: wrap;
     font-size: 1rem;
     line-height: 1.5;
     @media (min-width: 1024px) {

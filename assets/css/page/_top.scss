@@ -564,7 +564,6 @@
 
             .news-title {
               overflow: hidden;
-              height: 2.2em;
 
               font-size: 1rem;
               line-height: 1.2;
@@ -591,10 +590,6 @@
 
               @media (min-width: 600px) {
                 font-size: 1rem;
-              }
-
-              @media (min-width: 1024px) {
-                font-size: 1.125rem;
               }
             }
           }

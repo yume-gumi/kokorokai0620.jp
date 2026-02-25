@@ -104,21 +104,21 @@
 
     <section id="mail-contact" class="bg-yellow">
 
-    <div id="form">
+        <div id="form">
 
-        <h3>お問い合わせフォーム</h3>
-        <p class="form-desc">必要事項にご入力の上、「送信する」ボタンを押してください。</p>
+            <h3>お問い合わせフォーム</h3>
+            <p class="form-desc">必要事項にご入力の上、「送信する」ボタンを押してください。</p>
 
-        <div class="form-outer">
+            <div class="form-outer">
 
-            <?php the_content(); ?>
+                <?php the_content(); ?>
 
-            
-            
+
+
+            </div>
+
         </div>
-        
-    </div>
-    <!-- #form -->
+        <!-- #form -->
     </section>
     <!-- ＃mail-contact -->
 
@@ -138,3 +138,5 @@
 </main>
 
 <?php get_footer();  ?>
+
+<a herf="/kokorokai/privacy">プライバシーポリシーに同意</a>

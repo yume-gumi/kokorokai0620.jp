@@ -246,32 +246,29 @@
               margin-left: 12px;
               font-size: 1rem;
             }
-
+            
             @media (min-width: 786px) {
-              margin-left: 24px;
               font-size: 1.1rem;
             }
-
+            
             @media (min-width: 1024px) {
-              margin-left: 48px;
               font-size: 1.2rem;
             }
-
+            
             &:nth-child(1) {
               align-self: flex-start;
-            }
+              margin-left: 8px;
 
+            }
+            
             &:nth-child(2) {
               align-self: flex-end;
-              margin-right: 1vw;
-
+              margin-right: 12px;
+              
               @media (min-width: 600px) {
                 align-self: flex-start;
+                margin-right: 8px;
               }
-            }
-
-            &:nth-child(3) {
-              align-self: flex-start;
             }
 
             br {

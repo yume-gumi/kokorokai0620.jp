@@ -2372,6 +2372,7 @@ footer small {
   max-width: 350px;
   height: 7rem;
   border: 1px solid #F8E2CF;
+  resize: none;
 }
 #contact #mail-contact #form .form-outer .privacy-check-row {
   padding: 16px 0 24px;
@@ -2769,30 +2770,27 @@ footer small {
 }
 @media (min-width: 786px) {
   #top #top-container #kv .kv-container .catch_copy-outer .catch_copy {
-    margin-left: 24px;
     font-size: 1.1rem;
   }
 }
 @media (min-width: 1024px) {
   #top #top-container #kv .kv-container .catch_copy-outer .catch_copy {
-    margin-left: 48px;
     font-size: 1.2rem;
   }
 }
 #top #top-container #kv .kv-container .catch_copy-outer .catch_copy:nth-child(1) {
   align-self: flex-start;
+  margin-left: 8px;
 }
 #top #top-container #kv .kv-container .catch_copy-outer .catch_copy:nth-child(2) {
   align-self: flex-end;
-  margin-right: 1vw;
+  margin-right: 12px;
 }
 @media (min-width: 600px) {
   #top #top-container #kv .kv-container .catch_copy-outer .catch_copy:nth-child(2) {
     align-self: flex-start;
+    margin-right: 8px;
   }
-}
-#top #top-container #kv .kv-container .catch_copy-outer .catch_copy:nth-child(3) {
-  align-self: flex-start;
 }
 #top #top-container #kv .kv-container .catch_copy-outer .catch_copy br {
   display: block;

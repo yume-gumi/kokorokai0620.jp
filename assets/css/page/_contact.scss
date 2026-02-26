@@ -21,9 +21,8 @@
     z-index: 2;
 
     h3 {
-      padding-top: 0;
-      padding-bottom: 12px;
-      margin-bottom: 4px;
+      padding: 0 12px;
+      margin: 0 20px 4px;
       border-bottom: 1px solid $text;
     }
 
@@ -74,7 +73,7 @@
         // @media (min-width: 600px)
 
         @media (min-width: 786px) {
-          width: 22%;
+          width: 25%;
           border-bottom: 0;
 
           &:nth-of-type(2) {
@@ -169,6 +168,8 @@
         }
 
         .form-inner {
+          position: relative;
+          width: 100%;
           padding-bottom: 4px;
 
           display: flex;
@@ -206,13 +207,12 @@
             }
 
             .reply {
-              margin: 0 auto;
+              margin: 1rem auto 0;
               width: fit-content;
               max-width: 350px;
               text-align: center;
 
               display: block;
-              padding-bottom: 2px;
               border-bottom: 1px dashed $text;
 
               @media (min-width: 786px) {
@@ -257,55 +257,44 @@
           }
           // span
 
-          // // ドロップダウンがある時だけ矢印を表示させる
-          // &:has(.form-dropdown)::after {
-          //   content: "";
-          //   position: absolute;
-          //   right: 15px; // PC・スマホ共通の右端からの距離
-          //   top: 50%;
-          //   transform: translateY(-50%) rotate(45deg); // ど真ん中に配置して回転
-          //   width: 8px;
-          //   height: 8px;
-          //   border-right: 2px solid $orange;
-          //   border-bottom: 2px solid $orange;
-          //   pointer-events: none;
-          //   z-index: 5;
-
-          //   // スマホ時（縦並び）の矢印位置微調整
-          //   @media (max-width: 785px) {
-          //     top: auto;
-          //     bottom: 12px; // 下側の入力欄の中央に来るよう調整
-          //     right: calc(50% - 165px); // 入力欄max-width:350pxの右端付近
-          //   }
-          // }
-
-          .form-dropdown {
+          .wpcf7-form-control-wrap[data-name="select-type"] {
+            position: relative;
             display: block;
             margin: 0 auto;
-            padding: 0 10px;
             width: 100%;
             max-width: 350px;
-            height: 30px;
-            border: 1px solid $orange;
-
-            position: relative;
 
             &::before {
               content: "";
               position: absolute;
               top: 50%;
-              right: 15px;
+              right: 12px;
               transform: translateY(-70%) rotate(45deg);
 
               width: 8px;
               height: 8px;
-              border-right: 2px solid $orange;
-              border-bottom: 2px solid $orange;
+              border-right: 1px solid $orange;
+              border-bottom: 1px solid $orange;
 
               pointer-events: none;
+              z-index: 2;
             }
+
+            .form-dropdown {
+              display: block;
+              margin: 0 auto;
+              padding: 0 10px;
+              width: 100%;
+              max-width: 350px;
+              height: 30px;
+              border: 1px solid $orange;
+
+              appearance: none;
+              -webkit-appearance: none;
+            }
+            // form-dropdown
           }
-          // form-dropdown
+          // .wpcf7-form-control-wrap
 
           .form-message {
             display: block;
@@ -314,6 +303,8 @@
             max-width: 350px;
             height: 7rem;
             border: 1px solid $orange;
+
+            resize: none;
           }
           // form-message
         }
@@ -321,7 +312,7 @@
 
         // プライバシーポリシー
         .privacy-check-row {
-          padding: 16px 0;
+          padding: 16px 0 24px;
 
           p {
             width: 100%;
@@ -329,6 +320,41 @@
             align-items: center;
             justify-content: center;
             gap: 8px;
+
+            .wpcf7-form-control-wrap {
+              .wpcf7-acceptance {
+                .wpcf7-list-item {
+                  label {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+
+                    .wpcf7-list-item-label {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: fit-content;
+
+                      font-size: .95rem;
+                      
+                      a {
+                        color: $text-sub;
+                        font-size: .95rem;
+                      }
+                    }
+                  }
+                }
+
+              }
+            }
+
+            .wpcf7-not-valid-tip {
+              position: absolute;
+              width: 240px;
+              top: 100%;
+              left: 0;
+            }
           }
 
           .wpcf7-list-item {
@@ -348,7 +374,51 @@
 
         .send-btn {
           display: block;
+          position: relative;
+
+          margin: 0 auto;
+          padding: 5px 24px;
+          width: fit-content;
           text-align: center;
+          .btn {
+            max-width: 200px;
+            font-size: 1.075rem;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+
+            width: 16px; //
+            height: 16px;
+            background: $text;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 37px;
+            transform: translateY(-55%) rotate(45deg);
+
+            width: 4px;
+            height: 4px;
+            border-top: 1px solid $btn-cc;
+            border-right: 1px solid $btn-cc;
+            z-index: 2;
+          }
+
+          .wpcf7-spinner {
+            display: none;
+          }
         }
       }
       // form-outer

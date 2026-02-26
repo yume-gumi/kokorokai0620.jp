@@ -37,8 +37,12 @@
                                 </span>
                             </div>
 
-                            <span class="title"><?php the_title(); ?></span>
-
+                            <p class="title"><?php
+                                                        // タイトルの文字数を30文字に制限し、超える場合は「...」を付与
+                                                        $title = get_the_title();
+                                                        echo mb_strimwidth($title, 0, 80, '...', 'UTF-8');
+                                                        ?>
+                            </p>
                         </a>
                 <?php
                     endwhile;
@@ -46,12 +50,12 @@
                 wp_reset_postdata();
                 ?>
                 <?php
-the_posts_pagination( array(
-    'mid_size' => 2,      // 現在のページの両側に表示する数字の数
-    'prev_text' => '<', // 「前へ」リンクのテキスト
-    'next_text' => '>', // 「次へ」リンクのテキスト
-) );
-?>
+                the_posts_pagination(array(
+                    'mid_size' => 2,      // 現在のページの両側に表示する数字の数
+                    'prev_text' => '<', // 「前へ」リンクのテキスト
+                    'next_text' => '>', // 「次へ」リンクのテキスト
+                ));
+                ?>
             </div>
             <!-- news-outer -->
 

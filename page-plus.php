@@ -2,11 +2,11 @@
 
 <!--  MAIN  -->
 <main id="plus" class="service_page">
-  
+
   <h4 class="service-head">就労継続支援B型 ぷらす</h4>
 
   <div class="top-bg wave-green"></div>
-  
+
   <section id="top-mv">
 
     <div class="mv-container">
@@ -67,19 +67,19 @@
 
       <div class="policy-outer">
 
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_policy01.png" alt="労働の機会を提供し、少しでも高い工賃を得られるようにしていきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_policy02.png" alt="作業はもちろん、自立的な生活が実現できるように支援していきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_policy03.png" alt="自分の持っている強みを生かす視点で活動に取り組んでいきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_policy04.png" alt="plよりステップアップを目指していく自信や弾みをつけられるように支援していきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_policy05.png" alt="事業所間、他機関と連携し地域の活用できる資源の一つになれるよう目指していきます。">
         </div>
 
@@ -105,7 +105,7 @@
 
       <ul class="timeline">
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">9:00~</div>
 
@@ -120,7 +120,7 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">10:00~</div>
 
@@ -132,7 +132,7 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">12:00~</div>
 
@@ -144,7 +144,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">13:00~</div>
 
@@ -156,7 +156,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">15:00~</div>
 
@@ -190,7 +190,7 @@
 
       <div class="flow-outer flow-plus">
 
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step1.svg" alt="step1">
@@ -203,7 +203,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step2.svg" alt="step2">
@@ -217,7 +217,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step3.svg" alt="step3">
@@ -230,7 +230,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
@@ -373,14 +373,14 @@
       <div class="access">
         <p class="access-title">アクセス</p>
 
-        <div class="access-brock">
+        <div class="access-block">
           <div class="access-tool">
             <div class="access-01">【電車】</div>
             <p class="access-02">・東武東上線ふじみ野駅より徒歩30分</p>
           </div>
         </div>
 
-        <div class="access-brock">
+        <div class="access-block">
 
           <div class="access-tool">
             <div class="access-01">【バス】</div>
@@ -417,7 +417,7 @@
                     </div>
 
                 </div>
-                <!--  access-brock  -->
+                <!--  access-block  -->
 
                 <p  class=" access-car">お車、または自転車でお越しの際は、敷地内に
               駐車場と駐輪場がございますのでご利用下さい。</p>

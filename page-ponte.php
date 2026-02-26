@@ -27,8 +27,8 @@
         <div class="cc-inner">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_img01.png" alt="ponte_img01">
           <div class="cc-text">
-            <p>ご自身の持っている力を発揮し、自分のペースで一歩ずつ<br>
-              新しい生活を始めたいあなたを、わたしたちが地域との<br>
+            <p>ご自身の持っている力を発揮し、自分のペースで一歩ずつ<br class="pc-br">
+              新しい生活を始めたいあなたを、わたしたちが地域との<br  class="pc-br">
               架け橋としてサポートします。</p>
           </div>
         </div>
@@ -38,7 +38,8 @@
           <div class="cc-text">
             <p>退院したばかりなので、まずは生活リズムを整えたい。<br>
               今はデイケアに通っているけど、そこからステップアップする自信がない。<br>
-              一度は就職したけど挫折してしまったから、ゆっくり再チャレンジしたい…何でもご相談ください。</p>
+              一度は就職したけど挫折してしまったから、ゆっくり再チャレンジしたい…<br class="sp-br">
+              何でもご相談ください。</p>
           </div>
         </div>
       </div>
@@ -65,19 +66,19 @@
 
       <div class="policy-outer">
 
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_policy01.png" alt="面談や振り返りの時間を大切に、本人の気持ちを確認しながら進めていきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_policy02.png" alt="よりステップアップを目指していく方に、弾みをつけられるように支援していきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_policy03.png" alt="自分の持っている強みを生かす視点で活動に取り組んでいきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_policy04.png" alt="生活していく力、コミュニケーション能力を獲得していく時間を作っていきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/ponte_policy05.png" alt="アットホームな雰囲気で安心して通えるように心がけています。">
         </div>
 
@@ -103,7 +104,7 @@
 
       <ul class="timeline">
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">9:00~</div>
 
@@ -118,7 +119,7 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">10:00~</div>
 
@@ -130,7 +131,7 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">12:00~</div>
 
@@ -142,7 +143,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">13:00~</div>
 
@@ -154,7 +155,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">14:00~</div>
 
@@ -167,7 +168,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">15:00~</div>
 
@@ -200,7 +201,7 @@
 
       <div class="flow-outer flow-plus">
 
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step1.svg" alt="step1">
@@ -213,7 +214,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step2.svg" alt="step2">
@@ -227,7 +228,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step3.svg" alt="step3">
@@ -240,7 +241,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
@@ -378,15 +379,15 @@
       <div class="access">
         <p class="access-title">アクセス</p>
 
-        <div class="access-brock">
+        <div class="access-block">
+
           <div class="access-tool">
             <div class="access-01">【電車】</div>
             <p class="access-02">・東武東上線上福岡駅より徒歩15分</p>
           </div>
         </div>
 
-      </div>
-      <!--  access-brock  -->
+      <!--  access-block  -->
 
       <p class=" access-car">お車、または自転車でお越しの際は、敷地内に
         駐車場と駐輪場がございますのでご利用下さい。</p>

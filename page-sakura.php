@@ -6,7 +6,7 @@
   <h4 class="service-head">地域活動支援センター さくら</h4>
 
   <div class="top-bg wave-orange"></div>
-  
+
   <section id="top-mv">
 
     <div class="mv-container">
@@ -26,8 +26,8 @@
         <div class="cc-inner">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_img01.png" alt="sakura_img01">
           <div class="cc-text">
-            <p>わたしたちは地域に不足する資源の一つとして、<br>
-                また、地域との架け橋としてあなたをサポートしていきます。</p>
+            <p>わたしたちは地域に不足する資源の一つとして、<br class="pc-br">
+              また、地域との架け橋としてあなたをサポートしていきます。</p>
           </div>
         </div>
 
@@ -35,8 +35,8 @@
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_img02.png" alt="sakura_img02">
           <div class="cc-text">
             <p>ひきこもりで在宅生活が続いているけど、社会に出るきっかけがほしい。<br>
-                人との交流の場がほしい、でも何から始めたらいいのかわからない…<br>
-                なんでもご相談ください。</p>
+              人との交流の場がほしい、でも何から始めたらいいのかわからない…<br>
+              なんでもご相談ください。</p>
 
             <p class="cc-2nd-text">15歳の方からご利用いただけます。</p>
           </div>
@@ -65,13 +65,13 @@
 
       <div class="policy-outer">
 
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_policy01.png" alt="地域の暮らしのきっかけづくりのお手伝いをしていきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_policy02.png" alt="ご本人の居場所の一つになれるような事業所を目指していきます。">
         </div>
-        <div class="policy-brock">
+        <div class="policy-block">
           <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/sakura_policy03.png" alt="他機関と連携し、ご本人やご家族が安心して生活できる地域社会づくりを目指していきます。">
         </div>
 
@@ -97,7 +97,7 @@
 
       <ul class="timeline">
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">10:00~</div>
 
@@ -111,19 +111,19 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">11:00~</div>
 
           <div class="timeline-text">
             <p>午前 各プログラム開始。（日替わり）</p>
             <p>
-                主な活動内容<br>
-                ・創作活動（イラスト、漫画など）<br>
-                ・交流活動（ゲーム、当事者活動、外出など）<br>
-                ・個別活動（個別相談、居場所づくり）<br>
-                ・訪問活動（自宅訪問相談）<br>
-                ・SST（社会生活技能訓練）<br>
+              主な活動内容<br>
+              ・創作活動（イラスト、漫画など）<br>
+              ・交流活動（ゲーム、当事者活動、外出など）<br>
+              ・個別活動（個別相談、居場所づくり）<br>
+              ・訪問活動（自宅訪問相談）<br>
+              ・SST（社会生活技能訓練）<br>
             </p>
             <span>※各プログラムは予約制で人数制限があります。</span>
           </div>
@@ -132,7 +132,7 @@
         </li>
 
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">12:00~</div>
 
@@ -144,7 +144,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">13:00~</div>
 
@@ -157,7 +157,7 @@
 
         </li>
 
-        <li class="timeline-brock">
+        <li class="timeline-block">
 
           <div class="time">15:00~</div>
 
@@ -176,15 +176,15 @@
 
     </div>
 
-      <div class="circle">
-        <p class="circle-item">計画相談<br>有り</p>
-        <p class="circle-item">B型<br>併設</p>
-        <p class="circle-item">個室<br>有り</p>
-        <p class="circle-item">無料<br>Wi-Fi</p>
-        <p class="circle-item">PC<br>ゲーム</p>
-        <p class="circle-item">イラスト<br>・漫画</p>
-      </div>
-      <p class="back"><span class="back_circle  back_circle--01">社会福祉士</span>・<span class="back_circle  back_circle--02">精神保健福祉士</span>・<span class="back_circle  back_circle--03">相談支援専門員</span><br>が常勤しています！</p>
+    <div class="circle">
+      <p class="circle-item">計画相談<br>有り</p>
+      <p class="circle-item">B型<br>併設</p>
+      <p class="circle-item">個室<br>有り</p>
+      <p class="circle-item">無料<br>Wi-Fi</p>
+      <p class="circle-item">PC<br>ゲーム</p>
+      <p class="circle-item">イラスト<br>・漫画</p>
+    </div>
+    <p class="back"><span class="back_circle  back_circle--01">社会福祉士</span>・<span class="back_circle  back_circle--02">精神保健福祉士</span>・<span class="back_circle  back_circle--03">相談支援専門員</span><br>が常勤しています！</p>
 
 
     <!--  timeline-container  -->
@@ -203,7 +203,7 @@
 
       <div class="flow-outer flow-plus">
 
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step1.svg" alt="step1">
@@ -211,17 +211,17 @@
 
           <div class="flow-card  step1">
             <div class="flow-title  step1">ご相談</div>
-            <p class="step1">ご利用や見学・体験についてなど、<br>
-                お気軽にご相談ください。<br>
-                ご利用を希望される場合は<br>
-                直接ご連絡いただくか、<br>
-                市役所の障がい福祉課に<br>
-                お問い合わせください。<br>
-                年度毎の利用更新が必要です。</p>
+            <p class="step1">ご利用や見学・体験についてなど、
+              お気軽にご相談ください。<br>
+              ご利用を希望される場合は
+              直接ご連絡いただくか、
+              市役所の障がい福祉課に
+              お問い合わせください。<br>
+              年度毎の利用更新が必要です。</p>
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step2.svg" alt="step2">
@@ -235,7 +235,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step3.svg" alt="step3">
@@ -247,7 +247,7 @@
           </div>
 
         </div>
-        <div class="flow-brock">
+        <div class="flow-block">
 
           <span class="step-icon">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/step4.svg" alt="step4">
@@ -256,7 +256,7 @@
           <div class="flow-card  step4">
             <div class="flow-title  step4">ご利用開始</div>
             <p class="step4">いよいよ利用開始！<br>
-                自分のペースで楽しく作業しましょう。</p>
+              自分のペースで楽しく作業しましょう。</p>
           </div>
 
         </div>
@@ -277,21 +277,21 @@
           <li class="flow-li-plus">
             <div class="flow-2nd-title">ご利用料金</div>
             <p>基本的にはかかりませんが、イベントや創作活動等にかかる費用、<br>
-                及び昼食代は自己負担となります。</p>
+              及び昼食代は自己負担となります。</p>
           </li>
 
           <li class="flow-li-plus">
             <div class="flow-2nd-title">送迎について</div>
             <p>ご希望の方は3ヶ月までの限定でご利用いただけます。<br>
-                ただし、乗降場所や送迎時間はご希望に添えない場合もございます。</p>
+              ただし、乗降場所や送迎時間はご希望に添えない場合もございます。</p>
           </li>
 
           <li class="flow-li-plus">
             <div class="flow-2nd-title">その他</div>
             <p>他の日中サービスをご利用の日は併用できません。<br>
-                ご利用を希望される場合は直接ご連絡いただくか、市役所の障害福祉課に<br>
-                お問い合わせください。<br>
-                年度毎の利用更新が必要です。</p>
+              ご利用を希望される場合は直接ご連絡いただくか、市役所の障害福祉課に<br>
+              お問い合わせください。<br>
+              年度毎の利用更新が必要です。</p>
           </li>
 
         </ul>
@@ -380,16 +380,17 @@
       <div class="access">
         <p class="access-title">アクセス</p>
 
-        <div class="access-brock">
+        <div class="access-block">
           <div class="access-tool">
             <div class="access-01">【電車】</div>
             <p class="access-02">・東武東上線ふじみ野駅より徒歩30分</p>
           </div>
         </div>
 
-        <div class="access-brock">
+        <div class="access-block">
 
           <div class="access-tool">
+
             <div class="access-01">【バス】</div>
             <p class="access-02">・ふじみ野駅西口より東武バス利用の場合 :</p>
 
@@ -417,23 +418,23 @@
               ・ふじみん号ご利用の場合：</p>
 
             <div class="access-03">
-                            <p>CまたはEコース<span>「大井支所」</span>下車  
-                            徒歩10分</p>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!--  access-brock  -->
-
-                <p  class=" access-car">お車、または自転車でお越しの際は、敷地内に
-              駐車場と駐輪場がございますのでご利用下さい。</p>
-
+              <p>CまたはEコース<span>「大井支所」</span>下車
+                徒歩10分</p>
             </div>
-            <!--  access  -->
 
           </div>
-          <!--  address-container  -->
+
+        </div>
+        <!--  access-block  -->
+
+        <p class="access-car">お車、または自転車でお越しの際は、敷地内に
+          駐車場と駐輪場がございますのでご利用下さい。</p>
+
+      </div>
+      <!--  access  -->
+
+    </div>
+    <!--  address-container  -->
 
 
   </section>
@@ -441,14 +442,14 @@
 
 
 
-    <?php
-    $args  =  [
-        "top-wave"  =>  "green",
-        "background"  =>  "orange",
-        "service"  =>  true
-    ];
-    get_template_part("parts/footer_top",  null, $args);
-    ?>
+  <?php
+  $args  =  [
+    "top-wave"  =>  "green",
+    "background"  =>  "orange",
+    "service"  =>  true
+  ];
+  get_template_part("parts/footer_top",  null, $args);
+  ?>
 </main>
 <!--  MAIN  -->
 

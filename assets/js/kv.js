@@ -1,121 +1,69 @@
 
-document.body.style.overflow = 'hidden';
 
-if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-}
-// GSAPを使ったヌルヌル動くバージョン
-var images = document.getElementsByTagName('img');
-const loadingMask = document.querySelector(".loading__mask");
+const loading = document.querySelector(".loading");
 const loadingLogo = document.querySelector(".loading__logo");
+const loadingMask = document.querySelector(".loading__mask");
+const loadingLogoItems = document.querySelectorAll(".loading__logo--item");
 const loadingInner = document.querySelector(".loading__inner");
-const loadingPercent = document.querySelector(".loading__percent");
-var percentText = document.getElementById('percent-text');
-percentText.innerHTML = 0
 
-var imgCount = 0;
-var totalImages = images.length || 1;
-var proxy = { value: 0 }; // GSAPで数値をアニメーションさせるためのダミーオブジェクト
+const kvPhoto = document.querySelector(".kv-photo .photo");
+const kvCatchcopy = document.querySelectorAll(".kv-photo .catch_copy");
 
-// 画像監視
-for (var i = 0; i < images.length; i++) {
-    if (images[i].complete) { imgCount++; } 
-    else {
-        var img = new Image();
-        img.onload = img.onerror = function() { imgCount++; updateProgress(); };
-        img.src = images[i].src;
-    }
-}
-// 初回実行
-updateProgress();
+let index = 0;
+const firstCount = 5; // 最初の5つ
+const lastCount = 4;  // 最後の4つ
 
-function updateProgress() {
-
-
-    var target = (imgCount / totalImages) * 100;
-
-    // ★追加：最初の1秒でふわっと表示させるアニメーション
-    gsap.to([loadingLogo, loadingPercent], {
-        opacity: 1,
-        y: 0,           // ちょっと下から上に浮き上がらせるなら
-        duration: .5,    // 1秒かけて
-        ease: "power2.out"
-    });
-
-    // GSAPで数値をなめらかに変化させる
-    gsap.to(proxy, {
-        value: target,
-        duration: 4,      // 4秒かけて目標値へ
-        delay: 1.5,         // ★ここで「何秒止めておくか」を指定（例: 2秒）
-        ease: "expo.out", 
-        onStart: function() {
-            // アニメーション開始時に何か処理をしたい場合はここ
-        },
-        onUpdate: function() {
-            var current = proxy.value;
-            var displayInt = Math.floor(current);
-            if (percentText) percentText.innerHTML = displayInt;
-
-            moveElements(current);
-        }
-    });
-}
-
-function moveLogo(val) {
-    const margin = 14;
-    const pW = loadingInner.clientWidth;
-    const pH = loadingInner.clientHeight;
-    const tH = pH - loadingLogo.clientHeight - (margin * 2);
-    const tW = pW - loadingLogo.clientWidth;
-
-    // GSAPの「set」を使って位置を更新。transformを使うとより滑らかになります
-    if (val < 33) {
-        gsap.set(loadingLogo, { left: "auto", right: 0, bottom: "auto", top: margin + (val / 33 * tH) });
-    } else if (val < 66) {
-        gsap.set(loadingLogo, { top: "auto", bottom: margin, left: "auto", right: ((val - 33) / 33 * tW) });
-    } else {
-        gsap.set(loadingLogo, { right: "auto", left: 0, bottom: "auto", top: (margin + tH) - ((val - 66) / 34 * tH) });
-    }
-
-}
-
-/**
- * 数字の移動：右から左へ横断する（左右マージン180px）
- */
-function moveLoadingText(val) {
-    if (!loadingPercent || !loadingInner) return;
-
-    const margin = 180; // 左右のマージン
-    const loadingInnerWidth = loadingInner.clientWidth;
-    const loadingPercentWidth = loadingPercent.clientWidth;
-
-    const travelWidth = loadingInnerWidth - (margin * 2) - loadingPercentWidth;
-
-    const currentRight = margin + (travelWidth / 100 * val);
-
-    gsap.set(loadingPercent, {
-        display: 'block',
-        left: "auto",
-        right: currentRight + "px",
-        // 指定の通り top 48px に配置
-        top: "48px",
-        yPercent: -50,
-    });
-}
-
-function moveElements(val) {
-
-    // ロゴの移動関数
-    moveLogo(val);
-
-    // 数字の移動関数（切り出し）
-    moveLoadingText(val);
-
+function showNextItem() {
     // 終了判定
-    if (val >= 100) {
-        document.body.style.overflow = 'scroll';
-        loadingMask.classList.add("hidden");
-        loadingPercent.style.opacity="0";
-        loadingLogo.style.opacity="0";
+    if (index === loadingLogoItems.length) {
+        setTimeout(()=>{
+            loadingLogo.classList.remove("loading__logo--expand");
+        },500)
+        return;
     }
+
+    // 表示処理
+    const item = loadingLogoItems[index];
+    item.style.opacity = "1";
+    item.style.translate = "0";
+    
+    index++;
+
+    // 次のアイテムまでの待ち時間を決定
+    let delay = 500; // デフォルト（中間の速度）
+
+    if (index < firstCount) {
+        delay = 500; // 最初の5つは遅く
+    } else if (index > loadingLogoItems.length - lastCount) {
+        delay = 250; // 最後の4つは速く
+    }
+
+    // 次のステップを予約
+    setTimeout(showNextItem, delay);
 }
+
+// 実行開始
+showNextItem();
+
+window.onload = () => {
+  setTimeout(() => {
+    document.body.style.overflow = 'scroll';
+    loadingMask.classList.add("loading__mask--hidden");
+
+    setTimeout(() => {
+        loading.style.display="none";
+        kvPhoto.classList.remove("photo--hidden");
+        index = 0;
+
+        const intervalId = setInterval(() => {
+            if(index == kvCatchcopy.length) {
+                clearInterval(intervalId);
+                return;
+            }
+            kvCatchcopy[index].classList.remove("catch_copy--hidden");
+
+            index++;
+        }, 1000); 
+    }, 500);
+  }, Math.max(0, 6000 - performance.now()));
+};

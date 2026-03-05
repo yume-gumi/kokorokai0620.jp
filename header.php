@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    <title>こころ会</title>
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="一般社団法人こころ会" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title><?= esc_html(get_site_meta('title')); ?></title>
+    <?php 
+        $site_des = get_site_meta('des'); 
+        if (!empty($site_des)): 
+    ?>
+        <meta name="description" content="<?= esc_attr($site_des); ?>">
+    <?php endif; ?>
+
+
     <link rel="icon" href="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/favicon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="stylesheet" href="<?php echo  get_theme_file_uri();  ?>/assets/css/style.css">

@@ -278,6 +278,10 @@ function get_thumbnail() {
   }
 }
 
+
+
+
+// メタデータのタイトルとディスクリプションを呼び出す関数
 function get_site_meta($type) {
     $site_name = '一般社団法人こころ会';
 

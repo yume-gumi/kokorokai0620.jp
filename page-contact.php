@@ -138,5 +138,3 @@
 </main>
 
 <?php get_footer();  ?>
-
-<a herf="/kokorokai/privacy">プライバシーポリシーに同意</a>

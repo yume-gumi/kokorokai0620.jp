@@ -10,7 +10,7 @@
             <div class="service-outer">
 
                 <div class="service-block">
-                    <a href="<?= site_url();  ?>/service/ponte">
+                    <a href="<?= home_url();  ?>/service/ponte">
                         <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_ponte.png" alt="就労継続支援B型  ぽんて">
                         <p>
                             <span>就労継続支援B型</span>
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="service-block">
-                    <a href="<?= site_url();  ?>/service/plus">
+                    <a href="<?= home_url();  ?>/service/plus">
                         <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_plus.png" alt="就労継続支援B型ぷらす">
                         <p class="service-title">
                             <span>就労継続支援B型</span>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="service-block">
-                    <a href="<?= site_url();  ?>/service/sakura">
+                    <a href="<?= home_url();  ?>/service/sakura">
                         <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_sakura.png" alt="地域活動支援センターさくら">
                         <p class="service-title">
                             <span>地域活動支援センター</span>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="service-block">
-                    <a href="<?= site_url();  ?>/service/ponte-pw">
+                    <a href="<?= home_url();  ?>/service/ponte-pw">
                         <img class="top-logo-img" src="<?php echo  get_theme_file_uri();  ?>/assets/images/logo_ponte.png" alt="相談支援ぽんて">
                         <p class="service-title">
                             <span>相談支援</span>

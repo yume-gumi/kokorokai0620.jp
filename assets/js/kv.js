@@ -42,28 +42,54 @@ function showNextItem() {
     setTimeout(showNextItem, delay);
 }
 
-// 実行開始
-showNextItem();
 
-window.onload = () => {
-  setTimeout(() => {
-    document.body.style.overflow = 'scroll';
-    loadingMask.classList.add("loading__mask--hidden");
 
-    setTimeout(() => {
-        loading.style.display="none";
-        kvPhoto.classList.remove("photo--hidden");
-        index = 0;
 
-        const intervalId = setInterval(() => {
-            if(index == kvCatchcopy.length) {
-                clearInterval(intervalId);
-                return;
-            }
-            kvCatchcopy[index].classList.remove("catch_copy--hidden");
-
-            index++;
-        }, 1000); 
-    }, 500);
-  }, Math.max(0, 6000 - performance.now()));
+// 設定値をまとめる
+const CONFIG = {
+    TOTAL_LOADING_MS: 6000,
+    LOGO_DELAY_DEFAULT: 500,
+    LOGO_DELAY_FAST: 250,
 };
+
+const isVisited = sessionStorage.getItem('hasVisited');
+
+
+// 実行判定
+if (isVisited) {
+    loading.style.display = "none";
+    loadingMask.classList.add("loading__mask--hidden");
+    document.body.style.overflow = 'scroll';
+    kvPhoto.classList.remove("photo--hidden");
+    // キャッチコピーも即座に表示
+    kvCatchcopy.forEach(el => el.classList.remove("catch_copy--hidden"));
+} else {
+    // 初回のみアニメーション開始
+    showNextItem();
+
+    window.onload = () => {
+        setTimeout(() => {
+            document.body.style.overflow = 'scroll';
+            loadingMask.classList.add("loading__mask--hidden");
+
+            setTimeout(() => {
+                loading.style.display = "none";
+                kvPhoto.classList.remove("photo--hidden");
+                index = 0;
+
+                const intervalId = setInterval(() => {
+                    if (index == kvCatchcopy.length) {
+                        clearInterval(intervalId);
+                        return;
+                    }
+                    kvCatchcopy[index].classList.remove("catch_copy--hidden");
+                    index++;
+                }, 1000);
+
+                // 【ここが重要！】アニメーションが完了した時点でフラグをセットする
+                sessionStorage.setItem('hasVisited', 'true');
+
+            }, 500);
+        }, Math.max(0, 6000 - performance.now()));
+    };
+}

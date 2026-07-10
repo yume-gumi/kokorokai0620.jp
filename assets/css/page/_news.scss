@@ -58,10 +58,10 @@
           display: flex;
           flex-direction: column;
 
-          &:first-child{
+          // &:first-child{
 
-            border-top: 1px dashed $orange;
-          }
+          //   border-top: 1px dashed $orange;
+          // }
           @media (min-width: 600px) {
             flex-direction: row;
             justify-content: start;

@@ -3794,9 +3794,6 @@ footer small {
   display: flex;
   flex-direction: column;
 }
-#news #news-home .news-outer .news-inner .news-card:first-child {
-  border-top: 1px dashed #F8E2CF;
-}
 @media (min-width: 600px) {
   #news #news-home .news-outer .news-inner .news-card {
     flex-direction: row;

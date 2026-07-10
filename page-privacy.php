@@ -63,7 +63,7 @@
             <div class="privacy-block">
                 以上<br>
                 <br>
-                制定日：〇〇年〇月〇日
+                制定日：2026年7月9日
             </div>
             <!-- tell-block -->
 

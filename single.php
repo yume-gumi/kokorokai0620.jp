@@ -43,9 +43,15 @@
                             </div>
                         </div>
                         <div class="news-pagination">
-                            <div class="prev btn">
+                            <div class="prev btn
+                                    <?php 
+                                        $prev_post = get_previous_post();
+                                        if(!$prev_post): 
+                                    ?>
+                                        disabled
+                                    <?php endif; ?>
+                            ">
                                 <?php
-                                $prev_post = get_previous_post();
                                 if ($prev_post) :
                                     previous_post_link('%link', '← 前の記事');
                                 else :
@@ -53,9 +59,15 @@
                                     <span class="no-post">← 前の記事</span>
                                 <?php endif; ?>
                             </div>
-                            <div class="next btn">
+                            <div class="next btn
+                                    <?php 
+                                        $next_post = get_next_post();
+                                        if(!$next_post): 
+                                    ?>
+                                        disabled
+                                    <?php endif; ?>
+                            ">
                                 <?php
-                                $next_post = get_next_post();
                                 if ($next_post) :
                                     next_post_link('%link', '次の記事 →');
                                 else :

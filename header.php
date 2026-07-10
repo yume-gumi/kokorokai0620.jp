@@ -87,9 +87,9 @@
                     <li>
                         <a href="<?= home_url();  ?>/contact">お問い合わせ</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href=""><img src="<?= get_theme_file_uri();  ?>/assets/images/icon/instagram.svg" alt=""></a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </nav>
@@ -134,7 +134,7 @@
 
             <li><a href="<?= home_url();  ?>/about">会社概要<span class="arrow"></span></a></li>
 
-            <a href="#"><img class="inst" src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/instagram.svg" alt="instagram"></a>
+            <!-- <a href="#"><img class="inst" src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/instagram.svg" alt="instagram"></a> -->
             <div class="sub-menu">
                 <a href="<?= home_url();  ?>/contact"><span>お問い合わせ</span></a>
                 <a href="<?= home_url();  ?>/privacy"><span>プライバシーポリシー</span></a>

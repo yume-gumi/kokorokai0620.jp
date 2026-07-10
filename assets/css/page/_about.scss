@@ -20,6 +20,10 @@
         &__company{
             background: $blue;
             padding-inline: 20px;
+            padding-bottom: 64px;
+            @include tb(){
+                padding-bottom: 32px;
+            }
             h2{
                 &::before{
                     background: $pink-3rd;

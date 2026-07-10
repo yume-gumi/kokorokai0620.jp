@@ -156,7 +156,8 @@
 
       .form-desc {
         padding: 16px 0;
-        text-align: center;
+        max-width: fit-content;
+        margin-inline: auto;
       }
 
       .form-outer {

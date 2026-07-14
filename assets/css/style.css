@@ -994,6 +994,16 @@ footer small {
   width: 100%;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 800px) {
+  #footer_top {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (max-width: 580px) {
+  #footer_top {
+    padding-bottom: 48px;
+  }
+}
 #footer_top.bg-pink {
   background: var(--color-pink);
 }
@@ -1241,7 +1251,7 @@ footer small {
   }
 }
 #footer_top #back-btn-containar #back-page-top .btn-top {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 #footer_top #back-btn-containar #back-page-top .btn-top::before {
   content: "";
@@ -1259,7 +1269,6 @@ footer small {
 }
 #footer_top #back-btn-containar #back-page-top .btn-top:hover {
   transform: translateY(4px);
-  transition: transform 0.2s ease;
 }
 #footer_top #back-btn-containar #back-page-top .btn-top:active {
   background: #FEFBF3;

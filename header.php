@@ -48,11 +48,13 @@
             <nav class="header_nav__pc">
                 <ul>
                     <li class="  background_circle  background_circle--01">
-                        <a href="<?= home_url();  ?>/news">お知らせ</a>
+                        <a href="<?= home_url();  ?>/news">
+                            <span class="menu_text">お知らせ</span>
+                        </a>
                     </li>
                     <li class="service  background_circle  background_circle--02">
                         <a class="service">
-                            事業内容
+                            <span class="menu_text">事業内容</span>
                             <div class="service__items">
                                 <object>
                                     <a href="<?= home_url();  ?>/service/ponte">
@@ -82,10 +84,14 @@
                         </a>
                     </li>
                     <li class="background_circle  background_circle--03">
-                        <a href="<?= home_url();  ?>/about">会社概要</a>
+                        <a href="<?= home_url();  ?>/about">
+                            <span class="menu_text">会社概要</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="<?= home_url();  ?>/contact">お問い合わせ</a>
+                        <a href="<?= home_url();  ?>/contact">
+                            <span class="menu_text">お問い合わせ</span>
+                        </a>
                     </li>
                     <!-- <li>
                         <a href=""><img src="<?= get_theme_file_uri();  ?>/assets/images/icon/instagram.svg" alt=""></a>

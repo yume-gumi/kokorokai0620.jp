@@ -58,6 +58,11 @@
           display: flex;
           flex-direction: column;
 
+          transition: opacity .3s;
+          &:hover{
+            opacity: .7;
+          }
+
           // &:first-child{
 
           //   border-top: 1px dashed $orange;

@@ -125,6 +125,15 @@ header {
       font-size: 1.5rem;
       z-index: 1;
 
+      a{
+        transition: opacity .3s;
+        &:hover{
+          .menu_text{
+            opacity: .7;
+          }
+        }
+      }
+
       .service{
         position: relative;
         &:hover{
@@ -146,10 +155,16 @@ header {
           opacity: 0;
           transition: opacity .4s ,visibility .4s;
           a{
+            transition: opacity .3s;
+            &:hover{
+                opacity: .7;
+            }
+            
             span{
               display: block;
               font-size: 12px;
             }
+            
           }
         }
       }

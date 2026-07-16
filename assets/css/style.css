@@ -525,6 +525,12 @@ header.header-sticky {
   font-size: 1.5rem;
   z-index: 1;
 }
+.header_nav__pc ul li a {
+  transition: opacity 0.3s;
+}
+.header_nav__pc ul li a:hover .menu_text {
+  opacity: 0.7;
+}
 .header_nav__pc ul li .service {
   position: relative;
 }
@@ -544,6 +550,12 @@ header.header-sticky {
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.4s, visibility 0.4s;
+}
+.header_nav__pc ul li .service__items a {
+  transition: opacity 0.3s;
+}
+.header_nav__pc ul li .service__items a:hover {
+  opacity: 0.7;
 }
 .header_nav__pc ul li .service__items a span {
   display: block;
@@ -1467,6 +1479,14 @@ footer small {
   width: fit-content;
   border-radius: 24px;
   z-index: 3;
+}
+.service_page #top-mv .mv-container .mv-frame .cc .sp-br {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .service_page #top-mv .mv-container .mv-frame .cc .sp-br {
+    display: block;
+  }
 }
 @media (min-width: 600px) {
   .service_page #top-mv .mv-container .mv-frame .cc {
@@ -3178,6 +3198,12 @@ footer small {
   width: 100%;
   text-align: center;
 }
+#top #service .service-container .service-outer .service-block a {
+  transition: opacity 0.3s;
+}
+#top #service .service-container .service-outer .service-block a:hover {
+  opacity: 0.7;
+}
 #top #service .service-container .service-outer .service-block .top-logo-img {
   width: 60px;
   height: auto;
@@ -3802,6 +3828,10 @@ footer small {
   border-bottom: 1px dashed #F8E2CF;
   display: flex;
   flex-direction: column;
+  transition: opacity 0.3s;
+}
+#news #news-home .news-outer .news-inner .news-card:hover {
+  opacity: 0.7;
 }
 @media (min-width: 600px) {
   #news #news-home .news-outer .news-inner .news-card {

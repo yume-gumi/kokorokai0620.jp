@@ -641,6 +641,12 @@
         .service-block {
           width: 100%;
           text-align: center;
+          a{
+            transition: opacity .3s;
+            &:hover{
+              opacity: .7;
+            }
+          }
 
           .top-logo-img {
             width: 60px;

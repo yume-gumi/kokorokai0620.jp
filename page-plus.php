@@ -15,9 +15,9 @@
         <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/plus_mv.webp" alt="ぷらすmainvisual">
 
         <div class="cc bg-green-2nd">
-          <p>あなたが持っている力を引き出し、<br>
+          <p>あなたが持っている力を引き出し、<br class="sp-br">
             あなたの人生にとっても、<br>
-            そして社会にとっても【ぷらす】を<br>
+            そして社会にとっても【ぷらす】を<br class="sp-br">
             作るお手伝いをしていきます。</p>
         </div>
       </div>

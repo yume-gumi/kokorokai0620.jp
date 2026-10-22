@@ -87,7 +87,7 @@
                                 桜ヶ丘1-38-34 2F
                             </address>
                             <div class="service__item--contact">
-                                <a href="tel:049-293-6329">TEL:049-290-3966</a>
+                                <a href="tel:049-293-6329">TEL:049-293-6739</a>
                                 <span>FAX:049-293-6780</a>
                             </div>
                         </div>

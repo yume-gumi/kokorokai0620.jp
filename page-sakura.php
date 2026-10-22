@@ -303,7 +303,7 @@
         <div class="flow-contact-inner">
           <div class="tell">
             <img src="<?php echo  get_theme_file_uri();  ?>/assets/images/icon/tellphone.svg" alt="tell-icon">
-            <p class="tell-number">049-290-3966</p>
+            <p class="tell-number">049-293-6739</p>
           </div>
           <span>平日 9:00~17:00まで</span>
         </div>
@@ -350,7 +350,7 @@
           <li>
             <div>連絡先</div>
             <div class="address-tell">
-              <p>電話:049-290-3966</p>
+              <p>電話:049-293-6739</p>
               <p>FAX:049-293-6780</p>
             </div>
           </li>
